@@ -5,9 +5,6 @@
 :root{
 	font-size: 16px;	
 }
-body{
-	overflow: hidden
-}
 body, nav ul{
 	margin: 0;
 }
