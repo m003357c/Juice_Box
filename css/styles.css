@@ -1,0 +1,181 @@
+*{
+	font-family: 'Roboto', Arial, sans-serif;
+	font-weight: normal;
+}
+body{
+	overflow: hidden
+}
+body, nav ul{
+	margin: 0;
+}
+/*-----------------------------------------*/
+/*----------------- Fonts -----------------*/
+/*-----------------------------------------*/
+h2{
+	font-size: 28px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-align: center;
+	color: #4c4242;
+}
+/*----------------------------------------------*/
+/*----------------- Navigation -----------------*/
+/*----------------------------------------------*/
+nav{
+	background: #d71010;
+}
+nav ul{
+	padding: 0;
+}
+nav ul li{
+	display: inline-block;
+	list-style-type: none;
+}
+nav ul li img{
+	vertical-align: middle;
+}
+/*------------- Top Nav Styles -------------*/
+#topNav{
+	padding: 20px 25px;
+	-webkit-box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.35);
+	   -moz-box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.35);
+			box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.35);
+}
+#topNav li{
+	float: left;
+}
+#topNav li:nth-child(1), #topNav li:nth-child(3){
+	width:10%
+}
+#topNav li:nth-child(2){
+	width: 80%;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 21px;
+	letter-spacing: 2px;
+}
+#topNav li:nth-child(3){
+	text-align: right;
+}
+.home #topNav li:nth-child(1) img{
+	opacity: 0;
+}
+/*------------- Bottom Nav Styles -------------*/
+#bottomNav{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 10px 0;
+}
+#bottomNav li{
+	width: 33%;
+	float: left;
+	box-sizing: border-box;
+	text-align: center;
+	position: relative;
+}
+.active::before{
+	content: "";
+	position: absolute;
+	top:-14px;
+	left: 0;
+	height: 4px;
+	width: 105%;
+}
+.active.home::before{
+	background: #ff7e00;
+}
+.active.basket::before{
+	background: #73397c;
+}
+.active.checkout::before{
+	background: #39b54a;
+}
+#bottomNav ul li img{
+	transform: scale(0.80);
+}
+.home #bottomNav ul li.home img, .basket #bottomNav ul li.basket img, .checkout #bottomNav ul li.checkout img{
+	transform: scale(1);
+}
+/*---------------------------------------------------*/
+/*------------------- Checkout Wallet ---------------*/
+/*---------------------------------------------------*/
+section{
+	padding: 10px;
+}
+.wallet{
+	background: #47280a;
+	width: 100%;
+	border-radius: 10px;
+	padding-top: 10px;
+}
+.cash{
+	background: #39b54a;
+	position: relative;
+	outline: 5px solid #11681d;
+	outline-offset: -10px;
+	padding: 15px;
+	box-sizing: border-box;
+	margin: 10px 20px -20px;
+}
+.cash h5{
+	font-size: 24px;
+	color: #0d6119;
+	text-align: right;
+	margin: 0;
+}
+.cash h5 span{
+	font-size: 15px;
+	margin-bottom: 8px
+}
+.wallet-inner{
+	background: #603913;
+	width: 100%;
+	outline: 2px dashed #362f2d;
+	outline-offset: -10px;
+	border-radius: 10px;
+	padding: 20px;
+	box-sizing: border-box;
+	position: relative;
+	z-index: 2;
+}
+.card{
+	height: 70px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	padding: 20px 15px;
+	box-sizing: border-box;
+  margin-bottom: -10px;
+	-webkit-box-shadow: 0px -5px 4px 0px rgba(0,0,0,0.35);
+	-moz-box-shadow: 0px -5px 4px 0px rgba(0,0,0,0.35);
+	box-shadow: 0px -5px 4px 0px rgba(0,0,0,0.35);
+}
+.card:last-child{
+	-webkit-box-shadow: 0px -5px 4px 0px rgba(0,0,0,0.35), inset 0px -5px 4px 0px rgba(0,0,0,0.35);
+	-moz-box-shadow: 0px -5px 4px 0px rgba(0,0,0,0.35), inset 0px -5px 4px 0px rgba(0,0,0,0.35);
+	box-shadow: 0px -5px 4px 0px rgba(0,0,0,0.35), inset 0px -5px 4px 0px rgba(0,0,0,0.35);
+	margin-bottom: 20px;
+}
+ .card h5{
+	margin: 0;
+	color: #fff;
+	font-size: 22px;
+}
+.card h5 .cost{
+	float: right;
+}
+.mobile.card{
+	background: #6300de;
+}
+.debit.card{
+	background: #211ec6;
+}
+.paypal.card{
+	background: #009cde;
+}
+.clear, .card h5 .cost::after{
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
