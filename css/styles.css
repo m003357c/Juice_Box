@@ -109,16 +109,20 @@ nav ul li img{
 	border-radius: 100%;
 }
 #citrus{
-	background: #f4ca07, url(../assets/images/menu-citrus.svg) 50% 50% no-repeat;
+	background: url(../assets/images/menu-citrus.svg) 50% 50% no-repeat;
+	background-color: #f4ca07;
 }
 #berry{
-	background: #73397c, url(../assets/images/menu-berry.svg) 50% 50% no-repeat;
+	background: url(../assets/images/menu-berry.svg) 50% 50% no-repeat;
+	background-color: #73397c;
 }
 #green{
-	background: #7fb75a, url(../assets/images/menu-green.svg) 50% 50% no-repeat;
+	background: url(../assets/images/menu-green.svg) 50% 50% no-repeat;
+	background-color: #7fb75a;
 }
 #red{
-	background: #a32121, url(../assets/images/menu-red.svg) 50% 50% no-repeat;
+	background: url(../assets/images/menu-red.svg) 50% 50% no-repeat;
+	background-color: #a32121;
 }
 /*---------------------------------------------------*/
 /*------------------- Checkout Wallet ---------------*/
