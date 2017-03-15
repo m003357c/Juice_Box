@@ -106,10 +106,20 @@ nav ul li img{
 .drink-option{
 	width: 120px;
 	height: 120px;
-	border-radius: 50px;
-	background: teal;
+	border-radius: 100%;
 }
-
+#citrus{
+	background: #f4ca07, url(../assets/images/menu-citrus.svg) 50% 50% no-repeat;
+}
+#berry{
+	background: #73397c, url(../assets/images/menu-berry.svg) 50% 50% no-repeat;
+}
+#green{
+	background: #7fb75a, url(../assets/images/menu-green.svg) 50% 50% no-repeat;
+}
+#red{
+	background: #a32121, url(../assets/images/menu-red.svg) 50% 50% no-repeat;
+}
 /*---------------------------------------------------*/
 /*------------------- Checkout Wallet ---------------*/
 /*---------------------------------------------------*/
