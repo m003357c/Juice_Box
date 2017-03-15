@@ -104,8 +104,8 @@ nav ul li img{
 /*------------------- Menu Items ---------------*/
 /*----------------------------------------------*/
 .drink-option{
-	width: 120px;
-	height: 120px;
+	width: 130px;
+	height: 130px;
 	border-radius: 100%;
 }
 #citrus{
@@ -130,6 +130,11 @@ nav ul li img{
 	background: rgba(255,255,255,0.7);
 	text-align: center;
 	padding: 8px; 0;
+	text-transform: uppercase;
+	margin: 0;
+	-webkit-transform: translate(0, 60px);
+	-moz-transform: translate(0, 60px);
+	transform: translate(0, 60px);
 }
 /*---------------------------------------------------*/
 /*------------------- Checkout Wallet ---------------*/
