@@ -107,22 +107,36 @@ nav ul li img{
 	width: 130px;
 	height: 130px;
 	border-radius: 100%;
+	overflow: hidden;
+	margin: 0 auto;
 }
 #citrus{
 	background: url(../assets/images/menu-citrus.svg) 50% 50% no-repeat;
 	background-color: #f4ca07;
+	-webkit-transform: translate(-70px, 0);
+	-moz-transform: translate(-70px, 0);
+	transform: translate(-70px, 0);
 }
 #berry{
 	background: url(../assets/images/menu-berry.svg) 50% 50% no-repeat;
 	background-color: #73397c;
+	-webkit-transform: translate(70px, 0);
+	-moz-transform: translate(70px, 0);
+	transform: translate(70px, 0);
 }
 #green{
 	background: url(../assets/images/menu-green.svg) 50% 50% no-repeat;
 	background-color: #7fb75a;
+	-webkit-transform: translate(-70px, 0);
+	-moz-transform: translate(-70px, 0);
+	transform: translate(-70px, 0);
 }
 #red{
 	background: url(../assets/images/menu-red.svg) 50% 50% no-repeat;
 	background-color: #a32121;
+	-webkit-transform: translate(70px, 0);
+	-moz-transform: translate(70px, 0);
+	transform: translate(70px, 0);
 }
 .drink-name{
 	font-size: 14px;
