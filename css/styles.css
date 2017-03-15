@@ -158,9 +158,12 @@ nav ul li img{
 /*-------------------------------------------------*/
 /*------------------- Basket Styles ---------------*/
 /*-------------------------------------------------*/
+#basket{
+	width: 90%;
+	margin: 0 auto;
+}
 .basket-item{
-	width: auto;
-	margin: 0 auto 30px;
+	margin: 0 0 30px;
 	padding: 10px;
 	box-sizing: border-box;
 	height: 75px;
@@ -278,7 +281,7 @@ nav ul li img{
 .paypal.card{
 	background: #009cde;
 }
-.clear, .card h5 .cost::after, .basket-item span.price::after{
+.clear, .card h5 .cost::after, .basket-item .price::after{
 	clear: both;
 	margin: 0;
 	padding: 0;
