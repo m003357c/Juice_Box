@@ -113,30 +113,30 @@ nav ul li img{
 #citrus{
 	background: url(../assets/images/menu-citrus.svg) 50% 50% no-repeat;
 	background-color: #f4ca07;
-	-webkit-transform: translate(-70px, 0);
-	-moz-transform: translate(-70px, 0);
-	transform: translate(-70px, 0);
+	-webkit-transform: translate(-60px, 0);
+	-moz-transform: translate(-60px, 0);
+	transform: translate(-60px, 0);
 }
 #berry{
 	background: url(../assets/images/menu-berry.svg) 50% 50% no-repeat;
 	background-color: #73397c;
-	-webkit-transform: translate(70px, 0);
-	-moz-transform: translate(70px, 0);
-	transform: translate(70px, 0);
+	-webkit-transform: translate(60px, -20px);
+	-moz-transform: translate(60px, -20px);
+	transform: translate(60px, -20px);
 }
 #green{
 	background: url(../assets/images/menu-green.svg) 50% 50% no-repeat;
 	background-color: #7fb75a;
-	-webkit-transform: translate(-70px, 0);
-	-moz-transform: translate(-70px, 0);
-	transform: translate(-70px, 0);
+	-webkit-transform: translate(-60px, -40px);
+	-moz-transform: translate(-60px, -40px);
+	transform: translate(-60px, -40px);
 }
 #red{
 	background: url(../assets/images/menu-red.svg) 50% 50% no-repeat;
 	background-color: #a32121;
-	-webkit-transform: translate(70px, 0);
-	-moz-transform: translate(70px, 0);
-	transform: translate(70px, 0);
+	-webkit-transform: translate(60px, -60px);
+	-moz-transform: translate(60px, -60px);
+	transform: translate(60px, -60px);
 }
 .drink-name{
 	font-size: 14px;
