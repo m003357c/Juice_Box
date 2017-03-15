@@ -160,10 +160,13 @@ nav ul li img{
 /*-------------------------------------------------*/
 .basket-item{
 	width: 90%;
-	margin: 0 auto;
+	margin: 0 auto 30px;
 	padding: 10px;
 	box-sizing: border-box;
 	height: 75px;
+	-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.35);
+	-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.35);
+	box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.35);
 }
 .basket-item img{
 	display: inline-block;
