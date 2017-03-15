@@ -2,6 +2,7 @@
  "name": "Juice Box",
  "short_name": "Juice Box",
  "start_url": "https://m003357c.github.io/Juice_Box/index.html",
+ "orientation", "portrait",
  "display": "standalone",
  "background_color": "#d71010",
  "theme_color": "#d71010",
