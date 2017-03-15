@@ -124,6 +124,13 @@ nav ul li img{
 	background: url(../assets/images/menu-red.svg) 50% 50% no-repeat;
 	background-color: #a32121;
 }
+.drink-name{
+	font-size: 14px;
+	font-weight: bold;
+	background: rgba(255,255,255,0.7);
+	text-align: center;
+	padding: 8px; 0;
+}
 /*---------------------------------------------------*/
 /*------------------- Checkout Wallet ---------------*/
 /*---------------------------------------------------*/
