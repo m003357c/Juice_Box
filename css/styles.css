@@ -266,7 +266,7 @@ nav ul li img{
 .paypal.card{
 	background: #009cde;
 }
-.clear, .card h5 .cost::after{
+.clear, .card h5 .cost::after, .basket-item span:nth-child(2)::after{
 	clear: both;
 	margin: 0;
 	padding: 0;
