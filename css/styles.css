@@ -211,7 +211,7 @@ nav ul li img{
 	float: left;
 	text-align: center;
 }
-.basket-items{
+.basket-items, .basket-price{
 	font-size: 2rem;
 	margin: 5px 0 0;	
 }
