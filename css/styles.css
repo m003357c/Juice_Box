@@ -185,13 +185,14 @@ nav ul li img{
 	vertical-align: middle;
 }
 .basket-item span:last-child{
-	margin-right: 0;	
+	margin-right: 0;
 }
 .basket-item span small{	
 	font-size: 0.75rem;
 }
 .basket-item span.price{
 	font-size: 1.375rem;
+	float: right;
 }
 .citrus-blast{
 	background: #f4ca07;	
@@ -213,6 +214,18 @@ nav ul li img{
 .basket-items{
 	font-size: 2rem;
 	margin: 5px 0 0;	
+}
+#basket-pay{
+	text-align: center;	
+}
+#basket-pay .basket-pay-btn{
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	background: #d71010;
+	border-radius: 100%;
+	text-align: center;
+	width: 108px;
+	height: 108px;
 }
 /*---------------------------------------------------*/
 /*------------------- Checkout Wallet ---------------*/
