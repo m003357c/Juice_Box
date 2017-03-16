@@ -227,7 +227,10 @@ nav ul li img{
 	display: inline-block;
 	color: #fff;
 	text-decoration: none;
-    	padding: 50px 15px;
+    	padding: 22px 27px;
+	-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.35);
+	-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.35);
+	box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.35);
 }
 /*---------------------------------------------------*/
 /*------------------- Checkout Wallet ---------------*/
