@@ -96,6 +96,9 @@ nav ul li img{
 .active.checkout::before{
 	background: #39b54a;
 }
+#bottomNav ul li{
+	display: inline-block;
+}	
 #bottomNav ul li img{
 	transform: scale(0.80);
 }
@@ -181,6 +184,7 @@ nav ul li img{
 	margin-right: 10px;
 	float: left;	
 	font-size:1rem;
+	line-height: 110%;
 	color: #fff;
 	vertical-align: middle;
 }
