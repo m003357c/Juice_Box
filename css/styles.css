@@ -224,8 +224,10 @@ nav ul li img{
 	background: #d71010;
 	border-radius: 100%;
 	text-align: center;
-	width: 108px;
-	height: 108px;
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+    	padding: 50px 15px;
 }
 /*---------------------------------------------------*/
 /*------------------- Checkout Wallet ---------------*/
