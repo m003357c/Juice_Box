@@ -180,7 +180,7 @@ nav ul li img{
 .basket-item span{
 	margin-right: 10px;
 	float: left;	
-	font-size: 0.875rem;
+	font-size:1rem;
 	color: #fff;
 	vertical-align: middle;
 }
@@ -188,11 +188,12 @@ nav ul li img{
 	margin-right: 0;
 }
 .basket-item span small{	
-	font-size: 0.75rem;
+	font-size: 0.875rem;
 }
 .basket-item span.price{
 	font-size: 1.375rem;
 	float: right;
+	margin-top: 15px;
 }
 .citrus-blast{
 	background: #f4ca07;	
