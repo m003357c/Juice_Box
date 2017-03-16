@@ -46,6 +46,7 @@ nav ul li img{
 }
 #topNav li{
 	float: left;
+	line-height: 100%;
 }
 #topNav li:nth-child(1), #topNav li:nth-child(3){
 	width:10%
