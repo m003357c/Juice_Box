@@ -244,14 +244,20 @@ nav ul li img{
 	border-radius: 10px;
 	padding-top: 10px;
 }
-.cash{
+    
+}
+styles.css:247
+.cash {
 	background: #39b54a;
 	position: relative;
 	outline: 5px solid #11681d;
 	outline-offset: -10px;
-	padding: 15px;
+	padding: 15px 15px 45px;
 	box-sizing: border-box;
-	margin: 10px 20px -20px;
+	margin: 10px 20px -50px;
+	-webkit-transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+	transform: rotate(-3deg);
 }
 .cash h5{
 	font-size: 24px;
