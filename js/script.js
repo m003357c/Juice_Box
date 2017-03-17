@@ -30,7 +30,7 @@ var simplyRed = {
 
 var basket = [greenMachine, berryBlast];
 
-console.log(basket);
+console.log(basket.item);
 
 basket.forEach(function(item) {
   
@@ -40,6 +40,6 @@ basket.forEach(function(item) {
       drinkPrice = item.price,
       drinkClass = item.className;    
   
-  console.log(drinkName, drinkImage, drinkIngred, drinkPrice, drinkClass);
+  //console.log(drinkName, drinkImage, drinkIngred, drinkPrice, drinkClass);
   
 });
