@@ -362,10 +362,10 @@ nav ul li img{
 }
 #loyaltyCounter{
 	background: #f0cc05;
-	margin: 0 10px;
-	-webkit-box-shadow: 0px -5px 4px 0px rgba(0,0,0,0.35);
-	-moz-box-shadow: 0px -5px 4px 0px rgba(0,0,0,0.35);
-	box-shadow: 0px -5px 4px 0px rgba(0,0,0,0.35);
+	margin: 0 10px 20px;
+	-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.35);
+	-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.35);
+	box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.35);
 }
 .fifth{
 	width: 20%;
@@ -373,11 +373,15 @@ nav ul li img{
 }
 .start-holder{
 	text-align: center;
-	padding: 14px;
+	padding: 14px 0;
 	box-sizing: border-box;
+	border-right: 1px solid #957f05;
+}
+.start-holder:last-child{
+	border-right: none;	
 }
 .start-holder img{
-	opacity: 20%
+	opacity: 0.2;
 }
 .clear, .card h5 .cost::after, .basket-item .price::after{
 	clear: both;
