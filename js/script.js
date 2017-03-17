@@ -46,4 +46,7 @@ basket.forEach(function(item) {
                    '<br class="clear">' +
                  '</article>';
   
+  var target = document.getElementById("basket");
+  
+  target.appendChild(template);
 });
