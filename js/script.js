@@ -30,10 +30,10 @@ var simplyRed = {
 
 var basket = [greenMachine, berryBlast];
 
-console.log(basket.item);
-
 basket.forEach(function(item) {
+  
   console.log(item);
+  
   var drinkName = item.name,
       drinkImage = item.image,
       drinkIngred = item.ingredients,
