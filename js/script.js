@@ -48,5 +48,5 @@ basket.forEach(function(item) {
   
   var target = document.getElementById("basket");
   
-  target.innerHTML(template);
+  target.innerHTML = template;
 });
