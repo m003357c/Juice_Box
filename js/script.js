@@ -30,4 +30,15 @@ var simplyRed = {
 
 var basket = [greenMachine, berryBlast];
 
-console.log(basket);
+basket.forEach(function() {
+  
+  var $this = this,
+        drinkName = $this.basket["name"],
+        drinkImage = $this.basket["image"],
+        drinkIngred = $this.basket["ingredients"],
+        drinkPrice = $this.basket["price"],
+        drinkClass = $this.basket["className"];    
+  
+  console.log(drinkName, drinkImage, drinkIngred, drinkPrice, drinkClass);
+  
+});
