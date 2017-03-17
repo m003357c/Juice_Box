@@ -386,6 +386,9 @@ nav ul li img{
 .start-holder img{
 	opacity: 0.2;
 }
+.start-holder.point img{
+	opacity: 1;	
+}
 .clear, .card h5 .cost::after, .basket-item .price::after{
 	clear: both;
 	margin: 0;
