@@ -1,4 +1,4 @@
-var CACHE_NAME = 'gih-cache';
+/*var CACHE_NAME = 'gih-cache';
 var CACHED_URLS = [
   '../offline-index.html',
   '../offline-basket.html',
@@ -27,4 +27,4 @@ self.addEventListener('fetch', function(event) {
       });
     })
   );
-});
+});*/
