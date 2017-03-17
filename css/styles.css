@@ -163,7 +163,11 @@ nav ul li img{
 /*------------------- Product Info ---------------*/
 /*------------------------------------------------*/
 .product-information{
-
+	text-align: center;
+}
+.product-information table{
+	width: 100%;
+	text-align: center;
 }
 /*-------------------------------------------------*/
 /*------------------- Basket Styles ---------------*/
@@ -210,16 +214,16 @@ nav ul li img{
 	float: right;
 	margin-top: 15px;
 }
-.citrus-blast{
+#citrusProdInfo, .citrus-blast{
 	background: #f4ca07;	
 }
-.green-machine{
+#greenProdInfo, .green-machine{
 	background: #7fb75a;	
 }
-.berry-blast{
+#berryProdInfo, .berry-blast{
 	background: #73397c;	
 }
-.simply-red{
+#redProdInfo, .simply-red{
 	background: #a32121;	
 }
 .remove-basket{
