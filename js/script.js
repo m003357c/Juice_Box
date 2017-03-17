@@ -15,7 +15,7 @@ var berryBlast = {
 };
 var greenMachine = {
   name:"Green Machine",
-  image:"assets/images/green",
+  image:"green",
   ingredients:"Apple, Banana, Avocado,<br>Kiwi &amp; Lime",
   price:"	&pound;2.50",
   className:"berry-blast"
