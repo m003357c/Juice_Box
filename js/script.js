@@ -14,7 +14,7 @@ var berryBlast = {
   className:"berry-blast"
 };
 var greenMachine = {
-  name:"Berry Blast",
+  name:"Green Machine",
   image:"assets/images/basket-green.svg",
   ingredients:"Apple, Banana, Avocado, Kiwi &amp; Lime",
   price:"	&pound;2.50",
