@@ -33,11 +33,11 @@ var basket = [greenMachine, berryBlast];
 basket.forEach(function() {
   
   var $this = this,
-        drinkName = $this.basket["name"],
-        drinkImage = $this.basket["image"],
-        drinkIngred = $this.basket["ingredients"],
-        drinkPrice = $this.basket["price"],
-        drinkClass = $this.basket["className"];    
+        drinkName = $this.["name"],
+        drinkImage = $this.["image"],
+        drinkIngred = $this.["ingredients"],
+        drinkPrice = $this.["price"],
+        drinkClass = $this.["className"];    
   
   console.log(drinkName, drinkImage, drinkIngred, drinkPrice, drinkClass);
   
