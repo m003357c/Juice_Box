@@ -354,7 +354,7 @@ nav ul li img{
 /*------------------- Loyalty Point Counter ---------------*/
 /*---------------------------------------------------------*/
 .loyatly-points h2{
-	margin-bottom: 10px;
+	margin: 10px 0 20px;
 }
 .loyatly-points p{
 	margin: 0 0 10px;
@@ -374,7 +374,7 @@ nav ul li img{
 }
 .start-holder{
 	text-align: center;
-	padding: 14px 0;
+	padding: 7px 0;
 	box-sizing: border-box;
 	border-right: 1px solid #957f05;
 }
