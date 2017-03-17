@@ -34,11 +34,11 @@ console.log(basket);
 
 basket.forEach(function(item) {
   
-  var drinkName = item.["name"],
-      drinkImage = item.["image"],
-      drinkIngred = item.["ingredients"],
-      drinkPrice = item.["price"],
-      drinkClass = item.["className"];    
+  var drinkName = item.name,
+      drinkImage = item.image,
+      drinkIngred = item.ingredients,
+      drinkPrice = item.price,
+      drinkClass = item.className;    
   
   console.log(drinkName, drinkImage, drinkIngred, drinkPrice, drinkClass);
   
