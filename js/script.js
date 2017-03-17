@@ -28,7 +28,7 @@ var simplyRed = {
   className:"simply-red"
 };
 
-var basket = [greenMachine, berryBlast];
+/*var basket = [greenMachine, berryBlast];
 
 basket.forEach(function(item) {
   
@@ -37,6 +37,12 @@ basket.forEach(function(item) {
       drinkIngred = item.ingredients,
       drinkPrice = item.price,
       drinkClass = item.className;    
+  
+  var a = document.createElement("article");
+  a.className = "basket-item " + drinkClass;
+  
+  var imgSpan = document.createElement("span");
+  
   
   var template = '<article class="basket-item ' + drinkClass + '">' +
                    '<span><img src="assets/images/basket-' + drinkImage + '.svg" alt="' + drinkName + ' Ingrediant Image"></span>' +
@@ -49,4 +55,4 @@ basket.forEach(function(item) {
   var target = document.getElementById("basket");
   
   target.appendChild(template);
-});
+});*/
