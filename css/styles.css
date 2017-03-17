@@ -349,6 +349,36 @@ nav ul li img{
 .paypal.card{
 	background: #009cde;
 }
+/*---------------------------------------------------------*/
+/*------------------- Loyalty Point Counter ---------------*/
+/*---------------------------------------------------------*/
+.loyatly-points h2{
+	margin-bottom: 10px;
+}
+.loyatly-points p{
+	margin: 0 0 10px;
+	font-size: 0.8rem;
+	text-align: center;
+}
+#loyaltyCounter{
+	background: #f0cc05;
+	margin: 0 10px;
+	-webkit-box-shadow: 0px -5px 4px 0px rgba(0,0,0,0.35);
+	-moz-box-shadow: 0px -5px 4px 0px rgba(0,0,0,0.35);
+	box-shadow: 0px -5px 4px 0px rgba(0,0,0,0.35);
+}
+.fifth{
+	width: 20%;
+	float: left;
+}
+.start-holder{
+	text-align: center;
+	padding: 14px;
+	box-sizing: border-box;
+}
+.start-holder img{
+	opacity: 20%
+}
 .clear, .card h5 .cost::after, .basket-item .price::after{
 	clear: both;
 	margin: 0;
