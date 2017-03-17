@@ -339,6 +339,7 @@ nav ul li img{
 }
 .card h5 .cost{
 	float: right;
+	color: #fff;
 }
 .mobile.card{
 	background: #6300de;
