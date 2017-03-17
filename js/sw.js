@@ -1,9 +1,9 @@
 var CACHE_NAME = 'gih-cache';
 var CACHED_URLS = [
-  '../index.html',
-  '../basket.html',
-  '../checkout.html',
-  '../order-status.html',
+  '../offline-index.html',
+  '../offline-basket.html',
+  '../offline-checkout.html',
+  '../offline-order-status.html',
   '../css/styles.css',
 ];
 
