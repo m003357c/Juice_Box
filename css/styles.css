@@ -273,7 +273,7 @@ nav ul li img{
 /*------------------- Checkout Wallet ---------------*/
 /*---------------------------------------------------*/
 .checkout section{
-	padding: 10px;
+	padding: 0 10px;
 }
 .wallet{
 	background: #47280a;
@@ -288,10 +288,10 @@ nav ul li img{
 	outline-offset: -10px;
 	padding: 15px 15px 45px;
 	box-sizing: border-box;
-	margin: 10px 20px -50px;
-	-webkit-transform: rotate(-3deg);
-	-moz-transform: rotate(-3deg);
-	transform: rotate(-3deg);
+	margin: -40px 20px -50px;
+	-webkit-transform: rotate(-7deg);
+	-moz-transform: rotate(-7deg);
+	transform: rotate(-7deg);
 }
 .cash h5{
 	font-size: 24px;
