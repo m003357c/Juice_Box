@@ -167,6 +167,7 @@ nav ul li img{
 	margin: 0 auto;
 }
 .basket-item{
+	position: relative;
 	margin: 0 0 30px;
 	padding: 10px;
 	box-sizing: border-box;
@@ -213,6 +214,17 @@ nav ul li img{
 }
 .simply-red{
 	background: #a32121;	
+}
+.remove-basket{
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #d71010;
+	font-size: 1.5rem;
+	border-radius: 100%;
+	padding: 8px;
+	color: #fff;
 }
 .fifty{
 	width: 50%;
