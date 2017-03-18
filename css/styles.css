@@ -168,19 +168,21 @@ nav ul li img{
 #hiddenProdInfo{
 	position: absolute;
 	width: 100%;
-	bottom: -170px;
+	bottom: -135px;
 }
 .product-information{
 	text-align: center;
 	position: relative;
+	z-index: 5;
 }
 .product-information::before{
 	content: '';
-	width: 100%;
-	height: 500px;
+	width: 140%;
+	height: 360px;
 	border-radius: 100%;
-	background: yellow;
-	top:-250px;
+	top: -80px;
+	left: -70px;
+	z-index: -5;
 	position: absolute;
 }
 .product-information img{
@@ -240,16 +242,16 @@ nav ul li img{
 	float: right;
 	margin-top: 15px;
 }
-#citrusProdInfo, .citrus-blast{
+#citrusProdInfo, .citrus-blast, #citrusProdInfo.product-information::before{
 	background: #f4ca07;	
 }
-#greenProdInfo, .green-machine{
+#greenProdInfo, .green-machine, #greenProdInfo.product-information::before{
 	background: #7fb75a;	
 }
-#berryProdInfo, .berry-blast{
+#berryProdInfo, .berry-blast, #berryProdInfo.product-information::before{
 	background: #73397c;	
 }
-#redProdInfo, .simply-red{
+#redProdInfo, .simply-red, #redProdInfo.product-information::before{
 	background: #a32121;	
 }
 .remove-basket{
