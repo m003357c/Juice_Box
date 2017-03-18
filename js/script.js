@@ -2,7 +2,6 @@
 var prodEls = document.getElementsByClassName("drink-option");
 
 var showProdInfo = function() {
-    var prodID = this.id;
     prodID.classList.toggle("isShowing");
   
     var blurMenu = document.getElementById("menuItems");
