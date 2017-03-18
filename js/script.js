@@ -1,5 +1,13 @@
 //JS file for Juice Box
-var citrusPunch = {
+function showProduct(){
+  var el =  this.id;
+  console.log(el);
+  el.classList.toggle("isShowing");
+}
+var prodClicked = document.getElementsByClass("drink-option").addEventListener("click", showProduct);
+
+
+/*var citrusPunch = {
   name:"Citrus Punch",
   image:"citrus",
   ingredients:"Grapefruit, Orange &amp; Pineapple",
@@ -28,7 +36,7 @@ var simplyRed = {
   className:"simply-red"
 };
 
-/*var basket = [greenMachine, berryBlast];
+var basket = [greenMachine, berryBlast];
 
 basket.forEach(function(item) {
   
