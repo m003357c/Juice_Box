@@ -1,11 +1,20 @@
 //JS file for Juice Box
-function showProduct(){
-  var el =  this.id;
-  console.log(el);
-  el.classList.toggle("isShowing");
-}
-var prodClicked = document.getElementsByClass("drink-option").addEventListener("click", showProduct);
+var prodEls = document.getElementsByClassName("drink-option");
 
+var showProdInfo = function() {
+    var prodID = this.id;
+    attribute.classList.toggle("isShowing");
+  
+    var blurMenu = document.getElementById("menuItems");
+    blurMenu.classList.toggle("blur");
+  
+    var blurHeading = document.getElementsByTagName("h1");
+    blurHeading.classList.toggle("blur");
+};
+
+for (var i = 0; i < prodEls.length; i++) {
+    prodEls[i].addEventListener('click', showProdInfo, false);
+}
 
 /*var citrusPunch = {
   name:"Citrus Punch",
