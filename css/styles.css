@@ -310,7 +310,7 @@ nav ul li img{
 	text-align: center;
 	font-weight: 300;
 	box-sizing: border-box;
-	padding-top: 3px 0 0 1px;
+	padding: 3px 0 0 1px;
 	-webkit-transform: scale(1,0.8);
 	-moz-transform: scale(1,0.8);
 	-ms-transform: scale(1,0.8);
