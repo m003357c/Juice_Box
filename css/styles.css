@@ -277,6 +277,14 @@ header{
 	width: 100%;
 	text-align: center;
 	font-size: 0.8rem;
+	border-collapse: collapse;
+}
+.product-information table tr td:first-child{
+	border-right: 1px solid #fff;	
+}
+.product-information table tr td{
+	padding: 5px;
+	vertical-align: middle;
 }
 .product-information.isShowing{
 	display: block;
