@@ -1,8 +1,4 @@
 //JS file for Juice Box
-
-$(document).ready(function(){
-	console.log("JQuery ready!");
-});
 // Drink JS Objects
 var citrusPunch = {
     name:"Citrus Punch",
@@ -41,41 +37,30 @@ var drinks = [citrusPunch, greenMachine, berryBlast, simplyRed];
 
 var basket = [greenMachine, berryBlast];
 
-//Function to show the drinks information when clicked
-var drinkClicked = document.getElementsByClassName("drink-option");
-
-var showDrinkInfo = function() {
-
-    var drinkID = this.id;
+$(document).ready(function(){
 	
-    switch (drinkID) {
-        case "citrus-punch":
-            var showProduct = document.getElementById("citrusProdInfo");
-			showProduct.classList += " isShowing";
-        break;
-        case "berry-blast":
-            var showProduct = document.getElementById("berryProdInfo");
-			showProduct.classList += " isShowing";
-        break;
-        case "green-machine":
-            var showProduct = document.getElementById("greenProdInfo");
-			showProduct.classList += " isShowing";
-            break;
-        case "simply-red":
-            var showProduct = document.getElementById("redProdInfo");
-			showProduct.classList += " isShowing";
-    };
-    
-    var blurMenu = document.getElementById("menuItems");
-    var blurText = document.getElementsByTagName("H1");
-    blurMenu.className += " blur";
-    blurText.className += " blur";
-    
-};
-
-for (var i = 0; i < drinkClicked.length; i++) {
-    drinkClicked[i].addEventListener('click', showDrinkInfo, false);
-};
+//Function to show the drinks information when clicked
+$(".drink-option").click(function(){
+	
+	var drinkID = this.id;
+	
+	switch (drinkID) {
+		case "citrus-punch":
+			$("#citrusProdInfo").addClass("isShowing");
+		break;
+		case "berry-blast":
+		    $("#berryProdInfo").addClass("isShowing");
+		break;
+		case "green-machine":
+		    $("#greenProdInfo").addClass("isShowing");
+		    break;
+		case "simply-red":
+            $("#redProdInfo").addClass("isShowing");
+	};
+	
+	$(".menuItems, h1").toggleClass("blur");
+	
+});
 
 //Code to remove the product information when button is clicked
 function removeProductInfo(){	
@@ -118,3 +103,6 @@ basket.forEach(function(item) {
 
   target.innerHTML = target.innerHTML + template;
 });
+
+});
+
