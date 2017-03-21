@@ -62,13 +62,14 @@ $(document).ready(function(){
 		    $("#redProdInfo").addClass("isShowing");
 		};
 
-		$(".menuItems, h1").toggleClass("blur");
+		$("#menuItems, h1").toggleClass("blur");
 
 	});
 
 	$(".close-btn").click(function(){
 
 		$(this).parent().toggleClass("isShowing");
+		$("#menuItems, h1").toggleClass("blur");
 	});
 
 
