@@ -61,7 +61,7 @@ basket.forEach(function(item) {
 });
 
 
-$(document).ready(function(){
+jQuery(document).ready(function(){
 
 	//Function to show the drinks information when clicked
 	$(".drink-option").click(function(){
