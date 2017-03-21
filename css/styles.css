@@ -113,7 +113,7 @@ nav ul li img{
 	background: #fff;
 	position: absolute;
 	top: 0;
-	right: 0;
+	right: 40%;
 	color: #d71010;
 	font-size: 0.6rem;
 	border-radius: 100%;
@@ -121,6 +121,9 @@ nav ul li img{
 	-webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.35);
 	-moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.35);
 	box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.35);
+	-webkit-transform: translate(60%, 0);
+	-moz-transform: translate(60%, 0);
+	transform: translate(60%, 0);
 }	
 /*----------------------------------------------*/
 /*------------------- Menu Items ---------------*/
