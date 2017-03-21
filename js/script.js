@@ -1,4 +1,5 @@
 //JS file for Juice Box
+// Drink JS Objects
 var citrusPunch = {
     name:"Citrus Punch",
     image:"citrus",
@@ -31,11 +32,12 @@ var simplyRed = {
     price:"&pound;2.50",
     drinkClass:"simply-red"
 };
-
+// JS arrays to emulate orders for now
 var drinks = [citrusPunch, greenMachine, berryBlast, simplyRed];
 
 var basket = [greenMachine, berryBlast];
 
+//Function to show the drinks information when clicked
 var drinkClicked = document.getElementsByClassName("drink-option");
 
 var showDrinkInfo = function() {
@@ -223,13 +225,21 @@ for (var i = 0; i < drinkClicked.length; i++) {
     drinkClicked[i].addEventListener('click', showDrinkInfo, false);
 }
 
-document.getElementsByClassName("close-btn").addEventListener("click", function(){
-	var node = document.getElementById('hiddenProdInfo');
-    	while (node.hasChildNodes()) {
-	    node.removeChild(node.firstChild);
-	}
-});
+//Code to remove the product information when button is clicked
+var closeButtons = document.getElementsByClassName("close-btn");
 
+function removeProductInfo (){	
+	var node = document.getElementById('hiddenProdInfo');
+	while (node.hasChildNodes()) {
+	    node.removeChild(node.firstChild);
+	}    
+}
+
+for (var i=0; i < closeButtons.length; i++){
+	closeButtons[i].addEventListener('click', removeProductInfo, false);
+}
+
+//Append the amount in the basket and total price to page
 var basketAmount = document.getElementsByClassName("basket-items");
 var basketArrayLength = basket.length;
 basketAmount.innerHTML = basketArrayLength;
@@ -238,6 +248,7 @@ var basketPrice = document.getElementsByClassName("basket-price");
 var basketTotalPrice = basket.length * 5;
 basketAmount.innerHTML = "&pound;" + basketTotalPrice;
 
+//JS template for outputting basket items to page
 basket.forEach(function(item) {
 
   var drinkName = item.name,
