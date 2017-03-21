@@ -230,9 +230,9 @@ var closeButtons = document.getElementsByClassName("close-btn");
 
 function removeProductInfo (){	
 	var node = document.getElementById('hiddenProdInfo');
-	while (node.hasChildNodes()) {
-	    node.removeChild(node.firstChild);
-	}    
+	node.innerHTML = "":
+	document.getElementById("menuItems").className = 
+		document.getElementById("menuItems").className.replace( /(?:^|\s)blur(?!\S)/g , '' )
 }
 
 for (var i=0; i < closeButtons.length; i++){
