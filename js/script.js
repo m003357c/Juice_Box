@@ -62,15 +62,21 @@ $(".drink-option").click(function(){
 	
 });
 
+$(".close-btn").click(function(){
+
+	$(this).parent().toggleClass("isShowing");
+});
+	
+
 //Code to remove the product information when button is clicked
-function removeProductInfo(){	
+/*function removeProductInfo(){	
 	document.getElementById('closeButton').className = document.getElementById("closeButton").className.replace( /(?:^|\s)isShowing(?!\S)/g , '' );
 	document.getElementById("menuItems").className = document.getElementById("menuItems").className.replace( /(?:^|\s)blur(?!\S)/g , '' );
 };
 
 var closingButton = document.getElementById("closeButton");
 
-closingButton.addEventListener('click', removeProductInfo);
+closingButton.addEventListener('click', removeProductInfo);*/
 
 
 //Append the amount in the basket and total price to page
@@ -99,9 +105,7 @@ basket.forEach(function(item) {
                    '<br class="clear">' +
                  '</article>';
 
-  var target = document.getElementById("basket");
-
-  target.innerHTML = target.innerHTML + template;
+  template.appendTo("#basket");
 });
 
 });
