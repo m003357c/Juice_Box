@@ -67,9 +67,11 @@ $(document).ready(function(){
 
 	//Append the amount in the basket and total price to page
 	$("basket-items").text(basket.length);
+	console.log(basket.length);
 
 	$("basket-price").text(basket.length * 5);
-
+	console.log(basket.length * 5);
+	
 	basket.forEach(function(item) {
 
 	  var drinkName = item.name,
