@@ -223,6 +223,13 @@ for (var i = 0; i < drinkClicked.length; i++) {
     drinkClicked[i].addEventListener('click', showDrinkInfo, false);
 }
 
+document.getElementsByClassName("close-btn").addEventListener("click", function(){
+	var node = document.getElementById('hiddenProdInfo');
+    	while (node.hasChildNodes()) {
+	    node.removeChild(node.firstChild);
+	}
+});
+
 var basketAmount = document.getElementsByClassName("basket-items");
 var basketArrayLength = basket.length;
 basketAmount.innerHTML = basketArrayLength;
