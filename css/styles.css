@@ -206,7 +206,7 @@ header{
 #hiddenProdInfo{
 	position: absolute;
 	width: 100%;
-	bottom: -125px;
+	bottom: -225px;
 }
 #berryProdInfo h2, #berryProdInfo p, #berryProdInfo th, #berryProdInfo td,
 #redProdInfo h2, #redProdInfo p, #redProdInfo th, #redProdInfo td{
