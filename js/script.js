@@ -93,7 +93,7 @@ $(document).ready(function(){
 	$(".card, .cash").click(function(){
 		$(this).toggleClass("card-animate-in");
 		
-		if($(this).hasClass("card-animate-in"){
+		if($(this).hasClass("card-animate-in")) {
 	   		$(this)addClass("card-animate-out");
 	   	};
 		//$(".overlay").toggleClass("isShowing");
