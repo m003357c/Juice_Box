@@ -223,9 +223,12 @@ header{
 	height: 360px;
 	border-radius: 100%;
 	top: -80px;
-	left: -70px;
+	left: -50px;
 	z-index: -5;
 	position: absolute;
+    -webkit-transform: translate(20%);
+    -moz-transform: translate(20%);
+    transform: translate(20%);
 }
 .product-information img{
 	position: absolute;
