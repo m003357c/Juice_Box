@@ -79,26 +79,23 @@ $(document).ready(function(){
 	$("basket-items").text(basket.length);
 
 	$("basket-price").text(basket.length * 5);
-
-	$(basket).each(function(item) {
-
-		var drinkName = item.name,
-		drinkImage = item.image,
-		drinkIngred = item.ingredients,
-		drinkPrice = item.price,
-		drinkClass = item.drinkClass;
-
-		var template = '<article class="basket-item ' + drinkClass + '">' +
-			   '<span><img src="assets/images/basket-' + drinkImage + '.svg" alt="' + drinkName + ' Ingrediant Image"></span>' +
-			   '<span>' + drinkName + '<br><small>' + drinkIngred + '</small></span>' +
-			   '<span class="price">' + drinkPrice + '</span>' +
-			   '<a class="remove-basket" href="#">x</a>' +
-			   '<br class="clear">' +
-			 '</article>';
-
-		$("#basket").append(template);
-	});
-
 });
+$.each(basket, function(item) {
 
+	var drinkName = item.name,
+	drinkImage = item.image,
+	drinkIngred = item.ingredients,
+	drinkPrice = item.price,
+	drinkClass = item.drinkClass;
+
+	var template = '<article class="basket-item ' + drinkClass + '">' +
+		   '<span><img src="assets/images/basket-' + drinkImage + '.svg" alt="' + drinkName + ' Ingrediant Image"></span>' +
+		   '<span>' + drinkName + '<br><small>' + drinkIngred + '</small></span>' +
+		   '<span class="price">' + drinkPrice + '</span>' +
+		   '<a class="remove-basket" href="#">x</a>' +
+		   '<br class="clear">' +
+		 '</article>';
+
+	$("#basket").append(template);
+});
 
