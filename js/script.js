@@ -1,8 +1,5 @@
 //JS file for Juice Box
-
-
-$(document).ready(function(){
-	// Drink JS Objects
+// Drink JS Objects
 var citrusPunch = {
     name:"Citrus Punch",
     image:"citrus",
@@ -35,43 +32,12 @@ var simplyRed = {
     price:"&pound;2.50",
     drinkClass:"simply-red"
 };
+
 // JS arrays to emulate orders for now
 var drinks = [citrusPunch, greenMachine, berryBlast, simplyRed];
 
 var basket = [greenMachine, berryBlast];
-//Function to show the drinks information when clicked
-$(".drink-option").click(function(){
-	
-	var drinkID = this.id;
-	
-	switch (drinkID) {
-		case "citrus-punch":
-			$("#citrusProdInfo").addClass("isShowing");
-		break;
-		case "berry-blast":
-		    $("#berryProdInfo").addClass("isShowing");
-		break;
-		case "green-machine":
-		    $("#greenProdInfo").addClass("isShowing");
-		    break;
-		case "simply-red":
-            $("#redProdInfo").addClass("isShowing");
-	};
-	
-	$(".menuItems, h1").toggleClass("blur");
-	
-});
 
-$(".close-btn").click(function(){
-
-	$(this).parent().toggleClass("isShowing");
-});
-	
-
-//Append the amount in the basket and total price to page
-$("basket-items").text(basket.length);
-
-$("basket-price").text(basket.length * 5);
 //JS template for outputting basket items to page
 basket.forEach(function(item) {
 
@@ -93,5 +59,43 @@ basket.forEach(function(item) {
 
   target.innerHTML = target.innerHTML + template;
 });
+
+
+$(document).ready(function(){
+
+	//Function to show the drinks information when clicked
+	$(".drink-option").click(function(){
+
+		var drinkID = this.id;
+
+		switch (drinkID) {
+			case "citrus-punch":
+				$("#citrusProdInfo").addClass("isShowing");
+			break;
+			case "berry-blast":
+			    $("#berryProdInfo").addClass("isShowing");
+			break;
+			case "green-machine":
+			    $("#greenProdInfo").addClass("isShowing");
+			    break;
+			case "simply-red":
+		    $("#redProdInfo").addClass("isShowing");
+		};
+
+		$(".menuItems, h1").toggleClass("blur");
+
+	});
+
+	$(".close-btn").click(function(){
+
+		$(this).parent().toggleClass("isShowing");
+	});
+
+
+	//Append the amount in the basket and total price to page
+	$("basket-items").text(basket.length);
+
+	$("basket-price").text(basket.length * 5);
+
 
 });
