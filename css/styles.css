@@ -12,6 +12,9 @@ body{
 body, nav ul{
 	margin: 0;
 }
+.relative{
+	position: relative;	
+}
 .btn{
 	font-size: 1.5rem;
 	text-transform: uppercase;
