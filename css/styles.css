@@ -109,6 +109,14 @@ nav ul li img{
 .home #bottomNav ul li.home img, .basket #bottomNav ul li.basket img, .checkout #bottomNav ul li.checkout img{
 	transform: scale(1);
 }
+.badge{
+	background: #fff;
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #d71010;
+	font-size: 1rem;
+}	
 /*----------------------------------------------*/
 /*------------------- Menu Items ---------------*/
 /*----------------------------------------------*/
