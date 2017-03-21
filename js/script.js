@@ -231,8 +231,9 @@ var closeButtons = document.getElementsByClassName("close-btn");
 function removeProductInfo(){	
 	console.log("click");
 	var node = document.getElementById('hiddenProdInfo');
+	var nodeChild = document.getElementByClassName('product-information');
 	console.log("find me");
-	node.innerHTML = "";
+	node.removeChild(nodeChild);
 	console.log("kill me");
 	document.getElementById("menuItems").className = document.getElementById("menuItems").className.replace( /(?:^|\s)blur(?!\S)/g , '' );
 	console.log("deblur");
