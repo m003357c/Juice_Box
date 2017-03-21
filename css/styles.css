@@ -227,9 +227,9 @@ header{
 	left: -50px;
 	z-index: -5;
 	position: absolute;
-    -webkit-transform: translate(-9%);
-    -moz-transform: translate(-9%);
-    transform: translate(-9%);
+    -webkit-transform: translate(-4%);
+    -moz-transform: translate(-4%);
+    transform: translate(-4%);
 }
 .product-information img{
 	position: absolute;
