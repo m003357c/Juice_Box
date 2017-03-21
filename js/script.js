@@ -86,8 +86,6 @@ $(document).ready(function(){
 			   '<br class="clear">' +
 			 '</article>';
 
-	  var target = document.getElementById("basket");
-
-	  target.innerHTML = target.innerHTML + template;
+	  $(".basket #basket").append(template);
 	});
 });
