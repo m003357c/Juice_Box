@@ -6,16 +6,20 @@ var showDrinkInfo = function() {
     
     switch (drinkID) {
         case "citrus":
-            console.log("citrus");
+            var citrusId = document.getElementById("citrusProdInfo");
+            citrusId.className += "isShowing";
             break;
         case "berry":
-            console.log("berry");
+            var berryId = document.getElementById("berryProdInfo");
+            berryId.className += "isShowing";
             break;
         case "green":
-            console.log("green");
+            var greenId = document.getElementById("greenProdInfo");
+            greenId.className += "isShowing";
             break;
         case "red":
-            console.log("red");
+            var redId = document.getElementById("redProdInfo");
+            redId.className += "isShowing";
     }
 };
 
