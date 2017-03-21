@@ -8,6 +8,7 @@
 }
 body{
 	position: relative;	
+	padding-top: 60px;
 }
 body, nav ul{
 	margin: 0;
@@ -52,6 +53,11 @@ nav ul li img{
 	vertical-align: middle;
 }
 /*------------- Top Nav Styles -------------*/
+header{
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
 #topNav{
 	max-height: 55px;
 	padding: 20px 25px;
@@ -141,6 +147,7 @@ nav ul li img{
 /*----------------------------------------------*/
 /*------------------- Menu Items ---------------*/
 /*----------------------------------------------*/
+
 .drink-option{
 	width: 130px;
 	height: 130px;
