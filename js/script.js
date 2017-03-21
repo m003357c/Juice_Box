@@ -20,28 +20,28 @@ var citrusPunch = {
   image:"citrus",
   ingredients:"Grapefruit, Orange &amp; Pineapple",
   price:"&pound;2.50",
-  className:"citrus-blast"
+  drinkClass:"citrus-blast"
 };
 var berryBlast = {
   name:"Berry Blast",
   image:"berry",
   ingredients:"Apple, Grape, Blueberry<br>&amp; Raspberry",
   price:"&pound;2.50",
-  className:"berry-blast"
+  drinkClass:"berry-blast"
 };
 var greenMachine = {
   name:"Green Machine",
   image:"green",
   ingredients:"Apple, Banana, Avocado,<br>Kiwi &amp; Lime",
   price:"&pound;2.50",
-  className:"berry-blast"
+  drinkClass:"berry-blast"
 };
 var simplyRed = {
   name:"Simply Red",
   image:"red",
   ingredients:"Apple, Grape, Strawberry<br>&amp; Cherry",
   price:"&pound;2.50",
-  className:"simply-red"
+  drinkClass:"simply-red"
 };
 
 var basket = [greenMachine, berryBlast];
@@ -52,7 +52,7 @@ basket.forEach(function(item) {
       drinkImage = item.image,
       drinkIngred = item.ingredients,
       drinkPrice = item.price,
-      drinkClass = item.className;      
+      drinkClass = item.drinkClass;      
   
   var template = '<article class="basket-item ' + drinkClass + '">' +
                    '<span><img src="assets/images/basket-' + drinkImage + '.svg" alt="' + drinkName + ' Ingrediant Image"></span>' +
