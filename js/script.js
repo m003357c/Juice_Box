@@ -19,28 +19,28 @@ var citrusPunch = {
   name:"Citrus Punch",
   image:"citrus",
   ingredients:"Grapefruit, Orange &amp; Pineapple",
-  price:"	&pound;2.50",
+  price:"&pound;2.50",
   className:"citrus-blast"
 };
 var berryBlast = {
   name:"Berry Blast",
   image:"berry",
   ingredients:"Apple, Grape, Blueberry<br>&amp; Raspberry",
-  price:"	&pound;2.50",
+  price:"&pound;2.50",
   className:"berry-blast"
 };
 var greenMachine = {
   name:"Green Machine",
   image:"green",
   ingredients:"Apple, Banana, Avocado,<br>Kiwi &amp; Lime",
-  price:"	&pound;2.50",
+  price:"&pound;2.50",
   className:"berry-blast"
 };
 var simplyRed = {
   name:"Simply Red",
   image:"red",
   ingredients:"Apple, Grape, Strawberry<br>&amp; Cherry",
-  price:"	&pound;2.50",
+  price:"&pound;2.50",
   className:"simply-red"
 };
 
