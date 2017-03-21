@@ -337,8 +337,11 @@ nav ul li img{
 /*------------------- Checkout Wallet ---------------*/
 /*---------------------------------------------------*/
 .checkout section{
-	padding: 0 10px;
+	padding: 22px 10px;
 	position: relative;
+}
+.checkout h1{
+	margin-top: 0;
 }
 .wallet{
 	background: #47280a;
