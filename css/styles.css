@@ -243,11 +243,11 @@ header{
 	left: 20%;
 }
 .product-information a.buy-now-btn{
-        padding: 15px 19px;
+        padding: 17px 19px;
 	right: 20%;
 }
 .product-information .info-holder{
-	padding: 25px 0 60px;
+	padding: 27px 0 60px;
 }	
 .product-information h2{
 	margin-bottom: 0;	
@@ -365,7 +365,7 @@ header{
 }
 #basket-pay .basket-pay-btn{
 	font-size: 1.5rem;
-	padding: 22px 27px;
+	padding: 25px 27px;
 }
 /*---------------------------------------------------*/
 /*------------------- Checkout Wallet ---------------*/
