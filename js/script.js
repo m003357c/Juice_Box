@@ -34,7 +34,7 @@ var simplyRed = {
 
 var drinks = [citrusPunch, greenMachine, berryBlast, simplyRed];
 
-var drinkClicked = document.getElementsByClassName("drink-option");
+var basket = [greenMachine, berryBlast];
 
 function drinkInfoTemplate(){
     
@@ -88,6 +88,8 @@ function drinkInfoTemplate(){
     
 }
 
+var drinkClicked = document.getElementsByClassName("drink-option");
+
 var showDrinkInfo = function() {
     
     var drinkID = this.id;
@@ -123,7 +125,7 @@ for (var i = 0; i < drinkClicked.length; i++) {
 
 
 
-var basket = [greenMachine, berryBlast];
+
 
 var basketAmount = document.getElementsByClassName("basket-items");
 var basketArrayLength = basket.length;
@@ -132,6 +134,9 @@ basketAmount.innerHTML = basketArrayLength;
 var basketPrice = document.getElementsByClassName("basket-price");
 var basketTotalPrice = basket.length * 5;
 basketAmount.innerHTML = "&pound;" + basketTotalPrice;
+
+
+
 
 basket.forEach(function(item) {
   
