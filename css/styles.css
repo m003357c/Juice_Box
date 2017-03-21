@@ -503,6 +503,11 @@ header{
 	-moz-animation: card-animate-in 2s ease-in-out forwards;
 	animation: card-animate-in 2s ease-in-out forwards;
 }
+.card-animate-out{
+	-webkit-animation: card-animate-out 2s ease-in-out forwards;
+	-moz-animation: card-animate-out 2s ease-in-out forwards;
+	animation: card-animate-out 2s ease-in-out forwards;
+}
 .overlay{
 	padding: 20px;
 	position: absolute;
