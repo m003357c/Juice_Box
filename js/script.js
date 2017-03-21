@@ -38,180 +38,28 @@ var drinks = [citrusPunch, greenMachine, berryBlast, simplyRed];
 var basket = [greenMachine, berryBlast];
 
 //Function to show the drinks information when clicked
-/*var drinkClicked = document.getElementsByClassName("drink-option");
+var drinkClicked = document.getElementsByClassName("drink-option");
 
 var showDrinkInfo = function() {
 
     var drinkID = this.id;
-
+	
     switch (drinkID) {
         case "citrus-punch":
-            var template =  '<article id="productInfo" class="product-information citrus-punch">' +
-			    '<a href="#" id="closeButton" class="btn close-btn">x</a>' +
-                            '<img src="assets/images/prod-citrus.svg" alt="Citrus Punch ingredient cup">' +
-                            '<p class="btn-holder"><a href="#" class="btn add-cart-btn">Add to<br>cart</a><a href="#" class="btn buy-now-btn">Vend<br>now</a></p>' +
-                            '<div class="info-holder">' +
-                               '<h2>Citrus Punch - &pound;5</h2>' +
-                                '<p class="product-info">Grapefruit, Orange &amp; Pineapple</p>' +
-                                '<p class="nurti-prompt">^ Scroll for nutrition &amp; allergy info ^</p>' +
-                                '<div class="nutri-table">' +
-                                    '<table>' +
-                                       ' <tbody><tr>' +
-                                           '<th></th>' +
-                                           '<th>per serving (250ml)</th>' +
-                                       '</tr>' +
-                                        '<tr>' +
-                                            '<td>Energy</td>' +
-                                            '<td>567.5kj (135.6kcal)</td>' +
-                                        '</tr>' +
-                                        '<tr>' +
-                                            '<td>Sugar</td>' +
-                                            '<td>27g</td>' +
-                                        '</tr>' +
-                                        '<tr>' +
-                                            '<td>Fat</td>' +
-                                            '<td>0g</td>' +
-                                        '</tr>' +
-                                        '<tr>' +
-                                            '<td>Carbohydrates</td>' +
-                                            '<td>30g</td>' +
-                                        '</tr>' +
-                                        '<tr>' +
-                                            '<td>Fibre</td>' +
-                                            '<td>3.5g</td>' +
-                                        '</tr>' +
-                                    '</tbody></table>' +
-                                '</div>' +
-                            '</div>' +
-                        '</article>';
-            var target = document.getElementById("hiddenProdInfo");
-            target.innerHTML =  template;
+            var showProduct = getElementById("citrusProdInfo");
+			showProduct.classList += " isShowing";
         break;
         case "berry-blast":
-            var template =    '<article id="productInfo" class="product-information berry-blast">' +
-			      '<a href="#" id="closeButton" class="btn close-btn">x</a>' +
-                              '<img src="assets/images/prod-berry.svg" alt="Berry Blast ingredient cup">' +
-                              '<p class="btn-holder"><a href="#" class="btn add-cart-btn">Add to<br>cart</a><a href="#" class="btn buy-now-btn">Vend<br>now</a></p>' +
-                              '<div class="info-holder">' +
-                                 '<h2>Berry Blast - &pound;5</h2>' +
-                                  '<p class="product-info">Apple, Grape, Blueberry &amp; Raspberry</p>' +
-                                  '<p class="nurti-prompt">^ Scroll for nutrition &amp; allergy info ^</p>' +
-                                  '<div class="nutri-table">' +
-                                      '<table>' +
-                                         ' <tbody><tr>' +
-                                             '<th></th>' +
-                                             '<th>per serving (250ml)</th>' +
-                                         '</tr>' +
-                                          '<tr>' +
-                                              '<td>Energy</td>' +
-                                              '<td>567.5kj (135.6kcal)</td>' +
-                                          '</tr>' +
-                                          '<tr>' +
-                                              '<td>Sugar</td>' +
-                                              '<td>27g</td>' +
-                                          '</tr>' +
-                                          '<tr>' +
-                                              '<td>Fat</td>' +
-                                              '<td>0g</td>' +
-                                          '</tr>' +
-                                          '<tr>' +
-                                              '<td>Carbohydrates</td>' +
-                                              '<td>30g</td>' +
-                                          '</tr>' +
-                                          '<tr>' +
-                                              '<td>Fibre</td>' +
-                                              '<td>3.5g</td>' +
-                                          '</tr>' +
-                                      '</tbody></table>' +
-                                  '</div>' +
-                              '</div>' +
-                          '</article>';
-            var target = document.getElementById("hiddenProdInfo");
-            target.innerHTML =  template;
+            var showProduct = getElementById("berryProdInfo");
+			showProduct.classList += " isShowing";
         break;
         case "green-machine":
-            var template =    '<article id="productInfo" class="product-information green-machine">' +
-			      '<a href="#" id="closeButton" class="btn close-btn">x</a>' +
-                              '<img src="assets/images/prod-green.svg" alt="Green Machine ingredient cup">' +
-                              '<p class="btn-holder"><a href="#" class="btn add-cart-btn">Add to<br>cart</a><a href="#" class="btn buy-now-btn">Vend<br>now</a></p>' +
-                              '<div class="info-holder">' +
-                                 '<h2>Green Machine - &pound;5</h2>' +
-                                  '<p class="product-info">Apple, Banana, Avocado, Kiwi &amp; Lime</p>' +
-                                  '<p class="nurti-prompt">^ Scroll for nutrition &amp; allergy info ^</p>' +
-                                  '<div class="nutri-table">' +
-                                      '<table>' +
-                                         ' <tbody><tr>' +
-                                             '<th></th>' +
-                                             '<th>per serving (250ml)</th>' +
-                                         '</tr>' +
-                                          '<tr>' +
-                                              '<td>Energy</td>' +
-                                              '<td>567.5kj (135.6kcal)</td>' +
-                                          '</tr>' +
-                                          '<tr>' +
-                                              '<td>Sugar</td>' +
-                                              '<td>27g</td>' +
-                                          '</tr>' +
-                                          '<tr>' +
-                                              '<td>Fat</td>' +
-                                              '<td>0g</td>' +
-                                          '</tr>' +
-                                          '<tr>' +
-                                              '<td>Carbohydrates</td>' +
-                                              '<td>30g</td>' +
-                                          '</tr>' +
-                                          '<tr>' +
-                                              '<td>Fibre</td>' +
-                                              '<td>3.5g</td>' +
-                                          '</tr>' +
-                                      '</tbody></table>' +
-                                  '</div>' +
-                              '</div>' +
-                          '</article>';
-                var target = document.getElementById("hiddenProdInfo");
-                target.innerHTML =  template;
+            var showProduct = getElementById("greenProdInfo");
+			showProduct.classList += " isShowing";
             break;
         case "simply-red":
-            var template =    '<article id="productInfo" class="product-information simply-red">' +
-			      '<a href="#" id="closeButton" class="btn close-btn">x</a>' +
-                              '<img src="assets/images/prod-red.svg" alt="Simply Red ingredient cup">' +
-                              '<p class="btn-holder"><a href="#" class="btn add-cart-btn">Add to<br>cart</a><a href="#" class="btn buy-now-btn">Vend<br>now</a></p>' +
-                              '<div class="info-holder">' +
-                                 '<h2>Simply Red - &pound;5</h2>' +
-                                  '<p class="product-info">Apple, Grape, Strawberry &amp; Cherry</p>' +
-                                  '<p class="nurti-prompt">^ Scroll for nutrition &amp; allergy info ^</p>' +
-                                  '<div class="nutri-table">' +
-                                      '<table>' +
-                                         ' <tbody><tr>' +
-                                             '<th></th>' +
-                                             '<th>per serving (250ml)</th>' +
-                                         '</tr>' +
-                                          '<tr>' +
-                                              '<td>Energy</td>' +
-                                              '<td>567.5kj (135.6kcal)</td>' +
-                                          '</tr>' +
-                                          '<tr>' +
-                                              '<td>Sugar</td>' +
-                                              '<td>27g</td>' +
-                                          '</tr>' +
-                                          '<tr>' +
-                                              '<td>Fat</td>' +
-                                              '<td>0g</td>' +
-                                          '</tr>' +
-                                          '<tr>' +
-                                              '<td>Carbohydrates</td>' +
-                                              '<td>30g</td>' +
-                                          '</tr>' +
-                                          '<tr>' +
-                                              '<td>Fibre</td>' +
-                                              '<td>3.5g</td>' +
-                                          '</tr>' +
-                                      '</tbody></table>' +
-                                  '</div>' +
-                              '</div>' +
-                          '</article>';
-            var target = document.getElementById("hiddenProdInfo");
-            target.innerHTML =  template;
+            var showProduct = getElementById("redProdInfo");
+			showProduct.classList += " isShowing";
     };
     
     var blurMenu = document.getElementById("menuItems");
