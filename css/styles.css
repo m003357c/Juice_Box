@@ -273,6 +273,9 @@ header{
 .product-information .product-info{
 	margin-top: 5px;	
 }
+.product-information .nutri-table{
+	padding: 0 30px;
+}	
 .product-information table{
 	width: 100%;
 	text-align: center;
@@ -281,15 +284,16 @@ header{
 	margin: 10px;
 }
 .product-information table tr th{
-	border-bottom: 1px solid #fff;
 	font-weight: bold;
 }
 .product-information table tr td:first-child{
 	border-right: 1px solid #fff;	
+	
 }
 .product-information table tr td, .product-information table tr th{
-	padding: 5px;
+	padding: 10px;
 	vertical-align: middle;
+	border-bottom: 1px solid #fff;
 }
 .product-information.isShowing{
 	display: block;
