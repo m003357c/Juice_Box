@@ -1,5 +1,8 @@
 //JS file for Juice Box
-// Drink JS Objects
+
+
+$(document).ready(function(){
+	// Drink JS Objects
 var citrusPunch = {
     name:"Citrus Punch",
     image:"citrus",
@@ -36,9 +39,6 @@ var simplyRed = {
 var drinks = [citrusPunch, greenMachine, berryBlast, simplyRed];
 
 var basket = [greenMachine, berryBlast];
-
-$(document).ready(function(){
-	
 //Function to show the drinks information when clicked
 $(".drink-option").click(function(){
 	
@@ -68,26 +68,10 @@ $(".close-btn").click(function(){
 });
 	
 
-//Code to remove the product information when button is clicked
-/*function removeProductInfo(){	
-	document.getElementById('closeButton').className = document.getElementById("closeButton").className.replace( /(?:^|\s)isShowing(?!\S)/g , '' );
-	document.getElementById("menuItems").className = document.getElementById("menuItems").className.replace( /(?:^|\s)blur(?!\S)/g , '' );
-};
-
-var closingButton = document.getElementById("closeButton");
-
-closingButton.addEventListener('click', removeProductInfo);*/
-
-
 //Append the amount in the basket and total price to page
-var basketAmount = document.getElementsByClassName("basket-items");
-var basketArrayLength = basket.length;
-basketAmount.innerHTML = basketArrayLength;
+$("basket-items").text(basket.length);
 
-var basketPrice = document.getElementsByClassName("basket-price");
-var basketTotalPrice = basket.length * 5;
-basketAmount.innerHTML = "&pound;" + basketTotalPrice;
-
+$("basket-price").text(basket.length * 5);
 //JS template for outputting basket items to page
 basket.forEach(function(item) {
 
@@ -105,8 +89,9 @@ basket.forEach(function(item) {
                    '<br class="clear">' +
                  '</article>';
 
-  template.appendTo("#basket");
+  var target = document.getElementById("basket");
+
+  target.innerHTML = target.innerHTML + template;
 });
 
 });
-
