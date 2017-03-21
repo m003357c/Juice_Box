@@ -75,10 +75,7 @@ for (var i = 0; i < drinkClicked.length; i++) {
 
 //Code to remove the product information when button is clicked
 function removeProductInfo(){	
-	var node = document.getElementById('hiddenProdInfo');
-	var nodeChild = document.getElementById('productInfo');
-	node.removeChild(nodeChild);
-
+	document.getElementById('closeButton') = document.getElementById("closeButton").className.replace( /(?:^|\s)isShowing(?!\S)/g , '' );
 	document.getElementById("menuItems").className = document.getElementById("menuItems").className.replace( /(?:^|\s)blur(?!\S)/g , '' );
 };
 
