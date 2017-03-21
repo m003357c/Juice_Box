@@ -90,7 +90,8 @@ $(document).ready(function(){
 		
 	});
 	
-	$(".card, .cash").click(function(){
+	$(".card, .cash, .pay-instructions .btn").click(function(){
 			$(".overlay").toggleClass("isShowing");
 	});
+	
 });
