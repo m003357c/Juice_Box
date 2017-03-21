@@ -44,46 +44,48 @@ var showDrinkInfo = function() {
 
     switch (drinkID) {
         case "citrus":
-              var template =    '<article class="product-information citrus-punch">' +
-                                '<img src="assets/images/prod-citrus.svg" alt="Citrus Punch ingredient cup">' +
-                                '<p class="btn-holder"><a href="#" class="btn add-cart-btn">Add to<br>cart</a><a href="#" class="btn buy-now-btn">Vend<br>now</a></p>' +
-                                '<div class="info-holder">' +
-                                   '<h2>Citrus Punch - &pound;5</h2>' +
-                                    '<p class="product-info">Grapefruit, Orange &amp; Pineapple</p>' +
-                                    '<p class="nurti-prompt">^ Scroll for nutrition &amp; allergy info ^</p>' +
-                                    '<div class="nutri-table">' +
-                                        '<table>' +
-                                           ' <tbody><tr>' +
-                                               '<th></th>' +
-                                               '<th>per serving (250ml)</th>' +
-                                           '</tr>' +
-                                            '<tr>' +
-                                                '<td>Energy</td>' +
-                                                '<td>567.5kj (135.6kcal)</td>' +
-                                            '</tr>' +
-                                            '<tr>' +
-                                                '<td>Sugar</td>' +
-                                                '<td>27g</td>' +
-                                            '</tr>' +
-                                            '<tr>' +
-                                                '<td>Fat</td>' +
-                                                '<td>0g</td>' +
-                                            '</tr>' +
-                                            '<tr>' +
-                                                '<td>Carbohydrates</td>' +
-                                                '<td>30g</td>' +
-                                            '</tr>' +
-                                            '<tr>' +
-                                                '<td>Fibre</td>' +
-                                                '<td>3.5g</td>' +
-                                            '</tr>' +
-                                        '</tbody></table>' +
-                                    '</div>' +
+            var template =    '<article class="product-information citrus-punch">' +
+                            '<img src="assets/images/prod-citrus.svg" alt="Citrus Punch ingredient cup">' +
+                            '<p class="btn-holder"><a href="#" class="btn add-cart-btn">Add to<br>cart</a><a href="#" class="btn buy-now-btn">Vend<br>now</a></p>' +
+                            '<div class="info-holder">' +
+                               '<h2>Citrus Punch - &pound;5</h2>' +
+                                '<p class="product-info">Grapefruit, Orange &amp; Pineapple</p>' +
+                                '<p class="nurti-prompt">^ Scroll for nutrition &amp; allergy info ^</p>' +
+                                '<div class="nutri-table">' +
+                                    '<table>' +
+                                       ' <tbody><tr>' +
+                                           '<th></th>' +
+                                           '<th>per serving (250ml)</th>' +
+                                       '</tr>' +
+                                        '<tr>' +
+                                            '<td>Energy</td>' +
+                                            '<td>567.5kj (135.6kcal)</td>' +
+                                        '</tr>' +
+                                        '<tr>' +
+                                            '<td>Sugar</td>' +
+                                            '<td>27g</td>' +
+                                        '</tr>' +
+                                        '<tr>' +
+                                            '<td>Fat</td>' +
+                                            '<td>0g</td>' +
+                                        '</tr>' +
+                                        '<tr>' +
+                                            '<td>Carbohydrates</td>' +
+                                            '<td>30g</td>' +
+                                        '</tr>' +
+                                        '<tr>' +
+                                            '<td>Fibre</td>' +
+                                            '<td>3.5g</td>' +
+                                        '</tr>' +
+                                    '</tbody></table>' +
                                 '</div>' +
-                            '</article>';
-            break;
+                            '</div>' +
+                        '</article>';
+            var target = document.getElementById("hiddenProdInfo");
+            target.innerHTML =  template;
+        break;
         case "berry":
-          var template =    '<article class="product-information berry-blast">' +
+            var template =    '<article class="product-information berry-blast">' +
                               '<img src="assets/images/prod-berry.svg" alt="Berry Blast ingredient cup">' +
                               '<p class="btn-holder"><a href="#" class="btn add-cart-btn">Add to<br>cart</a><a href="#" class="btn buy-now-btn">Vend<br>now</a></p>' +
                               '<div class="info-holder">' +
@@ -120,45 +122,49 @@ var showDrinkInfo = function() {
                                   '</div>' +
                               '</div>' +
                           '</article>';
-            break;
+            var target = document.getElementById("hiddenProdInfo");
+            target.innerHTML =  template;
+        break;
         case "green":
-        var template =    '<article class="product-information green-machine">' +
-                          '<img src="assets/images/prod-green.svg" alt="Green Machine ingredient cup">' +
-                          '<p class="btn-holder"><a href="#" class="btn add-cart-btn">Add to<br>cart</a><a href="#" class="btn buy-now-btn">Vend<br>now</a></p>' +
-                          '<div class="info-holder">' +
-                             '<h2>Green Machine - &pound;5</h2>' +
-                              '<p class="product-info">Apple, Banana, Avocado, Kiwi &amp; Lime</p>' +
-                              '<p class="nurti-prompt">^ Scroll for nutrition &amp; allergy info ^</p>' +
-                              '<div class="nutri-table">' +
-                                  '<table>' +
-                                     ' <tbody><tr>' +
-                                         '<th></th>' +
-                                         '<th>per serving (250ml)</th>' +
-                                     '</tr>' +
-                                      '<tr>' +
-                                          '<td>Energy</td>' +
-                                          '<td>567.5kj (135.6kcal)</td>' +
-                                      '</tr>' +
-                                      '<tr>' +
-                                          '<td>Sugar</td>' +
-                                          '<td>27g</td>' +
-                                      '</tr>' +
-                                      '<tr>' +
-                                          '<td>Fat</td>' +
-                                          '<td>0g</td>' +
-                                      '</tr>' +
-                                      '<tr>' +
-                                          '<td>Carbohydrates</td>' +
-                                          '<td>30g</td>' +
-                                      '</tr>' +
-                                      '<tr>' +
-                                          '<td>Fibre</td>' +
-                                          '<td>3.5g</td>' +
-                                      '</tr>' +
-                                  '</tbody></table>' +
+            var template =    '<article class="product-information green-machine">' +
+                              '<img src="assets/images/prod-green.svg" alt="Green Machine ingredient cup">' +
+                              '<p class="btn-holder"><a href="#" class="btn add-cart-btn">Add to<br>cart</a><a href="#" class="btn buy-now-btn">Vend<br>now</a></p>' +
+                              '<div class="info-holder">' +
+                                 '<h2>Green Machine - &pound;5</h2>' +
+                                  '<p class="product-info">Apple, Banana, Avocado, Kiwi &amp; Lime</p>' +
+                                  '<p class="nurti-prompt">^ Scroll for nutrition &amp; allergy info ^</p>' +
+                                  '<div class="nutri-table">' +
+                                      '<table>' +
+                                         ' <tbody><tr>' +
+                                             '<th></th>' +
+                                             '<th>per serving (250ml)</th>' +
+                                         '</tr>' +
+                                          '<tr>' +
+                                              '<td>Energy</td>' +
+                                              '<td>567.5kj (135.6kcal)</td>' +
+                                          '</tr>' +
+                                          '<tr>' +
+                                              '<td>Sugar</td>' +
+                                              '<td>27g</td>' +
+                                          '</tr>' +
+                                          '<tr>' +
+                                              '<td>Fat</td>' +
+                                              '<td>0g</td>' +
+                                          '</tr>' +
+                                          '<tr>' +
+                                              '<td>Carbohydrates</td>' +
+                                              '<td>30g</td>' +
+                                          '</tr>' +
+                                          '<tr>' +
+                                              '<td>Fibre</td>' +
+                                              '<td>3.5g</td>' +
+                                          '</tr>' +
+                                      '</tbody></table>' +
+                                  '</div>' +
                               '</div>' +
-                          '</div>' +
-                      '</article>';
+                          '</article>';
+                var target = document.getElementById("hiddenProdInfo");
+                target.innerHTML =  template;
             break;
         case "red":
             var template =    '<article class="product-information simply-red">' +
@@ -198,14 +204,15 @@ var showDrinkInfo = function() {
                                   '</div>' +
                               '</div>' +
                           '</article>';
+            var target = document.getElementById("hiddenProdInfo");
+            target.innerHTML =  template;
     }
-    var target = document.getElementById("hiddenProdInfo");
-    target.innerHTML =  template;
-
+    
     var blurMenu = document.getElementById("menuItems");
     var blurText = document.getElementsByTagName("H1");
     blurMenu.className += " blur";
     blurText.className += " blur";
+    
 };
 
 for (var i = 0; i < drinkClicked.length; i++) {
