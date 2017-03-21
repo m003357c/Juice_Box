@@ -223,6 +223,23 @@ nav ul li img{
 	-mos-transform: translate(-50%, 0);
 	transform: translate(-50%, 0);
 }
+.product-information p.btn-holder{
+	position: relative;
+}
+.product-information a.btn{
+	font-size: 1rem;
+	position: absolute;
+}	
+.product-information a.add-cart-btn{
+    padding: 15px 12px;
+	top: -20px;
+	left: 20%;
+}
+.product-information a.buy-now-btn{
+        padding: 15px 19px;
+		top: -20px;
+		right: 20%;
+}
 .product-information table{
 	width: 100%;
 	text-align: center;
