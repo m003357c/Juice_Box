@@ -231,7 +231,7 @@ var closeButtons = document.getElementsByClassName("close-btn");
 function removeProductInfo(){	
 	console.log("click");
 	var node = document.getElementById('hiddenProdInfo');
-	var nodeChild = document.getElementByClassName('product-information');
+	var nodeChild = document.getElementsByClassName('product-information');
 	console.log("find me");
 	node.removeChild(nodeChild);
 	console.log("kill me");
