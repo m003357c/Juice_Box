@@ -279,6 +279,9 @@ header{
 	font-size: 0.8rem;
 	border-collapse: collapse;
 }
+.product-information table tr th{
+	border-bottom: 1px solid #fff;
+}
 .product-information table tr td:first-child{
 	border-right: 1px solid #fff;	
 }
