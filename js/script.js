@@ -46,19 +46,19 @@ var showDrinkInfo = function() {
 	
     switch (drinkID) {
         case "citrus-punch":
-            var showProduct = getElementById("citrusProdInfo");
+            var showProduct = document.getElementById("citrusProdInfo");
 			showProduct.classList += " isShowing";
         break;
         case "berry-blast":
-            var showProduct = getElementById("berryProdInfo");
+            var showProduct = document.getElementById("berryProdInfo");
 			showProduct.classList += " isShowing";
         break;
         case "green-machine":
-            var showProduct = getElementById("greenProdInfo");
+            var showProduct = document.getElementById("greenProdInfo");
 			showProduct.classList += " isShowing";
             break;
         case "simply-red":
-            var showProduct = getElementById("redProdInfo");
+            var showProduct = document.getElementById("redProdInfo");
 			showProduct.classList += " isShowing";
     };
     
