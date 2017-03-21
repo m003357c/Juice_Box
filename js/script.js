@@ -43,7 +43,7 @@ var showDrinkInfo = function() {
     var drinkID = this.id;
 
     switch (drinkID) {
-        case "citrus":
+        case "citrus-punch":
             var template =    '<article class="product-information citrus-punch">' +
                             '<img src="assets/images/prod-citrus.svg" alt="Citrus Punch ingredient cup">' +
                             '<p class="btn-holder"><a href="#" class="btn add-cart-btn">Add to<br>cart</a><a href="#" class="btn buy-now-btn">Vend<br>now</a></p>' +
@@ -84,7 +84,7 @@ var showDrinkInfo = function() {
             var target = document.getElementById("hiddenProdInfo");
             target.innerHTML =  template;
         break;
-        case "berry":
+        case "berry-blast":
             var template =    '<article class="product-information berry-blast">' +
                               '<img src="assets/images/prod-berry.svg" alt="Berry Blast ingredient cup">' +
                               '<p class="btn-holder"><a href="#" class="btn add-cart-btn">Add to<br>cart</a><a href="#" class="btn buy-now-btn">Vend<br>now</a></p>' +
@@ -125,7 +125,7 @@ var showDrinkInfo = function() {
             var target = document.getElementById("hiddenProdInfo");
             target.innerHTML =  template;
         break;
-        case "green":
+        case "green-machine":
             var template =    '<article class="product-information green-machine">' +
                               '<img src="assets/images/prod-green.svg" alt="Green Machine ingredient cup">' +
                               '<p class="btn-holder"><a href="#" class="btn add-cart-btn">Add to<br>cart</a><a href="#" class="btn buy-now-btn">Vend<br>now</a></p>' +
@@ -166,7 +166,7 @@ var showDrinkInfo = function() {
                 var target = document.getElementById("hiddenProdInfo");
                 target.innerHTML =  template;
             break;
-        case "red":
+        case "simply-red":
             var template =    '<article class="product-information simply-red">' +
                               '<img src="assets/images/prod-red.svg" alt="Simply Red ingredient cup">' +
                               '<p class="btn-holder"><a href="#" class="btn add-cart-btn">Add to<br>cart</a><a href="#" class="btn buy-now-btn">Vend<br>now</a></p>' +
