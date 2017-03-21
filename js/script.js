@@ -92,24 +92,35 @@ var drinkClicked = document.getElementsByClassName("drink-option");
 
 var showDrinkInfo = function() {
     
+    drinks.forEach(function(item){
+          var drinkName = item.name,
+              drinkImage = item.image,
+              drinkDesc = item.description,
+              drinkPrice = item.price,
+              drinkClass = item.drinkClass;  
+        
+        return drinkName;
+        return drinkImage;
+        return drinkDesc;
+        return drinkPrice;
+        return drinkClass;
+   });
+    
     var drinkID = this.id;
    
     switch (drinkID) {
         case "citrus":
-            var citrusId = document.getElementById("citrusProdInfo");
-            citrusId.className += " isShowing";
+            /*var citrusId = document.getElementById("citrusProdInfo");
+            citrusId.className += " isShowing";*/
             break;
         case "berry":
-            var berryId = document.getElementById("berryProdInfo");
-            berryId.className += " isShowing";
+            //
             break;
         case "green":
-            var greenId = document.getElementById("greenProdInfo");
-            greenId.className += " isShowing";
+            //
             break;
         case "red":
-            var redId = document.getElementById("redProdInfo");
-            redId.className += " isShowing";
+            //
     }
     
     var blurMenu = document.getElementById("menuItems");
