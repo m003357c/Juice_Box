@@ -293,10 +293,10 @@ header{
 	border-bottom: 3px solid #fff;
 }
 #citrusProdInfo .product-information table tr th{
-	border-color: #2a5800;
+	border-bottom-color: #d64103;
 }
 #greenProdInfo .product-information table tr th{
-	border-color: #d64103;
+	border-bottom-color: #2a5800;
 }
 .product-information table tr td, .product-information table tr th{
 	padding: 10px;
