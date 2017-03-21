@@ -116,7 +116,7 @@ nav ul li img{
 	background: #fff;
 	position: absolute;
 	top: 0;
-	right: 5px;
+	right: -5px;
 	color: #d71010;
 	font-size: 0.6rem;
 	border-radius: 100%;
