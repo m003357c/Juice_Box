@@ -39,26 +39,6 @@ var drinks = [citrusPunch, greenMachine, berryBlast, simplyRed];
 var basket = [greenMachine, berryBlast];
 
 //JS template for outputting basket items to page
-basket.forEach(function(item) {
-
-  var drinkName = item.name,
-      drinkImage = item.image,
-      drinkIngred = item.ingredients,
-      drinkPrice = item.price,
-      drinkClass = item.drinkClass;
-
-  var template = '<article class="basket-item ' + drinkClass + '">' +
-                   '<span><img src="assets/images/basket-' + drinkImage + '.svg" alt="' + drinkName + ' Ingrediant Image"></span>' +
-                   '<span>' + drinkName + '<br><small>' + drinkIngred + '</small></span>' +
-                   '<span class="price">' + drinkPrice + '</span>' +
-                   '<a class="remove-basket" href="#">x</a>' +
-                   '<br class="clear">' +
-                 '</article>';
-
-  var target = document.getElementById("basket");
-
-  target.innerHTML = target.innerHTML + template;
-});
 
 
 jQuery(document).ready(function(){
@@ -99,3 +79,25 @@ jQuery(document).ready(function(){
 
 
 });
+
+basket.forEach(function(item) {
+
+  var drinkName = item.name,
+      drinkImage = item.image,
+      drinkIngred = item.ingredients,
+      drinkPrice = item.price,
+      drinkClass = item.drinkClass;
+
+  var template = '<article class="basket-item ' + drinkClass + '">' +
+                   '<span><img src="assets/images/basket-' + drinkImage + '.svg" alt="' + drinkName + ' Ingrediant Image"></span>' +
+                   '<span>' + drinkName + '<br><small>' + drinkIngred + '</small></span>' +
+                   '<span class="price">' + drinkPrice + '</span>' +
+                   '<a class="remove-basket" href="#">x</a>' +
+                   '<br class="clear">' +
+                 '</article>';
+
+  var target = document.getElementById("basket");
+
+  target.innerHTML = target.innerHTML + template;
+});
+
