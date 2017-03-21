@@ -21,6 +21,9 @@ var showDrinkInfo = function() {
             var redId = document.getElementById("redProdInfo");
             redId.className += " isShowing";
     }
+    
+    var blurMenu = document.getElementById("citrusProdInfo");
+    blurMenu.className += " blur";
 };
 
 for (var i = 0; i < drinkClicked.length; i++) {
