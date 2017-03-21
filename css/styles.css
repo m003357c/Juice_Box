@@ -16,7 +16,6 @@ body, nav ul{
 	position: relative;	
 }
 .btn{
-	font-size: 1.5rem;
 	text-transform: uppercase;
 	background: #d71010;
 	border-radius: 100%;
@@ -334,6 +333,7 @@ nav ul li img{
 	text-align: center;	
 }
 #basket-pay .basket-pay-btn{
+	font-size: 1.5rem;
 	padding: 22px 27px;
 }
 /*---------------------------------------------------*/
@@ -438,7 +438,8 @@ nav ul li img{
 	text-align: center;
 }
 .pay-screen .btn{
-	padding: 25px;	
+	padding: 35px 15px;;	
+	font-size: 1rem;
 }
 /*---------------------------------------------------------*/
 /*------------------- Loyalty Point Counter ---------------*/
