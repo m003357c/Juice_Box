@@ -70,7 +70,7 @@ $(document).ready(function(){
 	$("basket-price").text(basket.length * 5);
 });
 
-$basket = [greenMachine, berryBlast];
+var basket = [greenMachine, berryBlast];
 
 basket.forEach(function(item) {
 
