@@ -229,16 +229,15 @@ nav ul li img{
 .product-information a.btn{
 	font-size: 1rem;
 	position: absolute;
+	top: -40px;
 }	
 .product-information a.add-cart-btn{
-    padding: 15px 12px;
-	top: -20px;
+	padding: 15px 12px;		
 	left: 20%;
 }
 .product-information a.buy-now-btn{
         padding: 15px 19px;
-		top: -20px;
-		right: 20%;
+	right: 20%;
 }
 .product-information table{
 	width: 100%;
