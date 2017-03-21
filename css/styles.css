@@ -9,6 +9,8 @@
 body{
 	position: relative;	
 	padding-top: 60px;
+	max-width: 360px;
+	margin: 0 auto;
 }
 body, nav ul{
 	margin: 0;
