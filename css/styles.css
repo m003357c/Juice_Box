@@ -209,7 +209,7 @@ header{
 	bottom: -125px;
 }
 #berryProdInfo h2, #berryProdInfo p, #berryProdInfo th, #berryProdInfo td,
-#redProdInfo h2, #redProdInfo p #redProdInfo th, #redProdInfo td{
+#redProdInfo h2, #redProdInfo p, #redProdInfo th, #redProdInfo td{
 	color: #fff;	
 }
 .product-information{
