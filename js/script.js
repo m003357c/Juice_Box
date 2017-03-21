@@ -1,5 +1,5 @@
 //JS file for Juice Box
-var prodEls = document.getElementsByClassName("drink-option");
+/*var prodEls = document.getElementsByClassName("drink-option");
 
 var showProdInfo = function() {
     prodID.classList.toggle("isShowing");
@@ -13,9 +13,9 @@ var showProdInfo = function() {
 
 for (var i = 0; i < prodEls.length; i++) {
     prodEls[i].addEventListener('click', showProdInfo, false);
-}
+}*/
 
-/*var citrusPunch = {
+var citrusPunch = {
   name:"Citrus Punch",
   image:"citrus",
   ingredients:"Grapefruit, Orange &amp; Pineapple",
@@ -52,13 +52,7 @@ basket.forEach(function(item) {
       drinkImage = item.image,
       drinkIngred = item.ingredients,
       drinkPrice = item.price,
-      drinkClass = item.className;    
-  
-  var a = document.createElement("article");
-  a.className = "basket-item " + drinkClass;
-  
-  var imgSpan = document.createElement("span");
-  
+      drinkClass = item.className;      
   
   var template = '<article class="basket-item ' + drinkClass + '">' +
                    '<span><img src="assets/images/basket-' + drinkImage + '.svg" alt="' + drinkName + ' Ingrediant Image"></span>' +
@@ -71,4 +65,4 @@ basket.forEach(function(item) {
   var target = document.getElementById("basket");
   
   target.appendChild(template);
-});*/
+});
