@@ -319,16 +319,16 @@ header{
 	float: right;
 	margin-top: 15px;
 }
-.citrus-blast, .citrus-blast.product-information::before{
+.citrus-punch, .citrus-punch.product-information::before{
 	background: #f4ca07;	
 }
-.green-machine, .citrus-blast.product-information::before{
-	background: #7fb75a;	
-}
-.berry-blast, .citrus-blast.product-information::before{
+.berry-blast, .berry-blast.product-information::before{
 	background: #73397c;	
 }
-.simply-red, .citrus-blast.product-information::before{
+.green-machine, .green-machine.product-information::before{
+	background: #7fb75a;	
+}
+.simply-red, .simply-red.product-information::before{
 	background: #a32121;	
 }
 .remove-basket{
