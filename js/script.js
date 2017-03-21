@@ -33,6 +33,8 @@ var simplyRed = {
     drinkClass:"simply-red"
 };
 
+var basket = [greenMachine, berryBlast];
+
 $(document).ready(function(){
 	//Function to show the drinks information when clicked
 	$(".drink-option").click(function(){
@@ -70,7 +72,7 @@ $(document).ready(function(){
 	$("basket-price").text(basket.length * 5);
 });
 
-var basket = [greenMachine, berryBlast];
+
 
 basket.forEach(function(item) {
 
