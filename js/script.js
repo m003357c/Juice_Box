@@ -34,7 +34,7 @@ var greenMachine = {
   image:"green",
   ingredients:"Apple, Banana, Avocado,<br>Kiwi &amp; Lime",
   price:"&pound;2.50",
-  drinkClass:"berry-blast"
+  drinkClass:"greenMachine"
 };
 var simplyRed = {
   name:"Simply Red",
