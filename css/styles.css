@@ -197,7 +197,7 @@ nav ul li img{
 #hiddenProdInfo{
 	position: absolute;
 	width: 100%;
-	bottom: -85px;
+	bottom: -125px;
 }
 .product-information{
 	text-align: center;
@@ -241,9 +241,16 @@ nav ul li img{
 .product-information .info-holder{
 	padding: 25px 0 60px;
 }	
+.product-information h2{
+	margin-top: 0;	
+}
+.product-information .product-info{
+	margin-top: 5px;	
+}
 .product-information table{
 	width: 100%;
 	text-align: center;
+	font-size: 0.8rem;
 }
 .product-information.isShowing{
 	display: block;
