@@ -22,8 +22,10 @@ var showDrinkInfo = function() {
             redId.className += " isShowing";
     }
     
-    var blurMenu = document.getElementById("citrusProdInfo");
+    var blurMenu = document.getElementById("menuItems");
+    var blurText = document.getElementsByTagName("h1");
     blurMenu.className += " blur";
+    blurText.className += " blur";
 };
 
 for (var i = 0; i < drinkClicked.length; i++) {
