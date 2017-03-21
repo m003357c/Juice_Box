@@ -206,12 +206,16 @@ header{
 	position: absolute;
 	width: 100%;
 	bottom: -125px;
-	display: none;
+	
 }
 .product-information{
 	text-align: center;
 	position: relative;
 	z-index: 5;
+	display: none;
+}
+.product-information.isShowing{
+	display: block;	
 }
 .product-information::before{
 	content: '';
