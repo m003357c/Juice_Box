@@ -230,7 +230,7 @@ var closeButtons = document.getElementsByClassName("close-btn");
 
 function removeProductInfo (){	
 	var node = document.getElementById('hiddenProdInfo');
-	node.innerHTML = "":
+	node.innerHTML = "";
 	document.getElementById("menuItems").className = 
 		document.getElementById("menuItems").className.replace( /(?:^|\s)blur(?!\S)/g , '' )
 }
