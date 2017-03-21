@@ -41,7 +41,7 @@ var basket = [greenMachine, berryBlast];
 //JS template for outputting basket items to page
 
 
-jQuery(document).ready(function(){
+$(document).ready(function(){
 
 	//Function to show the drinks information when clicked
 	$(".drink-option").click(function(){
