@@ -79,13 +79,18 @@ $(document).ready(function(){
 	      drinkClass = item.drinkClass;
 
 	  var template = '<article class="basket-item ' + drinkClass + '">' +
-			   '<span><img src="assets/images/basket-' + drinkImage + '.svg" alt="' + drinkName + ' Ingrediant Image"></span>' +
-			   '<span>' + drinkName + '<br><small>' + drinkIngred + '</small></span>' +
-			   '<span class="price">' + drinkPrice + '</span>' +
-			   '<a class="remove-basket" href="#">x</a>' +
-			   '<br class="clear">' +
-			 '</article>';
+					   '<span><img src="assets/images/basket-' + drinkImage + '.svg" alt="' + drinkName + ' Ingrediant Image"></span>' +
+					   '<span>' + drinkName + '<br><small>' + drinkIngred + '</small></span>' +
+					   '<span class="price">' + drinkPrice + '</span>' +
+					   '<a class="remove-basket" href="#">x</a>' +
+					   '<br class="clear">' +
+					 '</article>';
 
 	  $(".basket #basket").append(template);
+		
+	});
+	
+	$(".card, .cash").click(function(){
+			$(".overlay").toggleClass("isShowing");
 	});
 });
