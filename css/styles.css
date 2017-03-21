@@ -212,6 +212,13 @@ header{
 #redProdInfo h2, #redProdInfo p, #redProdInfo th, #redProdInfo td{
 	color: #fff;	
 }
+
+#citrusProdInfo h2, #citrusProdInfo p, #citrusProdInfo th, #citrusProdInfo td{
+	color: #d64103;	
+}
+#greenProdInfo h2, #greenProdInfo p, #greenProdInfo th, #greenProdInfo td{
+	color: #2a5800;	
+}
 .product-information{
 	text-align: center;
 	position: relative;
@@ -230,9 +237,9 @@ header{
 	left: -50px;
 	z-index: -5;
 	position: absolute;
-    -webkit-transform: translate(-4%);
-    -moz-transform: translate(-4%);
-    transform: translate(-4%);
+	-webkit-transform: translate(-4%);
+	-moz-transform: translate(-4%);
+	transform: translate(-4%);
 }
 .product-information img{
 	position: absolute;
@@ -284,6 +291,12 @@ header{
 }
 .product-information table tr th{
 	border-bottom: 3px solid #fff;
+}
+#citrusProdInfo .product-information table tr th{
+	border-color: #2a5800;
+}
+#greenProdInfo .product-information table tr th{
+	border-color: #d64103;
 }
 .product-information table tr td, .product-information table tr th{
 	padding: 10px;
