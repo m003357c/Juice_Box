@@ -34,15 +34,17 @@ var simplyRed = {
 };
 
 // JS arrays to emulate orders for now
-var drinks = [citrusPunch, greenMachine, berryBlast, simplyRed];
 
-var basket = [greenMachine, berryBlast];
 
 //JS template for outputting basket items to page
 
 
 $(document).ready(function(){
+	
+	$drinks = [citrusPunch, greenMachine, berryBlast, simplyRed];
 
+	$basket = [greenMachine, berryBlast];
+	
 	//Function to show the drinks information when clicked
 	$(".drink-option").click(function(){
 
@@ -78,7 +80,7 @@ $(document).ready(function(){
 
 	$("basket-price").text(basket.length * 5);
 
-	basket.forEach(function(item) {
+	$(basket).each(function(item) {
 
 		var drinkName = item.name,
 		drinkImage = item.image,
