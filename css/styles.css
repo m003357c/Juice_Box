@@ -290,10 +290,9 @@ header{
 	padding: 10px;
 	vertical-align: middle;	
 	font-weight: bold;
-	font-style: italic;
 }
 .product-information table tr:nth-child(even) td{
-	background: rgba(255,255,255,0.2);	
+	background: rgba(255,255,255,0.05);	
 }
 .product-information table tr:nth-child(odd) td{
 	opacity: 0.8;	
