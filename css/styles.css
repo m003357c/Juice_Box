@@ -225,9 +225,6 @@ header{
 	z-index: 5;
 	display: none;
 }
-.product-information.isShowing{
-	display: block;	
-}
 .product-information::before{
 	content: '';
 	width: 140%;
@@ -566,6 +563,10 @@ header{
 }
 .start-holder.point img{
 	opacity: 1;	
+}
+
+.product-information.isShowing, .overlay.isShowing{
+	display: block;	
 }
 .clear, .card h5 .cost::after, .basket-item .price::after{
 	clear: both;
