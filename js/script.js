@@ -212,7 +212,7 @@ var showDrinkInfo = function() {
                           '</article>';
             var target = document.getElementById("hiddenProdInfo");
             target.innerHTML =  template;
-    }
+    };
     
     var blurMenu = document.getElementById("menuItems");
     var blurText = document.getElementsByTagName("H1");
@@ -228,16 +228,19 @@ for (var i = 0; i < drinkClicked.length; i++) {
 //Code to remove the product information when button is clicked
 var closeButtons = document.getElementsByClassName("close-btn");
 
-function removeProductInfo (){	
+function removeProductInfo(){	
+	console.log("click");
 	var node = document.getElementById('hiddenProdInfo');
+	console.log("find me");
 	node.innerHTML = "";
-	document.getElementById("menuItems").className = 
-		document.getElementById("menuItems").className.replace( /(?:^|\s)blur(?!\S)/g , '' )
-}
+	console.log("kill me");
+	document.getElementById("menuItems").className = document.getElementById("menuItems").className.replace( /(?:^|\s)blur(?!\S)/g , '' );
+	console.log("deblur");
+};
 
 for (var i=0; i < closeButtons.length; i++){
 	closeButtons[i].addEventListener('click', removeProductInfo, false);
-}
+};
 
 //Append the amount in the basket and total price to page
 var basketAmount = document.getElementsByClassName("basket-items");
