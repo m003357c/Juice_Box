@@ -1,4 +1,8 @@
 //JS file for Juice Box
+
+$(document).ready(function(){
+	console.log("JQuery ready!");
+});
 // Drink JS Objects
 var citrusPunch = {
     name:"Citrus Punch",
