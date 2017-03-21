@@ -3,7 +3,20 @@ var drinkClicked = document.getElementsByClassName("drink-option");
 
 var showDrinkInfo = function() {
     var drinkID = this.id;
-    alert(drinkID);
+    
+    switch (drinkID) {
+        case "citrus":
+            console.log("citrus");
+            break;
+        case "berry":
+            console.log("berry");
+            break;
+        case "green":
+            console.log("green");
+            break;
+        case "red":
+            console.log("red");
+    }
 };
 
 for (var i = 0; i < drinkClicked.length; i++) {
