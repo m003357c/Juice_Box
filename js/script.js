@@ -33,18 +33,7 @@ var simplyRed = {
     drinkClass:"simply-red"
 };
 
-// JS arrays to emulate orders for now
-
-
-//JS template for outputting basket items to page
-
-
 $(document).ready(function(){
-	
-	$drinks = [citrusPunch, greenMachine, berryBlast, simplyRed];
-
-	$basket = [greenMachine, berryBlast];
-	
 	//Function to show the drinks information when clicked
 	$(".drink-option").click(function(){
 
@@ -80,22 +69,26 @@ $(document).ready(function(){
 
 	$("basket-price").text(basket.length * 5);
 });
-$.each(basket, function(item) {
 
-	var drinkName = item.name,
-	drinkImage = item.image,
-	drinkIngred = item.ingredients,
-	drinkPrice = item.price,
-	drinkClass = item.drinkClass;
+$basket = [greenMachine, berryBlast];
 
-	var template = '<article class="basket-item ' + drinkClass + '">' +
-		   '<span><img src="assets/images/basket-' + drinkImage + '.svg" alt="' + drinkName + ' Ingrediant Image"></span>' +
-		   '<span>' + drinkName + '<br><small>' + drinkIngred + '</small></span>' +
-		   '<span class="price">' + drinkPrice + '</span>' +
-		   '<a class="remove-basket" href="#">x</a>' +
-		   '<br class="clear">' +
-		 '</article>';
+basket.forEach(function(item) {
 
-	$("#basket").append(template);
+  var drinkName = item.name,
+      drinkImage = item.image,
+      drinkIngred = item.ingredients,
+      drinkPrice = item.price,
+      drinkClass = item.drinkClass;
+
+  var template = '<article class="basket-item ' + drinkClass + '">' +
+                   '<span><img src="assets/images/basket-' + drinkImage + '.svg" alt="' + drinkName + ' Ingrediant Image"></span>' +
+                   '<span>' + drinkName + '<br><small>' + drinkIngred + '</small></span>' +
+                   '<span class="price">' + drinkPrice + '</span>' +
+                   '<a class="remove-basket" href="#">x</a>' +
+                   '<br class="clear">' +
+                 '</article>';
+
+  var target = document.getElementById("basket");
+
+  target.innerHTML = target.innerHTML + template;
 });
-
