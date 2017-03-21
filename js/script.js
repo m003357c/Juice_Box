@@ -7,19 +7,19 @@ var showDrinkInfo = function() {
     switch (drinkID) {
         case "citrus":
             var citrusId = document.getElementById("citrusProdInfo");
-            citrusId.className += "isShowing";
+            citrusId.className += " isShowing";
             break;
         case "berry":
             var berryId = document.getElementById("berryProdInfo");
-            berryId.className += "isShowing";
+            berryId.className += " isShowing";
             break;
         case "green":
             var greenId = document.getElementById("greenProdInfo");
-            greenId.className += "isShowing";
+            greenId.className += " isShowing";
             break;
         case "red":
             var redId = document.getElementById("redProdInfo");
-            redId.className += "isShowing";
+            redId.className += " isShowing";
     }
 };
 
