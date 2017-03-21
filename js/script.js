@@ -38,7 +38,7 @@ var drinks = [citrusPunch, greenMachine, berryBlast, simplyRed];
 var basket = [greenMachine, berryBlast];
 
 //Function to show the drinks information when clicked
-var drinkClicked = document.getElementsByClassName("drink-option");
+/*var drinkClicked = document.getElementsByClassName("drink-option");
 
 var showDrinkInfo = function() {
 
@@ -223,7 +223,7 @@ var showDrinkInfo = function() {
 
 for (var i = 0; i < drinkClicked.length; i++) {
     drinkClicked[i].addEventListener('click', showDrinkInfo, false);
-};
+};*/
 
 //Code to remove the product information when button is clicked
 function removeProductInfo(){	
