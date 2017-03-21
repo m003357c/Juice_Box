@@ -284,7 +284,7 @@ header{
 	margin: 10px;
 }
 .product-information table tr th{
-	font-weight: bold;
+	border-bottom: 3px solid #fff;
 }
 .product-information table tr td:first-child{
 	border-right: 1px solid #fff;	
@@ -292,8 +292,12 @@ header{
 }
 .product-information table tr td, .product-information table tr th{
 	padding: 10px;
-	vertical-align: middle;
-	border-bottom: 1px solid #fff;
+	vertical-align: middle;	
+	font-weight: bold;
+	font-style: italic;
+}
+.product-information table tr:nth-child(even) td{
+	opacity: 0.8;	
 }
 .product-information.isShowing{
 	display: block;
