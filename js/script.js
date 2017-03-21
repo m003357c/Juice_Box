@@ -68,7 +68,7 @@ var basketAmount = document.getElementsByClassName("basket-items");
 basketAmount.innerHTML = basket.length;
 
 var basketPrice = document.getElementsByClassName("basket-price");
-basketAmount.innerHTML = basket.length * 5;
+basketAmount.innerHTML = "&pound;" + basket.length * 5;
 
 basket.forEach(function(item) {
   
