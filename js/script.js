@@ -46,7 +46,7 @@ var showDrinkInfo = function() {
 
     switch (drinkID) {
         case "citrus-punch":
-            var template =  '<article class="product-information citrus-punch">' +
+            var template =  '<article id="productInfo" class="product-information citrus-punch">' +
 			    '<a href="#" class="btn close-btn">x</a>' +
                             '<img src="assets/images/prod-citrus.svg" alt="Citrus Punch ingredient cup">' +
                             '<p class="btn-holder"><a href="#" class="btn add-cart-btn">Add to<br>cart</a><a href="#" class="btn buy-now-btn">Vend<br>now</a></p>' +
@@ -88,8 +88,8 @@ var showDrinkInfo = function() {
             target.innerHTML =  template;
         break;
         case "berry-blast":
-            var template =    '<article class="product-information berry-blast">' +
-							  '<a href="#" class="btn close-btn">x</a>' +
+            var template =    '<article id="productInfo" class="product-information berry-blast">' +
+			      '<a href="#" class="btn close-btn">x</a>' +
                               '<img src="assets/images/prod-berry.svg" alt="Berry Blast ingredient cup">' +
                               '<p class="btn-holder"><a href="#" class="btn add-cart-btn">Add to<br>cart</a><a href="#" class="btn buy-now-btn">Vend<br>now</a></p>' +
                               '<div class="info-holder">' +
@@ -130,7 +130,7 @@ var showDrinkInfo = function() {
             target.innerHTML =  template;
         break;
         case "green-machine":
-            var template =    '<article class="product-information green-machine">' +
+            var template =    '<article id="productInfo" class="product-information green-machine">' +
 							  '<a href="#" class="btn close-btn">x</a>' +
                               '<img src="assets/images/prod-green.svg" alt="Green Machine ingredient cup">' +
                               '<p class="btn-holder"><a href="#" class="btn add-cart-btn">Add to<br>cart</a><a href="#" class="btn buy-now-btn">Vend<br>now</a></p>' +
@@ -172,7 +172,7 @@ var showDrinkInfo = function() {
                 target.innerHTML =  template;
             break;
         case "simply-red":
-            var template =    '<article class="product-information simply-red">' +
+            var template =    '<article id="productInfo" class="product-information simply-red">' +
 							  '<a href="#" class="btn close-btn">x</a>' +
                               '<img src="assets/images/prod-red.svg" alt="Simply Red ingredient cup">' +
                               '<p class="btn-holder"><a href="#" class="btn add-cart-btn">Add to<br>cart</a><a href="#" class="btn buy-now-btn">Vend<br>now</a></p>' +
@@ -231,7 +231,7 @@ var closeButtons = document.getElementsByClassName("close-btn");
 function removeProductInfo(){	
 	console.log("click");
 	var node = document.getElementById('hiddenProdInfo');
-	var nodeChild = document.getElementsByClassName('product-information');
+	var nodeChild = document.getElementById('productInfo');
 	console.log("find me");
 	node.removeChild(nodeChild);
 	console.log("kill me");
