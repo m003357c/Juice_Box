@@ -64,6 +64,12 @@ var simplyRed = {
 
 var basket = [greenMachine, berryBlast];
 
+var basketAmount = document.getElementsByClassName("basket-items");
+basketAmount.innerHTML = basket.length;
+
+var basketPrice = document.getElementsByClassName("basket-price");
+basketAmount.innerHTML = basket.length * 5;
+
 basket.forEach(function(item) {
   
   var drinkName = item.name,
