@@ -162,28 +162,28 @@ header{
 	-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.35);
 	box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.35);
 }
-#citrus{
+#citrus-blast{
 	background: url(../assets/images/menu-citrus.svg) 50% 50% no-repeat;
 	background-color: #f4ca07;
 	-webkit-transform: translate(-60px, 0);
 	-moz-transform: translate(-60px, 0);
 	transform: translate(-60px, 0);
 }
-#berry{
+#berry-blast{
 	background: url(../assets/images/menu-berry.svg) 50% 50% no-repeat;
 	background-color: #73397c;
 	-webkit-transform: translate(60px, -20px);
 	-moz-transform: translate(60px, -20px);
 	transform: translate(60px, -20px);
 }
-#green{
+#green-machine{
 	background: url(../assets/images/menu-green.svg) 50% 50% no-repeat;
 	background-color: #7fb75a;
 	-webkit-transform: translate(-60px, -40px);
 	-moz-transform: translate(-60px, -40px);
 	transform: translate(-60px, -40px);
 }
-#red{
+#simply-red{
 	background: url(../assets/images/menu-red.svg) 50% 50% no-repeat;
 	background-color: #a32121;
 	-webkit-transform: translate(60px, -60px);
@@ -320,16 +320,16 @@ header{
 	float: right;
 	margin-top: 15px;
 }
-#citrusProdInfo, .citrus-blast, #citrusProdInfo.product-information::before{
+.citrus-blast, .citrus-blast.product-information::before{
 	background: #f4ca07;	
 }
-#greenProdInfo, .green-machine, #greenProdInfo.product-information::before{
+.green-machine, .citrus-blast.product-information::before{
 	background: #7fb75a;	
 }
-#berryProdInfo, .berry-blast, #berryProdInfo.product-information::before{
+.berry-blast, .citrus-blast.product-information::before{
 	background: #73397c;	
 }
-#redProdInfo, .simply-red, #redProdInfo.product-information::before{
+.simply-red, .citrus-blast.product-information::before{
 	background: #a32121;	
 }
 .remove-basket{
