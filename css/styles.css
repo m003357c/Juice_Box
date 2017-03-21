@@ -109,11 +109,14 @@ nav ul li img{
 .home #bottomNav ul li.home img, .basket #bottomNav ul li.basket img, .checkout #bottomNav ul li.checkout img{
 	transform: scale(1);
 }
+#bottomNav ul li a{
+	position:relative;	
+}
 .badge{
 	background: #fff;
 	position: absolute;
 	top: 0;
-	right: 40%;
+	right: 5px;
 	color: #d71010;
 	font-size: 0.6rem;
 	border-radius: 100%;
@@ -121,9 +124,6 @@ nav ul li img{
 	-webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.35);
 	-moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.35);
 	box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.35);
-	-webkit-transform: translate(60%, 0);
-	-moz-transform: translate(60%, 0);
-	transform: translate(60%, 0);
 }	
 /*----------------------------------------------*/
 /*------------------- Menu Items ---------------*/
