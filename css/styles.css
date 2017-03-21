@@ -11,7 +11,7 @@ body{
 	padding-top: 60px;
 	overflow-x: hidden;
 }
-nav ul{
+body, nav ul{
 	margin: 0;
 }
 .btn{
