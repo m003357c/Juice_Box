@@ -90,8 +90,11 @@ $(document).ready(function(){
 		
 	});
 	
-	$(".card, .cash, .pay-screen .btn").click(function(){
-			$(".overlay").toggleClass("isShowing");
+	$(".card, .cash").click(function(){
+		$(this).addClass("card-animate-in");
+		$(".overlay").toggleClass("isShowing");
 	});
-	
+	$(".pay-screen .btn").click(function(){
+		$(".overlay").toggleClass("isShowing");
+	});
 });
