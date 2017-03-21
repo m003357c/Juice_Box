@@ -227,19 +227,17 @@ for (var i = 0; i < drinkClicked.length; i++) {
 
 //Code to remove the product information when button is clicked
 function removeProductInfo(){	
-	
-};
-
-document.getElementById("closeButton").addEventListener('click', function(){
-	console.log("click");
 	var node = document.getElementById('hiddenProdInfo');
 	var nodeChild = document.getElementById('productInfo');
-	console.log("find me");
 	node.removeChild(nodeChild);
-	console.log("kill me");
+
 	document.getElementById("menuItems").className = document.getElementById("menuItems").className.replace( /(?:^|\s)blur(?!\S)/g , '' );
-	console.log("deblur");
-});
+};
+
+var closingButton = document.getElementById("closeButton");
+
+closingButton.addEventListener('click', removeProductInfo);
+
 
 //Append the amount in the basket and total price to page
 var basketAmount = document.getElementsByClassName("basket-items");
