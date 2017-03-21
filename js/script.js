@@ -23,7 +23,7 @@ var showDrinkInfo = function() {
     }
     
     var blurMenu = document.getElementById("menuItems");
-    var blurText = document.getElementsByTagName("h1");
+    var blurText = document.getElementsByTagName("H1");
     blurMenu.className += " blur";
     blurText.className += " blur";
 };
