@@ -87,6 +87,7 @@ nav ul li img{
 	width: 100%;
 	padding: 10px 0;
 	max-height: 45px;
+    z-index: 9999;
 }
 #bottomNav li{
 	width: 33%;
