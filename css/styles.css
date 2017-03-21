@@ -595,3 +595,21 @@ header{
 		transform: translate(0px, -60px);
 	}
 }
+@keyframes card-animate-out{
+	0%{
+		-webkit-transform: translate(0px, 0px);
+		-moz-transform: translate(0px, 0px);
+		transform: translate(0px, 0px);
+	}
+	30%{
+		-webkit-transform: translate(0px, -60px);
+		-moz-transform: translate(0px, -60px);
+		transform: translate(0px, -60px);
+	}
+	100%{
+		-webkit-transform: translate(0px, 120px);
+		-moz-transform: translate(0px, -20px);
+		transform: translate(0px, -120px);
+		
+	}
+}
