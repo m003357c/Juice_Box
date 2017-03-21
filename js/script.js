@@ -47,7 +47,7 @@ var showDrinkInfo = function() {
     switch (drinkID) {
         case "citrus-punch":
             var template =  '<article id="productInfo" class="product-information citrus-punch">' +
-			    '<a href="#" class="btn close-btn">x</a>' +
+			    '<a href="#" id="closeButton" class="btn close-btn">x</a>' +
                             '<img src="assets/images/prod-citrus.svg" alt="Citrus Punch ingredient cup">' +
                             '<p class="btn-holder"><a href="#" class="btn add-cart-btn">Add to<br>cart</a><a href="#" class="btn buy-now-btn">Vend<br>now</a></p>' +
                             '<div class="info-holder">' +
@@ -89,7 +89,7 @@ var showDrinkInfo = function() {
         break;
         case "berry-blast":
             var template =    '<article id="productInfo" class="product-information berry-blast">' +
-			      '<a href="#" class="btn close-btn">x</a>' +
+			      '<a href="#" id="closeButton" class="btn close-btn">x</a>' +
                               '<img src="assets/images/prod-berry.svg" alt="Berry Blast ingredient cup">' +
                               '<p class="btn-holder"><a href="#" class="btn add-cart-btn">Add to<br>cart</a><a href="#" class="btn buy-now-btn">Vend<br>now</a></p>' +
                               '<div class="info-holder">' +
@@ -131,7 +131,7 @@ var showDrinkInfo = function() {
         break;
         case "green-machine":
             var template =    '<article id="productInfo" class="product-information green-machine">' +
-							  '<a href="#" class="btn close-btn">x</a>' +
+			      '<a href="#" id="closeButton" class="btn close-btn">x</a>' +
                               '<img src="assets/images/prod-green.svg" alt="Green Machine ingredient cup">' +
                               '<p class="btn-holder"><a href="#" class="btn add-cart-btn">Add to<br>cart</a><a href="#" class="btn buy-now-btn">Vend<br>now</a></p>' +
                               '<div class="info-holder">' +
@@ -173,7 +173,7 @@ var showDrinkInfo = function() {
             break;
         case "simply-red":
             var template =    '<article id="productInfo" class="product-information simply-red">' +
-							  '<a href="#" class="btn close-btn">x</a>' +
+			      '<a href="#" id="closeButton" class="btn close-btn">x</a>' +
                               '<img src="assets/images/prod-red.svg" alt="Simply Red ingredient cup">' +
                               '<p class="btn-holder"><a href="#" class="btn add-cart-btn">Add to<br>cart</a><a href="#" class="btn buy-now-btn">Vend<br>now</a></p>' +
                               '<div class="info-holder">' +
@@ -226,9 +226,11 @@ for (var i = 0; i < drinkClicked.length; i++) {
 };
 
 //Code to remove the product information when button is clicked
-var closeButtons = document.getElementsByClassName("close-btn");
-
 function removeProductInfo(){	
+	
+};
+
+document.getElementById("closeButton").addEventListener('click', function(){
 	console.log("click");
 	var node = document.getElementById('hiddenProdInfo');
 	var nodeChild = document.getElementById('productInfo');
@@ -237,11 +239,7 @@ function removeProductInfo(){
 	console.log("kill me");
 	document.getElementById("menuItems").className = document.getElementById("menuItems").className.replace( /(?:^|\s)blur(?!\S)/g , '' );
 	console.log("deblur");
-};
-
-for (var i=0; i < closeButtons.length; i++){
-	closeButtons[i].addEventListener('click', removeProductInfo, false);
-};
+});
 
 //Append the amount in the basket and total price to page
 var basketAmount = document.getElementsByClassName("basket-items");
