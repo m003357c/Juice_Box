@@ -93,9 +93,6 @@ $(document).ready(function(){
 	$(".card, .cash").click(function(){
 		$(this).toggleClass("card-animate-in");
 		
-		if($(this).hasClass("card-animate-in")) {
-	   		$(this).toggleClass("card-animate-in card-animate-out");
-	   	};
 		//$(".overlay").toggleClass("isShowing");
 	});
 	$(".pay-screen .btn").click(function(){
