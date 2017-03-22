@@ -313,9 +313,9 @@ header{
 	filter: blur(1.5px);	
 }
 .product-information.isShowing{
-	-webkit-animation: drink-animate-in 1s ease-in-out forwards;
-	-moz-animation: drink-animate-in 1s ease-in-out forwards;
-	animation: drink-animate-in 1s ease-in-out forwards;
+	-webkit-animation: drink-animate-in 500ms ease-in-out forwards;
+	-moz-animation: drink-animate-in 500ms ease-in-out forwards;
+	animation: drink-animate-in 500ms ease-in-out forwards;
 }
 .product-information.hideElement{
 	-webkit-animation: drink-animate-out 500ms ease-in-out forwards;
