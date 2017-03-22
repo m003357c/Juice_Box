@@ -422,6 +422,18 @@ header{
 	font-size: 1.5rem;
 	padding: 25px 27px;
 }
+.basket-item{
+	opacity: 0;	
+	-webkit-transform: translate(0px, -20px);
+	-moz-transform: translate(0px, -20px);
+	transform: translate(0px, -20px);
+}
+.basket-item.is-showing{
+	opacity: 1;	
+	-webkit-transform: translate(0px, 0px);
+	-moz-transform: translate(0px, 0px);
+	transform: translate(0px, 0px);	
+}
 /*---------------------------------------------------*/
 /*------------------- Checkout Wallet ---------------*/
 /*---------------------------------------------------*/
