@@ -108,10 +108,11 @@ $(document).ready(function(){
 	$(document).on("click", ".remove-basket", function(){
 		console.log("click");
 		$(this).parent().removeClass("is-showing");
+		$(this).closest(".basket-item").remove();
 		
 		setTimeout(function(){
 			console.log("boom");
-			$(this).closest(".basket-item").remove();
+			
 			console.log("bam");
 		}, 300);
 	});
