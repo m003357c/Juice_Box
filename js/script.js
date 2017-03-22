@@ -92,7 +92,7 @@ $(document).ready(function(){
 	
 	$(".card, .cash").click(function(){
 		$(this).addClass("card-animate-in");
-		$(this).child(".card-inner").addClass("fade")
+		$(this).child().addClass("fade")
 		//$(".overlay").toggleClass("isShowing");
 	});
 	$(".pay-screen .btn").click(function(){
