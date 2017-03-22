@@ -60,9 +60,13 @@ $(document).ready(function(){
 	});
 
 	$(".close-btn").click(function(){
-
-		$(this).parent().toggleClass("isShowing");
-		$("#menuItems, h1").toggleClass("blur");
+		$(this).addClass("hideElement");
+		setTimeout(function(){ 
+			$(this).parent().toggleClass("isShowing");
+			$(this).parent().removeClass("hideElement");
+			$("#menuItems, h1").toggleClass("blur"); 
+		}, 1000)
+		
 	});
 
 	//Append the amount in the basket and total price to page
@@ -99,6 +103,7 @@ $(document).ready(function(){
 		//$(".overlay").toggleClass("isShowing");
 	});
 	$(".pay-screen .btn").click(function(){
+		
 		$(".overlay").toggleClass("isShowing");
 	});
 });
