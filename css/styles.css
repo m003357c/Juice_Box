@@ -318,9 +318,9 @@ header{
 	animation: drink-animate-in 1s ease-in-out forwards;
 }
 .product-information.hideElement{
-	-webkit-animation: drink-animate-out 1s ease-in-out forwards;
-	-moz-animation: drink-animate-out 1s ease-in-out forwards;
-	animation: drink-animate-out 1s ease-in-out forwards;
+	-webkit-animation: drink-animate-out 500ms ease-in-out forwards;
+	-moz-animation: drink-animate-out 500ms ease-in-out forwards;
+	animation: drink-animate-out 500ms ease-in-out forwards;
 }
 /*-------------------------------------------------*/
 /*------------------- Basket Styles ---------------*/
