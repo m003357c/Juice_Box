@@ -553,14 +553,14 @@ header{
 	z-index: 999;	
 }
 .fade{
-	-webkit-animation: fade 2s ease-in-out forwards;
-	-moz-animation: fade 2s ease-in-out forwards;
-	animation: fade 2s ease-in-out forwards;	
+	-webkit-animation: fade 1s ease-in-out forwards;
+	-moz-animation: fade 1s ease-in-out forwards;
+	animation: fade 1s ease-in-out forwards;	
 }
 .card-animate-in{
-	-webkit-animation: card-animate-in 2s ease-in forwards;
-	-moz-animation: card-animate-in 2s ease-in forwards;
-	animation: card-animate-in 2s ease-in forwards;
+	-webkit-animation: card-animate-in 1s ease-in forwards;
+	-moz-animation: card-animate-in 1s ease-in forwards;
+	animation: card-animate-in 1s ease-in forwards;
 }
 .card-animate-out{
 	-webkit-animation: card-animate-out 2s ease-in-out forwards;
