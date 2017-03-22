@@ -465,6 +465,7 @@ header{
 }
 .card{
 	height: 70px;
+	position: relative;
 	max-height: 160px;
 	overflow: hidden;
 	border-top-right-radius: 10px;
@@ -493,6 +494,7 @@ header{
 }
 .mobile.card{
 	background: #6300de;
+	z-index: 1;
 }
 .mobile.card p{
 	color: #fff;
@@ -501,9 +503,11 @@ header{
 }	
 .debit.card{
 	background: #211ec6;
+	z-index: 2;
 }
 .paypal.card{
 	background: #009cde;
+	z-index: 3;
 }
 .card-animate-in{
 	-webkit-animation: card-animate-in 2s ease-in-out forwards;
@@ -613,7 +617,7 @@ header{
 		transform: translate(0px, -60px);
 	}
 }
-@keyframes card-animate-out{
+/*@keyframes card-animate-out{
 	0%{
 		-webkit-transform: translate(0px, -60px);
 		-moz-transform: translate(0px, -60px);
@@ -630,4 +634,4 @@ header{
 		transform: translate(0px, -0px);
 		
 	}
-}
+}*/
