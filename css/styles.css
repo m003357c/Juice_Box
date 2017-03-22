@@ -510,13 +510,13 @@ header{
 	color: #fff;
 	display: block;
 }	
-form .inline-form .form-group{
+.debit.card form .inline-form .form-group{
 	display: inline-block;	
 	width: 30%;
 	float: left;	
 }
-form .form-group input[type="text"], form .form-group input[type="number"],
-form .form-group input[type="month"], form .inline-form .form-group select{
+.debit.card form .form-group input[type="text"], .debit.card form .form-group input[type="number"],
+.debit.card form .form-group input[type="month"], .debit.card form .inline-form .form-group select{
 	max-width: 100%;	
 	font-size: 0.8rem;
 	color: #c6c6c6;
@@ -526,8 +526,8 @@ form .form-group input[type="month"], form .inline-form .form-group select{
 	border: none;
 	padding: 0;
 }
-form .inline-form .form-group input:nth-child(1),form .inline-form .form-group input:nth-child(2){
-	margin-right: 5%;	
+.debit.card form .inline-form .form-group:nth-child(1), .debit.card form .inline-form .form-group:nth-child(2){
+	padding-right: 5%;	
 }
 .paypal.card{
 	background: #009cde;
