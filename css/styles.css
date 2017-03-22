@@ -465,6 +465,7 @@ header{
 }
 .card{
 	height: 70px;
+	overflow: hidden;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
 	padding: 15px 15px 20px;
@@ -492,6 +493,11 @@ header{
 .mobile.card{
 	background: #6300de;
 }
+.mobile.card p{
+	color: #fff;
+	font-size: 0.8rem;
+	line-height: 1.75em;
+}	
 .debit.card{
 	background: #211ec6;
 }
@@ -590,11 +596,13 @@ header{
 		transform: translate(0px, 0px);
 	}
 	30%{
+		height: 70px;
 		-webkit-transform: translate(0px, -120px);
 		-moz-transform: translate(0px, -120px);
 		transform: translate(0px, -120px);
 	}
 	100%{
+		height: auto;
 		-webkit-transform: translate(0px, -60px);
 		-moz-transform: translate(0px, -60px);
 		transform: translate(0px, -60px);
