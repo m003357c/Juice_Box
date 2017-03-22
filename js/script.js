@@ -90,7 +90,7 @@ $(document).ready(function(){
 		
 	});
 	
-	$(".card, .cash").click(function(){
+	$(".card").click(function(){
 		
 		$(this).addClass("card-animate-in");
 		
