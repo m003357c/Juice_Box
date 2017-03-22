@@ -60,9 +60,8 @@ $(document).ready(function(){
 	});
 
 	$(".close-btn").click(function(){
-		$(this).addClass("hideElement");
+		$(this).parent().toggleClass("isShowing, hideElement");
 		setTimeout(function(){ 
-			$(this).parent().toggleClass("isShowing");
 			$(this).parent().removeClass("hideElement");
 			$("#menuItems, h1").toggleClass("blur"); 
 		}, 1000)
