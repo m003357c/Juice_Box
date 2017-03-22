@@ -60,12 +60,17 @@ $(document).ready(function(){
 	});
 
 	$(".close-btn").click(function(){
-		$(this).parent().toggleClass("isShowing hideElement");
-		setTimeout(function(){ 
-			$(this).parent().removeClass("hideElement");
-			$("#menuItems, h1").toggleClass("blur"); 
-		}, 2000)
 		
+		if ($(this).parent().hasClass("isShowing"){
+		    
+			$(this).parent().addClass("hideElement");
+			$("#menuItems, h1").toggleClass("blur"); 	
+		
+			setTimeout(function(){ 
+			   $(this).parent().removeClass("isShowing, hideElement");
+			}, 1000);
+		    
+		};
 	});
 
 	//Append the amount in the basket and total price to page
