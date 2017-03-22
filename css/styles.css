@@ -312,7 +312,7 @@ header{
 	-webkit-filter: blur(1.5px);
 	filter: blur(1.5px);	
 }
-#hiddenProdInfo < .isShowing{
+.product-information.isShowing{
 	-webkit-animation: drink-animate-in 2s ease-in-out forwards;
 	-moz-animation: drink-animate-in 2s ease-in-out forwards;
 	animation: drink-animate-in 2s ease-in-out forwards;
