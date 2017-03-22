@@ -43,15 +43,6 @@
         <h5>Cash <span>£5</span></h5>
       </div>
 	<div class="wallet-inner">
-	<aside class="overlay">
-		<div class="pay-screen">
-			<p class="pay-instructions">
-				Hover device over the contactless reader on the vending machine to confirm your order
-			</p>
-			<img src="assets/images/nfc-icon.png" alt="Visual NFC order instructions">
-			<a href="#" class="btn">Cancel<br>Payment</a>
-		</div>		
-	</aside>
         <div class="mobile card">
 			<h5>Mobile Contactless <span class="cost">£5</span></h5>
 			<div class="card-inner">
@@ -122,17 +113,26 @@
       </div>
     </article>
   </section>
+	<aside class="overlay">
+		<div class="pay-screen">
+			<p class="pay-instructions">
+				Hover device over the contactless reader on the vending machine to confirm your order
+			</p>
+			<img src="assets/images/nfc-icon.png" alt="Visual NFC order instructions">
+			<a href="#" class="btn">Cancel<br>Payment</a>
+		</div>		
+	</aside>
 	<footer>
 		<nav id="bottomNav">
-          <ul>
-            <li class="active home"><a href="index.html"><img src="assets/images/home.png" alt="Home page button"></a></li>
-            <li class="active basket"><a href="basket.html"><img src="assets/images/basket.png" alt="Basket page button"><span class="badge">2</span></a></li>
-            <li class="active checkout"><a href="checkout.html"><img src="assets/images/checkout.png" alt="Checkout page button"></a></li>
-	    <br class="clear">
-          </ul>
-        </nav>
+		  <ul>
+		    <li class="active home"><a href="index.html"><img src="assets/images/home.png" alt="Home page button"></a></li>
+		    <li class="active basket"><a href="basket.html"><img src="assets/images/basket.png" alt="Basket page button"><span class="badge">2</span></a></li>
+		    <li class="active checkout"><a href="checkout.html"><img src="assets/images/checkout.png" alt="Checkout page button"></a></li>
+		    <br class="clear">
+		  </ul>
+		</nav>
 	</footer>
-	  <script  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="  crossorigin="anonymous"></script>
+	<script  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="  crossorigin="anonymous"></script>
 	<script src="js/script.js"></script>
 	<script>
 		if ('serviceWorker' in navigator) {
