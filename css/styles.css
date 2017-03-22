@@ -544,12 +544,6 @@ header{
 }
 .card-inner{
 	opacity: 0;
-	-webkit-transition: all 300ms ease-in-out;
-	-moz-transition: all 300ms ease-in-out;
-	transition: all 300ms ease-in-out;
-}
-.card-animate-in .card-inner{
-	opacity: 1;	
 }
 .card-animate-in{
 	-webkit-animation: card-animate-in 2s ease-in-out forwards;
@@ -636,6 +630,14 @@ header{
 	margin: 0;
 	padding: 0;
 }
+@keyframes fade {
+	0%{	
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
 @keyframes card-animate-in{
 	0%{	
 		-webkit-transform: translate(0px, 0px);
@@ -644,6 +646,7 @@ header{
 	}
 	30%{
 		height: 70px;
+		margin-bottom: 0;
 		border-bottom-right-radius: 0;
 		border-bottom-left-radius: 0;
 		-webkit-transform: translate(0px, -120px);
@@ -652,6 +655,7 @@ header{
 	}
 	100%{
 		height: 190px;
+	        margin-bottom: -130px;
 		border-bottom-right-radius: 10px;
 		border-bottom-left-radius: 10px;
 		-webkit-transform: translate(0px, -60px);
