@@ -107,9 +107,9 @@ $(document).ready(function(){
 	
 	$(".basket-item .remove-basket").click(function(){
 		console.log("click");
-		$(this).parent().removeClass(".is-showing");
+		$(this).parent().removeClass("is-showing");
 		setTimeout(function(){
-			$(this).parent().empty();
+			$(this).parent().remove();
 		}, 300);
 	});
 	
