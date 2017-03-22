@@ -98,12 +98,15 @@ $(document).ready(function(){
 	  $(".basket #basket").append(template);
 		
 	});
+	
 	$("#basket .basket-item").each(function(i){
 		setTimeout(function(){
 			$("#basket .basket-item").eq(i).addClass("is-showing");
 		}, 150 * (i + 1));
 	});
+	
 	$(".remove-basket").click(function(){
+		console.log("click");
 		$(this).parent().removeClass(".is-showing");
 		setTimeout(function(){
 			$(this).parent().empty();
