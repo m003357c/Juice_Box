@@ -103,6 +103,14 @@ $(document).ready(function(){
 			$("#basket .basket-item").eq(i).addClass("is-showing");
 		}, 150 * (i + 1));
 	});
+	$(".remove-basket").click(function(){
+		$(this).parent().removeClass(".is-showing");
+		setTimeout(function(){
+			$(this).parent().empty();
+		}, 300);
+	});
+	
+	
 	$(".card").click(function(){
 		
 		$(this).addClass("card-animate-in");
