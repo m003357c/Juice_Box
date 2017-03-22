@@ -1,4 +1,4 @@
-e//JS file for Juice Box
+//JS file for Juice Box
 $(document).ready(function(){
 	// Drink JS Objects
 	var citrusPunch = {
