@@ -479,6 +479,9 @@ header{
 	-moz-box-shadow: 0px -5px 4px 0px rgba(0,0,0,0.35);
 	box-shadow: 0px -5px 4px 0px rgba(0,0,0,0.35);
 }
+.card.card-animate-in{
+	z-index: 999;	
+}
 .card:last-child{
 	-webkit-box-shadow: 0px -5px 4px 0px rgba(0,0,0,0.35), inset 0px -5px 4px 0px rgba(0,0,0,0.35);
 	-moz-box-shadow: 0px -5px 4px 0px rgba(0,0,0,0.35), inset 0px -5px 4px 0px rgba(0,0,0,0.35);
