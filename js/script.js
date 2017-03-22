@@ -108,13 +108,15 @@ $(document).ready(function(){
 	$(document).on("click", ".remove-basket", function(){
 		console.log("click");
 		$(this).parent().removeClass("is-showing");
-		$(this).closest(".basket-item").remove();
-		
+
 		setTimeout(function(){
 			console.log("boom");
 			
 			console.log("bam");
 		}, 300);
+		setTimeout(function(){
+			$(this).closest(".basket-item").remove();
+		}, 5000);
 	});
 	
 	
