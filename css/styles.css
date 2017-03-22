@@ -505,6 +505,14 @@ header{
 	background: #211ec6;
 	z-index: 2;
 }
+.debit.card form label{
+	font-size: 0.6rem;
+	color: #fff;
+	display: block;
+}	
+form .inline-form .form-group{
+	display: inline-block;	
+}
 .paypal.card{
 	background: #009cde;
 	z-index: 3;
