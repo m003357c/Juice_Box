@@ -509,6 +509,7 @@ header{
 	font-size: 0.6rem;
 	color: #fff;
 	display: block;
+	margin-bottom: 5px
 }
 .debit.card form .inline-form {
 	margin: 10px 0	
@@ -517,9 +518,6 @@ header{
 	display: inline-block;	
 	width: 30%;
 	float: left;	
-}
-.debit.card form .form-group label{
-	margin-bottom: 5px	
 }
 .debit.card form .form-group input[type="text"], .debit.card form .form-group input[type="number"],
 .debit.card form .form-group input[type="month"], .debit.card form .inline-form .form-group select{
