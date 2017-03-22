@@ -465,6 +465,7 @@ header{
 }
 .card{
 	height: 70px;
+	max-height: 160px;
 	overflow: hidden;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
@@ -597,12 +598,16 @@ header{
 	}
 	30%{
 		height: 70px;
+		border-bottom-right-radius: 0;
+		border-bottom-left-radius: 0;
 		-webkit-transform: translate(0px, -120px);
 		-moz-transform: translate(0px, -120px);
 		transform: translate(0px, -120px);
 	}
 	100%{
-		height: auto;
+		height: 100%;
+		border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 10px;
 		-webkit-transform: translate(0px, -60px);
 		-moz-transform: translate(0px, -60px);
 		transform: translate(0px, -60px);
