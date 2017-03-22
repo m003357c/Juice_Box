@@ -517,6 +517,11 @@ form .inline-form .form-group{
 }
 form .inline-form .form-group input, form .inline-form .form-group select{
 	max-width: 100%;	
+	font-size: 0.8rem;
+	color: #c6c6c6;
+	border-radius: 3px;
+	height: 30px;
+	width: 100%;
 }
 .paypal.card{
 	background: #009cde;
