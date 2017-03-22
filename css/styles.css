@@ -526,6 +526,9 @@ form .form-group input[type="month"], form .inline-form .form-group select{
 	border: none;
 	padding: 0;
 }
+form .inline-form .form-group input:nth-child(1),form .inline-form .form-group input:nth-child(2){
+	margin-right: 5%;	
+}
 .paypal.card{
 	background: #009cde;
 	z-index: 3;
