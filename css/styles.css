@@ -507,7 +507,7 @@ header{
 	background: #211ec6;
 	z-index: 2;
 }
-.debit.card form label, .debit.card .card-inner form .form-group:nth-child(2){
+.debit.card form label, .debit.card .card-inner form div:nth-child(3){
 	font-size: 0.6rem;
 	color: #fff;
 }	
