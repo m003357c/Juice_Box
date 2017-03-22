@@ -695,7 +695,7 @@ header{
 	100%{		
 		
 		opacity: 1;
-		bottom: 190px;
+		bottom: -190px;
 	}
 }
 /*@keyframes card-animate-out{
