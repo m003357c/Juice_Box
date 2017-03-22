@@ -515,8 +515,8 @@ form .inline-form .form-group{
 	width: 30%;
 	float: left;	
 }
-form .inline-form .form-group:nth-child(1), form .inline-form .form-group:nth-child(2){
-	margin-right: 5%;	
+form .inline-form .form-group input, form .inline-form .form-group select{
+	max-width: 100%;	
 }
 .paypal.card{
 	background: #009cde;
