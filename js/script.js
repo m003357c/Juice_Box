@@ -105,7 +105,7 @@ $(document).ready(function(){
 		}, 150 * (i + 1));
 	});
 	
-	$(".remove-basket").click(function(){
+	$(".basket-item .remove-basket").click(function(){
 		console.log("click");
 		$(this).parent().removeClass(".is-showing");
 		setTimeout(function(){
