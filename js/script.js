@@ -91,8 +91,11 @@ $(document).ready(function(){
 	});
 	
 	$(".card, .cash").click(function(){
+		
 		$(this).addClass("card-animate-in");
-		$(this).child().addClass("fade")
+		
+		$(this).children(".card-inner").addClass("fade");
+		
 		//$(".overlay").toggleClass("isShowing");
 	});
 	$(".pay-screen .btn").click(function(){
