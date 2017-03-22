@@ -67,8 +67,8 @@ $(document).ready(function(){
 			$("#menuItems, h1").toggleClass("blur"); 	
 		
 			setTimeout(function(){ 
-				$(this).parent().removeClass("isShowing");
-				$(this).parent().removeClass("hideElement");	
+				$(".product-information").removeClass("isShowing");
+				$(".product-information").removeClass("hideElement");	
 			}, 1000);
 		    
 		};
