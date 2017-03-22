@@ -91,7 +91,7 @@ $(document).ready(function(){
 	});
 	
 	$(".card, .cash").click(function(){
-		$(this).toggleClass("card-animate-in");
+		$(this).addClass("card-animate-in");
 		
 		//$(".overlay").toggleClass("isShowing");
 	});
