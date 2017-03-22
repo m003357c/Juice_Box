@@ -98,9 +98,9 @@ $(document).ready(function(){
 	  $(".basket #basket").append(template);
 		
 	});
-	$("#basket .basket-item ").each(function(i){
+	$("#basket .basket-item").each(function(i){
 		setTimeout(function(){
-			$("##basket .basket-item").eq(i).addClass("is-showing");
+			$("#basket .basket-item").eq(i).addClass("is-showing");
 		}, 150 * (i + 1));
 	});
 	$(".card").click(function(){
