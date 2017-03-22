@@ -1,4 +1,4 @@
-//JS file for Juice Box
+e//JS file for Juice Box
 $(document).ready(function(){
 	// Drink JS Objects
 	var citrusPunch = {
@@ -92,7 +92,7 @@ $(document).ready(function(){
 	
 	$(".card, .cash").click(function(){
 		$(this).addClass("card-animate-in");
-		
+		$(this).child(".card-inner").addClass("fade")
 		//$(".overlay").toggleClass("isShowing");
 	});
 	$(".pay-screen .btn").click(function(){
