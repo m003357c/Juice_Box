@@ -532,7 +532,8 @@ header{
 	height: 30px;
 	width: 100%;
 	border: none;
-	padding: 0;
+	padding: 5px;
+	box-sizing: border-box;
 }
 .debit.card form .inline-form .form-group:nth-child(1), .debit.card form .inline-form .form-group:nth-child(2){
 	padding-right: 5%;	
