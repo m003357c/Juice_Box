@@ -643,13 +643,13 @@ header{
 }
 @keyframes card-animate-in{
 	0%{	
+		margin-bottom: 0;
 		-webkit-transform: translate(0px, 0px);
 		-moz-transform: translate(0px, 0px);
 		transform: translate(0px, 0px);
 	}
 	30%{
 		height: 70px;
-		margin-bottom: 0;
 		border-bottom-right-radius: 0;
 		border-bottom-left-radius: 0;
 		-webkit-transform: translate(0px, -120px);
