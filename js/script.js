@@ -69,7 +69,7 @@ $(document).ready(function(){
 			setTimeout(function(){ 
 				$(".product-information").removeClass("isShowing");
 				$(".product-information").removeClass("hideElement");	
-			}, 1000);
+			}, 500);
 		    
 		};
 	});
