@@ -111,7 +111,7 @@ $(document).ready(function(){
 		
 		setTimeout(function(){
 			console.log("boom");
-			$(this).clostest(".basket-item").remove();
+			$(this).closest(".basket-item").remove();
 			console.log("bam");
 		}, 300);
 	});
