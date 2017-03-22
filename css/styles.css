@@ -515,7 +515,7 @@ form .inline-form .form-group{
 	width: 30%;
 	float: left;	
 }
-form .form-group input, form .inline-form .form-group select{
+form .form-group input[type="text"], form .form-group input[type="number"], form .inline-form .form-group select{
 	max-width: 100%;	
 	font-size: 0.8rem;
 	color: #c6c6c6;
