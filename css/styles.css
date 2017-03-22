@@ -10,7 +10,7 @@ body{
 	position: relative;	
 	padding-top: 60px;
 	overflow-x: hidden;
-}
+}e
 body, nav ul{
 	margin: 0;
 }
@@ -466,7 +466,7 @@ header{
 .card{
 	height: 70px;
 	position: relative;
-	max-height: 160px;
+	max-height: 190px;
 	overflow: hidden;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
@@ -509,11 +509,17 @@ header{
 	font-size: 0.6rem;
 	color: #fff;
 	display: block;
-}	
+}
+.debit.card form .inline-form {
+	margin: 10px 0	
+}
 .debit.card form .inline-form .form-group{
 	display: inline-block;	
 	width: 30%;
 	float: left;	
+}
+.debit.card form .form-group label{
+	margin-bottom: 5px	
 }
 .debit.card form .form-group input[type="text"], .debit.card form .form-group input[type="number"],
 .debit.card form .form-group input[type="month"], .debit.card form .inline-form .form-group select{
@@ -528,6 +534,9 @@ header{
 }
 .debit.card form .inline-form .form-group:nth-child(1), .debit.card form .inline-form .form-group:nth-child(2){
 	padding-right: 5%;	
+}
+.debit.card form .form-group input[type="radio"]{
+	margin-top: 15px;	
 }
 .paypal.card{
 	background: #009cde;
