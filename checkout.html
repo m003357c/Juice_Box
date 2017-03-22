@@ -45,9 +45,37 @@
       <div class="wallet-inner">
         <div class="mobile card">
           <h5>Mobile Contactless <span class="cost">£5</span></h5>
+			<p>Before using this option, please make sure you have contactless payment app installed on your device and you have NFC capabilities enabled.</p>
         </div>
         <div class="debit card">
           <h5>Debit Card <span class="cost">£5</span></h5>
+			<form>
+				<div class="inline-form">
+					<div class="form-group">
+						<label>Card Type</label>
+						<select list="card-types" name="card-types" value="Visa Debit">
+							<option value="visa-debit">Visa Debit</option>
+							<option value="master-card">Master Card</option>
+							<option value="american-express">American Express</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label>Expiry Date</label>
+						<input type="month" name="expiryDate"  min="2017-03-22">
+					</div>
+					<div class="form-group">
+						<label>CVV Number</label>
+						<input type="number" name="CVV">
+					</div>
+				</div>
+				<div class="form-group">
+					<label>Card Number</label>
+					<input type="number" name="cardNo" placeholder="XXXX-XXXX-XXXX-XXXX" min="12" max="12" >
+				</div>
+				<div class="form-group">
+					<input type="radio" name="saveCard" value="true"> Save card details for next time
+				</div>
+			</form>
         </div>
         <div class="paypal card">
           <h5>PayPal <span class="cost">£5</span></h5>
