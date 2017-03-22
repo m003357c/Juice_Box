@@ -540,6 +540,15 @@ header{
 	background: #009cde;
 	z-index: 3;
 }
+.card-inner{
+	opacity: 0;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+}
+.card-animate-in .card-inner{
+	opacity: 1;	
+}
 .card-animate-in{
 	-webkit-animation: card-animate-in 2s ease-in-out forwards;
 	-moz-animation: card-animate-in 2s ease-in-out forwards;
