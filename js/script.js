@@ -61,7 +61,7 @@ $(document).ready(function(){
 
 	$(".close-btn").click(function(){
 		
-		if ($(this).parent().hasClass("isShowing"){
+		if ($(this).parent().hasClass("isShowing")){
 		    
 			$(this).parent().addClass("hideElement");
 			$("#menuItems, h1").toggleClass("blur"); 	
