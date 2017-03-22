@@ -10,7 +10,7 @@ body{
 	position: relative;	
 	padding-top: 60px;
 	overflow-x: hidden;
-}e
+}
 body, nav ul{
 	margin: 0;
 }
@@ -507,11 +507,13 @@ header{
 	background: #211ec6;
 	z-index: 2;
 }
-.debit.card form label{
+.debit.card form label, .debit.card form .form-group:nth-child(2){
 	font-size: 0.6rem;
 	color: #fff;
+}	
+.debit.card form label{
 	display: block;
-	margin-bottom: 5px
+	margin-bottom: 5px;	
 }
 .debit.card form .inline-form {
 	margin: 10px 0	
