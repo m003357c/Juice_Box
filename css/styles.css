@@ -317,6 +317,11 @@ header{
 	-moz-animation: drink-animate-in 1s ease-in-out forwards;
 	animation: drink-animate-in 1s ease-in-out forwards;
 }
+.product-information.hideElement{
+	-webkit-animation: drink-animate-out 1s ease-in-out forwards;
+	-moz-animation: drink-animate-out 1s ease-in-out forwards;
+	animation: drink-animate-out 1s ease-in-out forwards;
+}
 /*-------------------------------------------------*/
 /*------------------- Basket Styles ---------------*/
 /*-------------------------------------------------*/
@@ -659,6 +664,20 @@ header{
 		-webkit-transform: translate(0px, 0px);
 		-moz-transform: translate(0px, 0px);
 		transform: translate(0px, 0px);
+	}
+}
+@keyframes drink-animate-out{
+	0%{			
+		opacity: 1;
+		-webkit-transform: translate(0px, 0px);
+		-moz-transform: translate(0px, 0px);
+		transform: translate(0px, 0px);
+	}
+	100%{		
+		opacity: 0;
+		-webkit-transform: translate(0px, 100px);
+		-moz-transform: translate(0px, 100px);
+		transform: translate(0px, 100px);
 	}
 }
 @keyframes fade {
