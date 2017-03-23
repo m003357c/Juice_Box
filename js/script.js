@@ -133,11 +133,11 @@ $(document).ready(function(){
 	
 	$(".card").click(function(){
 		
-		if ($(this).hasClass("mobile"){
+		if ($(this).hasClass("mobile")){
 		    
 			$(this).addClass("mobile-animate-in");	
 		
-		}else if ($(this).hasClass("card"){
+		}else if ($(this).hasClass("card")){
 		
 			$(this).addClass("card-animate-in");	
 	
