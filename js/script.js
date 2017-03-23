@@ -160,24 +160,26 @@ $(document).ready(function(){
 	
 	$(".overlay").on("click", ".pay-screen .btn", function(){		
 		
-		if($(".overlay").hasClass("fade")){
-		   $(".overlay").toggleClass("fade fadeOut").delay(1000).queue(function(){ $(".overlay").removeClass("isShowing fadeOut"); } );
+		if($(".overlay").hasClass("isShowing")){
+		    $(".overlay").toggleClass("fade fadeOut");
+			setTimeout(function(){
+				$(".overlay").removeClass("isShowing").removeClass("fadeOut");
+			}, 1000);
 	   	};		
 
 		if ($(".card.animated").hasClass("mobile")){ 
 			$(".card.mobile").toggleClass("mobile-animate-in mobile-animate-out").delay(1000).queue(function() { $(".card.mobile").removeClass("mobile-animate-out animated").css("z-index","1"); } );
-
+			$(".wallet-inner").css("position","relative");		
+			$(".card-inner").removeClass("fade");
 		}else if ($(".card.animated").hasClass("debit")){
-
 			$(".card.debit").toggleClass("card-animate-in card-animate-out").delay(1000).queue(function() { $(".card.debit").removeClass("card-animate-out animated").css("z-index","2"); } );
-
+			$(".wallet-inner").css("position","relative");		
+			$(".card-inner").removeClass("fade");
 		} else if ($(".card.animated").hasClass("paypal")){
-
 			$(".card.paypal").toggleClass("paypal-animate-in paypal-animate-out").delay(1000).queue(function() { $(".card.paypal").removeClass("paypal-animate-out animated").css("z-index","3"); } );	
-
+			$(".wallet-inner").css("position","relative");		
+			$(".card-inner").removeClass("fade");
 		};
-
-		$(".wallet-inner").css("position","relative");		
-		$(".card-inner").removeClass("fade");
+		
 	});
 });
