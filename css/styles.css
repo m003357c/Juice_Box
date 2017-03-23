@@ -261,11 +261,11 @@ header{
     z-index: 999;
 }
 .product-information a.add-cart-btn{
-	padding: 17px 12px;		
+	padding: 19px 12px;		
 	left: 20%;
 }
 .product-information a.buy-now-btn{
-        padding: 17px 19px;
+        padding: 19px 19px;
 	right: 20%;
 }
 .product-information .info-holder{
