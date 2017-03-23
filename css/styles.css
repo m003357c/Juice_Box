@@ -817,9 +817,9 @@ header{
 	        margin-bottom: -130px;
 		border-bottom-right-radius: 10px;
 		border-bottom-left-radius: 10px;
-		-webkit-transform: translateY(-220px);
-		-moz-transform: translateY(-220px);
-		transform: translateY(-220px);
+		-webkit-transform: translateY(-210px);
+		-moz-transform: translateY(-210px);
+		transform: translateY(-210px);
 	}
 }
 /*@keyframes card-animate-out{
