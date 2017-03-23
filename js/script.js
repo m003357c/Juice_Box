@@ -106,16 +106,10 @@ $(document).ready(function(){
 	});
 	
 	$(".remove-basket").click(function(){
-		
-		function removeElemet(){
-			console.log("delete");
-			$(this).closest(".basket-item").remove();
-			console.log("its gone");
-		};
-		
+
 		$(this).parent().removeClass("is-showing");
+		$(this).closest(".basket-item").remove();
 		
-		removeElemet();
 		/*setTimeout(function(){
 			
 		}, 300);*/
