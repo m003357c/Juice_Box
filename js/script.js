@@ -2,7 +2,7 @@
 $(document).ready(function(){
 	// Drink JS Objects
 	var citrusPunch = {
-	    id: "citrusPunch",
+	    drinkId: "citrusPunch",
 	    name:"Citrus Punch",
 	    image:"citrus",
 	    ingredients:"Grapefruit, Orange &amp; Pineapple",
@@ -11,7 +11,7 @@ $(document).ready(function(){
 	    drinkClass:"citrus-blast"
 	};
 	var berryBlast = {
-	    id: "berryBlast",
+	    drinkId: "berryBlast",
 	    name:"Berry Blast",
 	    image:"berry",
 	    ingredients:"Apple, Grape, Blueberry<br>&amp; Raspberry",
@@ -20,7 +20,7 @@ $(document).ready(function(){
 	    drinkClass:"berry-blast"
 	};
 	var greenMachine = {
- 	    id: "greenMachine",
+ 	    drinkId: "greenMachine",
 	    name:"Green Machine",
 	    image:"green",
 	    ingredients:"Apple, Banana, Avocado,<br>Kiwi &amp; Lime",
@@ -29,7 +29,7 @@ $(document).ready(function(){
 	    drinkClass:"green-machine"
 	};
 	var simplyRed = {
-	    id: "simplyRed",
+	    drinkId: "simplyRed",
 	    name:"Simply Red",
 	    image:"red",
 	    ingredients:"Apple, Grape, Strawberry<br>&amp; Cherry",
@@ -85,7 +85,7 @@ $(document).ready(function(){
 	
 	basket.forEach(function(item) {
 
-	  var drinkId = item.id,
+	  var drinkId = item.drinkId,
 	      drinkName = item.name,
 	      drinkImage = item.image,
 	      drinkIngred = item.ingredients,
@@ -127,10 +127,11 @@ $(document).ready(function(){
 		var removeBasketItem = function(id) {
 		    var out = [];
 		    for (var i = 0, len = basket.length; i < len; i++)
-			if (basket[i].id === id) out.push(basket[i]);
+			if (basket[i].id === $(this).parent().id) out.push(basket[i]);
 		    return out;
 		};
-
+		
+		console.log
 		
 		$(".basket-items").text(basket.length);
 
