@@ -686,7 +686,7 @@ header{
 	-moz-animation: mobile-animate-in 1s ease-in forwards;
 	animation: mobile-animate-in 1s ease-in forwards;
 }
-.mobile-animate-in{
+.mobile-animate-out{
 	-webkit-animation: mobile-animate-out 1s ease-in forwards;
 	-moz-animation: mobile-animate-out 1s ease-in forwards;
 	animation: mobile-animate-out 1s ease-in forwards;
@@ -696,7 +696,7 @@ header{
 	-moz-animation: card-animate-in 1s ease-in forwards;
 	animation: card-animate-in 1s ease-in forwards;
 }
-.card-animate-in{
+.card-animate-out{
 	-webkit-animation: card-animate-out 1s ease-in forwards;
 	-moz-animation: card-animate-out 1s ease-in forwards;
 	animation: card-animate-out 1s ease-in forwards;
