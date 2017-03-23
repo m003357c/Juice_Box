@@ -112,18 +112,17 @@ $(document).ready(function(){
 	
 	$(".remove-basket").click(function(){
 
-		console.log(basket);
-		
 		var prodId = $(this).parent().id;
+		console.log(prodId);
 		var index = basket.indexOf(prodId > -1);
-		console.log(prodId, index);
+		console.log(index);
 		
 		/*if(prodId == index){
 		   basket.splice(index, 1);
 			console.log(basket);
 		}*/
 	
-		function removeBasketItem() {
+		/*function removeBasketItem() {
 		    for (var i = 0; i < basket.length; i++){
 			if (basket[i].drinkId === prodId) {
 				basket.splice(basket[i], 1);
@@ -131,9 +130,8 @@ $(document).ready(function(){
 		    };
 		};
 		
-		removeBasketItem();
+		removeBasketItem();*/
 		
-		console.log(basket);
 		
 		$(".basket-items").text(basket.length);
 
