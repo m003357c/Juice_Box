@@ -116,9 +116,11 @@ $(document).ready(function(){
 		
 		var prodId = $(this).parent().id;
 		var index = basket.indexOf(prodId > -1);
-	
+		console.log(prodId, index);
+		
 		if(prodId == index){
 		   basket.splice(index, 1);
+			console.log(basket);
 		}
 		
 		console.log(basket.length);
