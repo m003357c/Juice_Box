@@ -165,17 +165,17 @@ $(document).ready(function(){
 		
 		if ($(this).hasClass("mobile")){
 		    
-			$(this).toggleClass("mobile-animate-in mobile-animate-out");
+			$(".card.mobile").toggleClass("mobile-animate-in mobile-animate-out");
 				//.delay(1000).queue(function() { $(this).removeClass("mobile-animate-out animated"); } );	
 		
 		}else if ($(this).hasClass("debit")){
 		
-			$(this).addClass("card-animate-in card-animate-out");
+			$(".card.debit").addClass("card-animate-in card-animate-out");
 			//.delay(1000).queue(function() { $(this).removeClass("mobile-animate-out animated"); } );	
 	
 		} else if ($(this).hasClass("paypal")){
 			
-			$(this).addClass("paypal-animate-in paypal-animate-out");
+			$(".card.paypal").addClass("paypal-animate-in paypal-animate-out");
 			//.delay(1000).queue(function() { $(this).removeClass("mobile-animate-out animated"); } );	
 			
 		};
