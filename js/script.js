@@ -176,7 +176,7 @@ $(document).ready(function(){
 
 			$(".wallet-inner").css("position","relative");		
 			$(".card-inner").removeClass("fade");
-		}, 1000);
+		}, 500);
 		
 		
 	});
