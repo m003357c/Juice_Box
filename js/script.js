@@ -170,7 +170,7 @@ $(document).ready(function(){
 			$(".card.mobile").toggleClass("mobile-animate-in mobile-animate-out");//.delay(1500).queue(function() {  } );	
 			setTimeout(function(){
 				$(this).removeClass("mobile-animate-out animated");
-			});
+			}, 2000);
 		}else if ($(".card-wrapper div").hasClass("debit")){
 		
 			$(".card.debit").addClass("card-animate-in card-animate-out").delay(1500).queue(function() { $(this).removeClass("mobile-animate-out animated"); } );	
