@@ -165,19 +165,22 @@ $(document).ready(function(){
 		
 		if ($(this).hasClass("mobile")){
 		    
-			$(this).toggleClass("mobile-animate-in mobile-animate-out").delay(1000).queue(function() { $(this).removeClass("mobile-animate-out animated"); } );	
+			$(this).toggleClass("mobile-animate-in mobile-animate-out");
+				//.delay(1000).queue(function() { $(this).removeClass("mobile-animate-out animated"); } );	
 		
 		}else if ($(this).hasClass("debit")){
 		
-			$(this).addClass("card-animate-in card-animate-out").delay(1000).queue(function() { $(this).removeClass("mobile-animate-out animated"); } );	
+			$(this).addClass("card-animate-in card-animate-out");
+			//.delay(1000).queue(function() { $(this).removeClass("mobile-animate-out animated"); } );	
 	
 		} else if ($(this).hasClass("paypal")){
 			
-			$(this).addClass("paypal-animate-in paypal-animate-out").delay(1000).queue(function() { $(this).removeClass("mobile-animate-out animated"); } );	
+			$(this).addClass("paypal-animate-in paypal-animate-out");
+			//.delay(1000).queue(function() { $(this).removeClass("mobile-animate-out animated"); } );	
 			
 		};
 		
-		$(".overlay").toggleClass("fade fadeOut").delay(1000).queue(function() { $(".product-information").removeClass("isShowing fadeOut"); } );
+		$(".overlay").toggleClass("fade fadeOut").delay(1000).queue(function() { $(".overlay").removeClass("isShowing fadeOut"); } );
 	
 	});
 });
