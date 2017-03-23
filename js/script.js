@@ -113,17 +113,17 @@ $(document).ready(function(){
 	$(".remove-basket").click(function(){
 
 		var prodId = $(this).parent().id;
-		var index = basket.indexOf(prodId);
-		
-		$(this).parent().removeClass("is-showing").delay(500).queue(function() { $(this).remove(); });
-		
-		if(index == prodId){
+		var index = basket.indexOf(prodId > -1);
+	
+		if(prodId == index){
 		   basket.splice(index, 1);
 		}
 		
 		$(".basket-items").text(basket.length);
 
 		$(".basket-price").text("£" + basket.length * 2.5);
+		
+		$(this).parent().removeClass("is-showing").delay(500).queue(function() { $(this).remove(); });
 		
 	});
 	
