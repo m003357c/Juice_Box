@@ -679,7 +679,7 @@ header{
 	-moz-animation: fade 1s ease-in-out forwards;
 	animation: fade 1s ease-in-out forwards;	
 }
-.fadeOut{
+.fadeOut, .overlay.isShowing{
 	-webkit-animation: fadeOut 1s ease-in-out forwards;
 	-moz-animation: fadeOut 1s ease-in-out forwards;
 	animation: fadeOut 1s ease-in-out forwards;	
