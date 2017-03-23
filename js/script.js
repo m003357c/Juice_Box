@@ -107,12 +107,8 @@ $(document).ready(function(){
 	
 	$(".remove-basket").click(function(){
 
-		$(this).parent().removeClass("is-showing");
+		$(this).parent().removeClass("is-showing").delay(2000).queue(function() { $(this).remove(); });
 		
-		
-		setInterval(function(){
-			$(this).closest(".basket-item").remove();
-		}, 300);
 	});
 	
 	
