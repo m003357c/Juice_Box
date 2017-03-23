@@ -125,11 +125,14 @@ $(document).ready(function(){
 		
 		console.log(basket.length);*/
 		var removeBasketItem = function(drinkId) {
-		    for (var i = 0, len = basket.length; i < len; i++)
+		    for (var i = 0, len = basket.length; i < len; i++){
 			if (basket[i].drinkId === $(this).parent().id) {
 				basket.splice(basket[i], 1);
-			}
+			};
+		    };
 		};
+		
+		removeBasketItem();
 		
 		console.log(basket);
 		
