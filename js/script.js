@@ -130,6 +130,7 @@ $(document).ready(function(){
 		
 	});
 	
+	$(".cost").text("£" + basket.length * 2.5);
 	
 	$(".card").click(function(){
 		
