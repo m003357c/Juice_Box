@@ -163,6 +163,10 @@ $(document).ready(function(){
 		
 		$(".wallet-inner").css("position","relative");
 		
-		$(".overlay").removeClass("isShowing").toggleClass("fade");
+		$(".overlay").toggleClass("fade fadeOut");
+		
+		setTimeout(function(){ 
+			$(".product-information").removeClass("isShowing");
+		}, 500);
 	});
 });
