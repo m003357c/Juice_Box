@@ -105,7 +105,7 @@ $(document).ready(function(){
 		}, 150 * (i + 1));
 	});
 	
-	$(document).on("click", ".remove-basket", function(){
+	$(".remove-basket").click(function(){
 		
 		function removeElemet(){
 			$(this).closest(".basket-item").remove();
