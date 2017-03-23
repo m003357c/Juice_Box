@@ -179,7 +179,7 @@ $(document).ready(function(){
 		$(".card-inner").removeClass("fade");
 		$(".overlay").toggleClass("fade fadeOut").delay(1000).queue(function() { $(".overlay").removeClass("isShowing fadeOut"); } );
 		setTimeout(function(){
-			(".card").removeClass("animated");
+			$(".card").removeClass("animated");
 		},3000);
 	});
 });
