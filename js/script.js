@@ -158,10 +158,11 @@ $(document).ready(function(){
 		$(".wallet-inner").css("position","static");
 		$(".overlay").toggleClass("isShowing").addClass("fade");
 	});
+	
 	$(".pay-screen .btn").click(function(){
 		
 		$(".wallet-inner").css("position","relative");
 		
-		$(".overlay").toggleClass("isShowing");
+		$(".overlay").removeClass("isShowing").toggleClass("fade");
 	});
 });
