@@ -124,14 +124,14 @@ $(document).ready(function(){
 		}
 		
 		console.log(basket.length);*/
-		var removeBasketItem = function(id) {
+		var removeBasketItem = function(drinkId) {
 		    var out = [];
 		    for (var i = 0, len = basket.length; i < len; i++)
-			if (basket[i].id === $(this).parent().id) out.push(basket[i]);
+			if (basket[i].drinkId === $(this).parent().id) out.push(basket[i]);
 		    return out;
 		};
 		
-		console.log
+		console.log(basket);
 		
 		$(".basket-items").text(basket.length);
 
