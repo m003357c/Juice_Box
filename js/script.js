@@ -155,25 +155,27 @@ $(document).ready(function(){
 		$(this).addClass("animated").css("z-index","999").children(".card-inner").addClass("fade");
 		
 		$(".wallet-inner").css("position","static");
-		$(".overlay").addClass("isShowing").addClass("fade");
+		$(".overlay").addClass("isShowing fade")
 	});
 	
 	$(".overlay").on("click", ".pay-screen .btn", function(){		
 		
-		$(".overlay").removeClass("fade").addClass("fadeOut").delay(1000).queue(function(){ $(".overlay").removeClass("isShowing fadeOut"); } );
+		$(".overlay").toggleClass("fade fadeOut").delay(1000).queue(function(){ $(".overlay").removeClass("isShowing fadeOut"); } );
 		
-		if ($(".card.animated").hasClass("mobile")){ 
-			$(".card.mobile").toggleClass("mobile-animate-in mobile-animate-out").delay(1000).queue(function() { $(".card.mobile").removeClass("mobile-animate-out animated").css("z-index","1"); } );
+		setTimeout(function(){
+			if ($(".card.animated").hasClass("mobile")){ 
+				$(".card.mobile").toggleClass("mobile-animate-in mobile-animate-out").delay(1000).queue(function() { $(".card.mobile").removeClass("mobile-animate-out animated").css("z-index","1"); } );
 
-		}else if ($(".card.animated").hasClass("debit")){
+			}else if ($(".card.animated").hasClass("debit")){
 
-			$(".card.debit").toggleClass("card-animate-in card-animate-out").delay(1000).queue(function() { $(".card.debit").removeClass("card-animate-out animated").css("z-index","2"); } );
+				$(".card.debit").toggleClass("card-animate-in card-animate-out").delay(1000).queue(function() { $(".card.debit").removeClass("card-animate-out animated").css("z-index","2"); } );
 
-		} else if ($(".card.animated").hasClass("paypal")){
+			} else if ($(".card.animated").hasClass("paypal")){
 
-			$(".card.paypal").toggleClass("paypal-animate-in paypal-animate-out").delay(1000).queue(function() { $(".card.paypal").removeClass("paypal-animate-out animated").css("z-index","3"); } );	
+				$(".card.paypal").toggleClass("paypal-animate-in paypal-animate-out").delay(1000).queue(function() { $(".card.paypal").removeClass("paypal-animate-out animated").css("z-index","3"); } );	
 
-		};
+			};
+		}, 2000);
 
 		$(".wallet-inner").css("position","relative");		
 		$(".card-inner").removeClass("fade");
