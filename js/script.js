@@ -138,8 +138,6 @@ $(document).ready(function(){
 	
 	$(".card").click(function(){
 		
-		clickedCard = $(this);
-		
 		if ($(this).hasClass("mobile")){
 		    
 			$(this).addClass("mobile-animate-in");	
@@ -167,11 +165,11 @@ $(document).ready(function(){
 		if ($(".card.animated").hasClass("mobile")){ 
 			$(".card.mobile").toggleClass("mobile-animate-in mobile-animate-out").delay(1000).queue(function() { $(this).removeClass("mobile-animate-out animated").css("z-index","1"); } );
 
-		}else if ($(".card").hasClass("debit")){
+		}else if ($(".card.animated").hasClass("debit")){
 
 			$(".card.debit").addClass("card-animate-in card-animate-out").delay(1000).queue(function() { $(this).removeClass("mobile-animate-out animated").css("z-index","2"); } );
 
-		} else if ($(".card").hasClass("paypal")){
+		} else if ($(".card.animated").hasClass("paypal")){
 
 			$(".card.paypal").addClass("paypal-animate-in paypal-animate-out").delay(1000).queue(function() { $(this).removeClass("mobile-animate-out animated").css("z-index","3"); } );	
 
