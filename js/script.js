@@ -114,7 +114,7 @@ $(document).ready(function(){
 
 		var prodId = $(this).parent().attr("id");
 		console.log(prodId);
-		var index = basket.indexOf(prodId);
+		var index = basket.indexOf(prodId !== -1);
 		console.log(index);
 		
 		/*if(prodId == index){
@@ -122,15 +122,15 @@ $(document).ready(function(){
 			console.log(basket);
 		}*/
 	
-		/*function removeBasketItem() {
+		function removeBasketItem() {
 		    for (var i = 0; i < basket.length; i++){
-			if (basket[i].drinkId === prodId) {
+			if (basket[i].indexOf(prodId !== -1)) {
 				basket.splice(basket[i], 1);
 			};
 		    };
 		};
 		
-		removeBasketItem();*/
+		removeBasketItem();
 		
 		
 		$(".basket-items").text(basket.length);
