@@ -677,9 +677,9 @@ header{
 	animation: fade 1s ease-in-out forwards;	
 }
 .fadeOut{
-	-webkit-animation: fade 1s ease-in-out forwards;
-	-moz-animation: fade 1s ease-in-out forwards;
-	animation: fade 1s ease-in-out forwards;	
+	-webkit-animation: fadeOut 1s ease-in-out forwards;
+	-moz-animation: fadeOut 1s ease-in-out forwards;
+	animation: fadeOut 1s ease-in-out forwards;	
 }
 .mobile-animate-in{
 	-webkit-animation: mobile-animate-in 1s ease-in forwards;
