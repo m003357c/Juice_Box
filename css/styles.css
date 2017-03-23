@@ -15,7 +15,7 @@ body, nav ul{
 	margin: 0;
 }
 .container{
-	padding: 20px 10px 52px;	
+	padding: 20px 10px 0;	
 }
 .btn{
 	text-transform: uppercase;
