@@ -160,7 +160,7 @@ $(document).ready(function(){
 		$(".overlay").addClass("isShowing").addClass("fade");
 	});
 	
-	$(".pay-screen .btn").on("click", ".overlay", function(){		
+	$(".overlay").on("click", ".pay-screen .btn", function(){		
 		
 		$(".overlay").removeClass("fade").addClass("fadeOut").delay(1000).queue(function(){ $(".overlay").removeClass("isShowing fadeOut"); } );
 		
