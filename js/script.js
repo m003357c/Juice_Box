@@ -162,7 +162,7 @@ $(document).ready(function(){
 	
 	$(".pay-screen .btn").click(function(){		
 		
-		$(".overlay").toggleClass("fade fadeOut").delay(1000).queue(function(){ $(this).removeClass("isShowing fadeOut"); } );
+		$(".overlay").toggleClass("fade fadeOut").delay(1000).queue(function(){ $(".overlay").removeClass("isShowing fadeOut"); } );
 		
 		if ($(".card.animated").hasClass("mobile")){ 
 			$(".card.mobile").toggleClass("mobile-animate-in mobile-animate-out").delay(1000).queue(function() { $(this).removeClass("mobile-animate-out animated").css("z-index","1"); } );
