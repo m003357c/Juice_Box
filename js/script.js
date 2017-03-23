@@ -105,7 +105,7 @@ $(document).ready(function(){
 	});
 	
 	if (basket.length !== 0) {
-		$("li.basket").append("<span class='badge'>" + basket.length +"</span>");
+		$("li.basket a").append("<span class='badge'>" + basket.length +"</span>");
 	}
 	
 	$("#basket .basket-item").each(function(i){
