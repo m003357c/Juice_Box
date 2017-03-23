@@ -106,17 +106,15 @@ $(document).ready(function(){
 	});
 	
 	$(document).on("click", ".remove-basket", function(){
-		/*$(this).parent().removeClass("is-showing");
+		
+		function removeElemet(){
+			$(this).closest(".basket-item").remove();
+		};
+		
+		$(this).parent().removeClass("is-showing");
 		setTimeout(function(){
-			$(this).closest(".basket-item").remove();
-		}, 300);*/
-		$(this).parent().animate({
-			opacity: 0,
-			transform: "translate (0px, -20px",
-			}, 5000, function() {
-			// Animation complete.
-			$(this).closest(".basket-item").remove();
-		});
+			removeElemet();
+		}, 300);
 	});
 	
 	
