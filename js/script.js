@@ -108,11 +108,11 @@ $(document).ready(function(){
 	$(".remove-basket").click(function(){
 
 		$(this).parent().removeClass("is-showing");
-		$(this).closest(".basket-item").remove();
 		
-		/*setTimeout(function(){
-			
-		}, 300);*/
+		
+		setTimeout(function(){
+			$(this).closest(".basket-item").remove();
+		}, 300);
 	});
 	
 	
