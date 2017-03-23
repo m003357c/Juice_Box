@@ -594,7 +594,7 @@ header{
 	vertical-align: middle;
 }
 .card.animated{
-	z-index: 999;	
+	/*z-index: 999;	*/
 	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.35) !important;
 	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.35) !important;
 	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.35) !important;
