@@ -104,7 +104,7 @@ $(document).ready(function(){
 		
 	});
 	
-	if (basket.length !=== 0) {
+	if (basket.length !== 0) {
 		$("li.basket").append("<span class='badge'>" + basket.length +"</span>");
 	}
 	
@@ -159,7 +159,9 @@ $(document).ready(function(){
 		$(".overlay").toggleClass("isShowing").addClass("fade");
 	});
 	$(".pay-screen .btn").click(function(){
+		
 		$(".wallet-inner").css("position","relative");
+		
 		$(".overlay").toggleClass("isShowing");
 	});
 });
