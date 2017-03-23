@@ -112,7 +112,7 @@ $(document).ready(function(){
 	
 	$(".remove-basket").click(function(){
 
-		console.log(basket);
+		/*console.log(basket);
 		
 		var prodId = $(this).parent().id;
 		var index = basket.indexOf(prodId > -1);
@@ -123,7 +123,14 @@ $(document).ready(function(){
 			console.log(basket);
 		}
 		
-		console.log(basket.length);
+		console.log(basket.length);*/
+		var removeBasketItem = function(id) {
+		    var out = [];
+		    for (var i = 0, len = basket.length; i < len; i++)
+			if (basket[i].id === id) out.push(basket[i]);
+		    return out;
+		};
+
 		
 		$(".basket-items").text(basket.length);
 
