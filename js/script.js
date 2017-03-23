@@ -110,7 +110,7 @@ $(document).ready(function(){
 		$(this).parent().removeClass("is-showing");
 		
 		
-		setinterval(function(){
+		setInterval(function(){
 			$(this).closest(".basket-item").remove();
 		}, 300);
 	});
