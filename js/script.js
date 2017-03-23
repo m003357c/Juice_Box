@@ -2,6 +2,7 @@
 $(document).ready(function(){
 	// Drink JS Objects
 	var citrusPunch = {
+	    id: "citrusPunch",
 	    name:"Citrus Punch",
 	    image:"citrus",
 	    ingredients:"Grapefruit, Orange &amp; Pineapple",
@@ -10,6 +11,7 @@ $(document).ready(function(){
 	    drinkClass:"citrus-blast"
 	};
 	var berryBlast = {
+	    id: "berryBlast",
 	    name:"Berry Blast",
 	    image:"berry",
 	    ingredients:"Apple, Grape, Blueberry<br>&amp; Raspberry",
@@ -18,6 +20,7 @@ $(document).ready(function(){
 	    drinkClass:"berry-blast"
 	};
 	var greenMachine = {
+ 	    id: "greenMachine",
 	    name:"Green Machine",
 	    image:"green",
 	    ingredients:"Apple, Banana, Avocado,<br>Kiwi &amp; Lime",
@@ -26,6 +29,7 @@ $(document).ready(function(){
 	    drinkClass:"green-machine"
 	};
 	var simplyRed = {
+	    id: "simplyRed",
 	    name:"Simply Red",
 	    image:"red",
 	    ingredients:"Apple, Grape, Strawberry<br>&amp; Cherry",
@@ -81,13 +85,14 @@ $(document).ready(function(){
 	
 	basket.forEach(function(item) {
 
-	  var drinkName = item.name,
+	  var drinkId = item.id,
+	      drinkName = item.name,
 	      drinkImage = item.image,
 	      drinkIngred = item.ingredients,
 	      drinkPrice = item.price,
 	      drinkClass = item.drinkClass;
 
-	  var template = '<article class="basket-item ' + drinkClass + '">' +
+	  var template = '<article id="' + drinkId + '" class="basket-item ' + drinkClass + '">' +
 					   '<span><img src="assets/images/basket-' + drinkImage + '.svg" alt="' + drinkName + ' Ingrediant Image"></span>' +
 					   '<span>' + drinkName + '<br><small>' + drinkIngred + '</small></span>' +
 					   '<span class="price">' + drinkPrice + '</span>' +
@@ -107,7 +112,19 @@ $(document).ready(function(){
 	
 	$(".remove-basket").click(function(){
 
+		var prodId = $(this).parent().id();
+		
 		$(this).parent().removeClass("is-showing").delay(500).queue(function() { $(this).remove(); });
+		
+		var index = array.indexOf(prodId);
+		
+		if(index == prodId){
+		   basket.splice(index, 1);
+		}
+		
+		$(".basket-items").text(basket.length);
+
+		$(".basket-price").text("£" + basket.length * 2.5);
 		
 	});
 	
