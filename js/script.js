@@ -107,7 +107,7 @@ $(document).ready(function(){
 	
 	$(".remove-basket").click(function(){
 
-		$(this).parent().removeClass("is-showing").delay(300).queue(function() { $(this).remove(); });
+		$(this).parent().removeClass("is-showing").delay(500).queue(function() { $(this).remove(); });
 		
 	});
 	
