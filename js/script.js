@@ -160,17 +160,12 @@ $(document).ready(function(){
 	});
 	
 	$(".pay-screen .btn").click(function(){
-		$(".overlay").toggleClass("fade fadeOut");//.delay(1000).queue(function() { $(".overlay").removeClass("isShowing fadeOut"); } );
-		$(".wallet-inner").css("position","relative");		
-		$(".card-inner").removeClass("fade");
 		
 		
-		if ($(".card-wrapper div").hasClass("mobile")){
-		    
-			$(".card.mobile").toggleClass("mobile-animate-in mobile-animate-out");//.delay(1500).queue(function() {  } );	
-			setTimeout(function(){
-				$(this).removeClass("mobile-animate-out animated");
-			}, 2000);
+		if ($(".card-wrapper div").hasClass("mobile")){ 
+			
+			$(".card.mobile").toggleClass("mobile-animate-in mobile-animate-out").delay(1500).queue(function() { $(this).removeClass("mobile-animate-out animated");  } );	
+		
 		}else if ($(".card-wrapper div").hasClass("debit")){
 		
 			$(".card.debit").addClass("card-animate-in card-animate-out").delay(1500).queue(function() { $(this).removeClass("mobile-animate-out animated"); } );	
@@ -181,7 +176,9 @@ $(document).ready(function(){
 			
 		};
 		
-		
+		$(".wallet-inner").css("position","relative");		
+		$(".card-inner").removeClass("fade");
+		$(".overlay").toggleClass("fade fadeOut").delay(1000).queue(function() { $(".overlay").removeClass("isShowing fadeOut"); } );
 	
 	});
 });
