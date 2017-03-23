@@ -15,7 +15,7 @@ body, nav ul{
 	margin: 0;
 }
 .container{
-	padding: 61px 0 52px;	
+	padding: 61px 10px 52px;	
 }
 .btn{
 	text-transform: uppercase;
@@ -444,7 +444,6 @@ header{
 /*------------------- Checkout Wallet ---------------*/
 /*---------------------------------------------------*/
 .checkout section{
-	padding: 22px 10px;
 	position: relative;
 }
 .checkout h1{
