@@ -112,11 +112,10 @@ $(document).ready(function(){
 	
 	$(".remove-basket").click(function(){
 
-		var prodId = $(this).parent().id();
+		var prodId = $(this).parent().id;
+		var index = array.indexOf(prodId);
 		
 		$(this).parent().removeClass("is-showing").delay(500).queue(function() { $(this).remove(); });
-		
-		var index = array.indexOf(prodId);
 		
 		if(index == prodId){
 		   basket.splice(index, 1);
