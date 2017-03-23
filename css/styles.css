@@ -563,7 +563,7 @@ header{
 .debit.card form .inline-form .form-group:nth-child(1), .debit.card form .inline-form .form-group:nth-child(2){
 	padding-right: 5%;	
 }
-.debit.card form .form-group input[type="radio"]{
+.debit.card form .form-group input[type="checkbox"]{
         margin: 9px 2px 10px 0;
 	vertical-align: middle;
 }
