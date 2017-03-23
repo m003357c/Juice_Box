@@ -152,8 +152,7 @@ $(document).ready(function(){
 			
 		};
 		
-		$(this).addClass("animated");		
-		$(this).children(".card-inner").addClass("fade");
+		$(this).addClass("animated").css("z-index","999").children(".card-inner").addClass("fade");
 		
 		$(".wallet-inner").css("position","static");
 		$(".overlay").toggleClass("isShowing").addClass("fade");
@@ -162,16 +161,15 @@ $(document).ready(function(){
 	$(".pay-screen .btn").click(function(){		
 		
 		if ($(".card").hasClass("mobile")){ 
-			
-			$(".card.mobile").toggleClass("mobile-animate-in mobile-animate-out").delay(1500).queue(function() { $(this).removeClass("mobile-animate-out");  } );	
+			$(".card.mobile").css("z-index","1").toggleClass("mobile-animate-in mobile-animate-out").delay(1500).queue(function() { $(this).removeClass("mobile-animate-out");  } );	
 		
 		}else if ($(".card").hasClass("debit")){
 		
-			$(".card.debit").addClass("card-animate-in card-animate-out").delay(1500).queue(function() { $(this).removeClass("card-animate-out"); } );	
+			$(".card.debit").css("z-index","2").addClass("card-animate-in card-animate-out").delay(1500).queue(function() { $(this).removeClass("card-animate-out"); } );	
 	
 		} else if ($(".card").hasClass("paypal")){
 			
-			$(".card.paypal").addClass("paypal-animate-in paypal-animate-out").delay(1500).queue(function() { $(this).removeClass("paypal-animate-out"); } );	
+			$(".card.paypal").css("z-index","3").addClass("paypal-animate-in paypal-animate-out").delay(1500).queue(function() { $(this).removeClass("paypal-animate-out"); } );	
 			
 		};
 		
