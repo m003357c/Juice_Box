@@ -167,11 +167,11 @@ $(document).ready(function(){
 
 		}else if ($(".card.animated").hasClass("debit")){
 
-			$(".card.debit").toggleClass("card-animate-in card-animate-out").delay(1000).queue(function() { $(".card.debit").removeClass("mobile-animate-out animated").css("z-index","2"); } );
+			$(".card.debit").toggleClass("card-animate-in card-animate-out").delay(1000).queue(function() { $(".card.debit").removeClass("card-animate-out animated").css("z-index","2"); } );
 
 		} else if ($(".card.animated").hasClass("paypal")){
 
-			$(".card.paypal").toggleClass("paypal-animate-in paypal-animate-out").delay(1000).queue(function() { $(".card.paypal").removeClass("mobile-animate-out animated").css("z-index","3"); } );	
+			$(".card.paypal").toggleClass("paypal-animate-in paypal-animate-out").delay(1000).queue(function() { $(".card.paypal").removeClass("paypal-animate-out animated").css("z-index","3"); } );	
 
 		};
 
