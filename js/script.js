@@ -157,12 +157,12 @@ $(document).ready(function(){
 		$(this).addClass("animated").css("z-index","999").children(".card-inner").addClass("fade");
 		
 		$(".wallet-inner").css("position","static");
-		$(".overlay").toggleClass("isShowing").addClass("fade");
+		$(".overlay").addClass("isShowing").addClass("fade");
 	});
 	
 	$(".pay-screen .btn").click(function(){		
 		
-		$(".overlay").toggleClass("fade fadeOut").delay(1000).queue(function(){ $(".overlay").removeClass("isShowing fadeOut"); } );
+		$(".overlay").removeClass("fade").addClass("fadeOut").delay(1000).queue(function(){ $(".overlay").removeClass("isShowing fadeOut"); } );
 		
 		if ($(".card.animated").hasClass("mobile")){ 
 			$(".card.mobile").toggleClass("mobile-animate-in mobile-animate-out").delay(1000).queue(function() { $(this).removeClass("mobile-animate-out animated").css("z-index","1"); } );
