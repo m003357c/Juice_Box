@@ -141,7 +141,7 @@ $(document).ready(function(){
 		
 			$(this).addClass("card-animate-in");	
 	
-		} else {
+		} else if ($(this).hasClass("paypal")){
 			
 			$(this).addClass("paypal-animate-in");	
 			
