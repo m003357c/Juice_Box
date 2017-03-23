@@ -611,7 +611,7 @@ header{
 	animation: card-animate-out 2s ease-in-out forwards;
 }
 .overlay{
-	padding: 20px;
+	padding: 10px;
 	position: absolute;
 	top: 0;
 	bottom: 0;
