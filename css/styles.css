@@ -555,8 +555,9 @@ header{
 	width: 30%;
 	float: left;	
 }
-.card form .form-group input[type="text"], .card form .form-group input[type="number"],
-.card form .form-group input[type="month"], .card form .inline-form .form-group select{
+.card form .form-group input, .card form .form-group input[type="text"], 
+.card form .form-group input[type="number"],.card form .form-group input[type="month"], 
+.card form .inline-form .form-group select{
 	max-width: 100%;	
 	font-size: 0.8rem;
 	color: #c6c6c6;
