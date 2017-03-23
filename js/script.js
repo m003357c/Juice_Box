@@ -138,6 +138,8 @@ $(document).ready(function(){
 	
 	$(".card").click(function(){
 		
+		clickedCard = $(this);
+		
 		if ($(this).hasClass("mobile")){
 		    
 			$(this).addClass("mobile-animate-in");	
@@ -163,15 +165,15 @@ $(document).ready(function(){
 		$(".overlay").toggleClass("fade fadeOut").delay(1000).queue(function(){ $(this).removeClass("isShowing fadeOut"); } );
 		
 		if ($(".card.animated").hasClass("mobile")){ 
-			$(".card.mobile").toggleClass("mobile-animate-in mobile-animate-out").removeClass("mobile-animate-out").css("z-index","1");
+			$(".card.mobile").toggleClass("mobile-animate-in mobile-animate-out").delay(100).queue(function() { $(this).removeClass("mobile-animate-out animated").css("z-index","1"); } );
 
 		}else if ($(".card").hasClass("debit")){
 
-			$(".card.debit").addClass("card-animate-in card-animate-out").removeClass("card-animate-out").css("z-index","2");	
+			$(".card.debit").addClass("card-animate-in card-animate-out").delay(100).queue(function() { $(this).removeClass("mobile-animate-out animated").css("z-index","2"); } );
 
 		} else if ($(".card").hasClass("paypal")){
 
-			$(".card.paypal").addClass("paypal-animate-in paypal-animate-out").removeClass("paypal-animate-out").css("z-index","3");	
+			$(".card.paypal").addClass("paypal-animate-in paypal-animate-out").delay(100).queue(function() { $(this).removeClass("mobile-animate-out animated").css("z-index","3"); } );	
 
 		};
 
