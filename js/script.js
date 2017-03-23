@@ -131,16 +131,16 @@ $(document).ready(function(){
 	});
 	
 	
-	/*$(".card").click(function(){
+	$(".card").click(function(){
 		
-		$(this).addClass("card-animate-in");
-		
+		$(this).addClass("card-animate-in");		
 		$(this).children(".card-inner").addClass("fade");
 		
-		//$(".overlay").toggleClass("isShowing");
+		$(".wallet-inner").css("position","static");
+		$(".overlay").toggleClass("isShowing").addClass("fade");
 	});
 	$(".pay-screen .btn").click(function(){
-		
+		$(".wallet-inner").css("position","relative");
 		$(".overlay").toggleClass("isShowing");
-	});*/
+	});
 });
