@@ -17,6 +17,9 @@ body, nav ul{
 .container{
 	padding: 20px 0 50px;	
 }
+.checkout .container{
+	padding: 20px 10px 50px;
+}
 .btn{
 	text-transform: uppercase;
 	background: #d71010;
