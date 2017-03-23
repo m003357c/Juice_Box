@@ -133,6 +133,20 @@ $(document).ready(function(){
 	
 	$(".card").click(function(){
 		
+		if ($(this).hasClass("mobile"){
+		    
+			$(this).addClass("mobile-animate-in");	
+		
+		}else if ($(this).hasClass("card"){
+		
+			$(this).addClass("card-animate-in");	
+	
+		} else {
+			
+			$(this).addClass("paypal-animate-in");	
+			
+		};
+		
 		$(this).addClass("card-animate-in");		
 		$(this).children(".card-inner").addClass("fade");
 		
