@@ -686,15 +686,30 @@ header{
 	-moz-animation: mobile-animate-in 1s ease-in forwards;
 	animation: mobile-animate-in 1s ease-in forwards;
 }
+.mobile-animate-in{
+	-webkit-animation: mobile-animate-out 1s ease-in forwards;
+	-moz-animation: mobile-animate-out 1s ease-in forwards;
+	animation: mobile-animate-out 1s ease-in forwards;
+}
 .card-animate-in{
 	-webkit-animation: card-animate-in 1s ease-in forwards;
 	-moz-animation: card-animate-in 1s ease-in forwards;
 	animation: card-animate-in 1s ease-in forwards;
 }
+.card-animate-in{
+	-webkit-animation: card-animate-out 1s ease-in forwards;
+	-moz-animation: card-animate-out 1s ease-in forwards;
+	animation: card-animate-out 1s ease-in forwards;
+}
 .paypal-animate-in{
 	-webkit-animation: paypal-animate-in 1s ease-in forwards;
 	-moz-animation: paypal-animate-in 1s ease-in forwards;
 	animation: paypal-animate-in 1s ease-in forwards;
+}
+.paypal-animate-out{
+	-webkit-animation: paypal-animate-out 1s ease-in forwards;
+	-moz-animation: paypal-animate-out 1s ease-in forwards;
+	animation: paypal-animate-out 1s ease-in forwards;
 }
 .card-animate-out{
 	-webkit-animation: card-animate-out 2s ease-in-out forwards;
@@ -775,6 +790,35 @@ header{
 		transform: translateY(-80px);
 	}
 }
+@keyframes mobile-animate-out{
+	0%{			
+		height: 190px;
+	        margin-bottom: -130px;
+		border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		-webkit-transform: translateY(-80px);
+		-moz-transform: translateY(-80px);
+		transform: translateY(-80px);
+	}
+	60%{
+		height: 190px;
+	        margin-bottom: -130px;
+		border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		-webkit-transform: translateY(-120px);
+		-moz-transform: translateY(-120px);
+		transform: translateY(-120px);
+	}
+	100%{		
+		height: 70px;
+		margin-bottom: 0;
+		border-bottom-right-radius: 0;
+		border-bottom-left-radius: 0;
+		-webkit-transform: translateY(0px);
+		-moz-transform: translateY(0px);
+		transform: translateY(0px);
+	}
+}
 @keyframes card-animate-in{
 	0%{			
 		height: 70px;
@@ -805,6 +849,35 @@ header{
 		transform: translateY(-140px);
 	}
 }
+@keyframes card-animate-out{
+	0%{			
+		height: 190px;
+	        margin-bottom: -130px;
+		border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		-webkit-transform: translateY(-140px);
+		-moz-transform: translateY(-140px);
+		transform: translateY(-140px);
+	}
+	60%{
+		height: 190px;
+	        margin-bottom: -130px;
+		border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		-webkit-transform: translateY(-170px);
+		-moz-transform: translateY(-170px);
+		transform: translateY(-170px);
+	}
+	100%{		
+		height: 70px;
+		margin-bottom: 0;
+		border-bottom-right-radius: 0;
+		border-bottom-left-radius: 0;
+		-webkit-transform: translateY(0px);
+		-moz-transform: translateY(0px);
+		transform: translateY(0px);
+	}
+}
 @keyframes paypal-animate-in{
 	0%{			
 		height: 70px;
@@ -816,7 +889,6 @@ header{
 		transform: translateY(0px);
 	}
 	60%{
-		
 		height: 190px;
 	        margin-bottom: -130px;
 		border-bottom-right-radius: 10px;
@@ -835,21 +907,33 @@ header{
 		transform: translateY(-210px);
 	}
 }
-/*@keyframes card-animate-out{
-	0%{
-		-webkit-transform: translate(0px, -60px);
-		-moz-transform: translate(0px, -60px);
-		transform: translate(0px, -60px);
+@keyframes paypal-animate-out{
+	0%{			
+		height: 190px;
+	        margin-bottom: -130px;
+		border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		-webkit-transform: translateY(-210px);
+		-moz-transform: translateY(-210px);
+		transform: translateY(-210px);
 	}
-	30%{
-		-webkit-transform: translate(0px, 120px);
-		-moz-transform: translate(0px, -120px);
-		transform: translate(0px, -120px);
+	60%{
+		height: 190px;
+	        margin-bottom: -130px;
+		border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		-webkit-transform: translateY(-240px);
+		-moz-transform: translateY(-240px);
+		transform: translateY(-240px);
 	}
-	100%{
-		-webkit-transform: translate(0px, 0px);
-		-moz-transform: translate(0px, -0px);
-		transform: translate(0px, -0px);
+	100%{		
 		
+		height: 70px;
+		margin-bottom: 0;
+		border-bottom-right-radius: 0;
+		border-bottom-left-radius: 0;
+		-webkit-transform: translateY(0px);
+		-moz-transform: translateY(0px);
+		transform: translateY(0px);
 	}
-}*/
+}
