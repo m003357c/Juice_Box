@@ -137,7 +137,7 @@ $(document).ready(function(){
 		    
 			$(this).addClass("mobile-animate-in");	
 		
-		}else if ($(this).hasClass("card")){
+		}else if ($(this).hasClass("debit")){
 		
 			$(this).addClass("card-animate-in");	
 	
