@@ -159,9 +159,9 @@ $(document).ready(function(){
 	});
 	
 	$(".pay-screen .btn").click(function(){		
-		$(".overlay").toggleClass("fade fadeOut").delay(1000).queue(function() { $(".overlay").removeClass("isShowing fadeOut"); } );
+		$(".overlay").toggleClass("fade fadeOut").delay(1000).queue(function(){ $(this).removeClass("isShowing fadeOut"); } );
 		setTimeout(function(){
-			if ($(".card").hasClass("mobile")){ 
+			if ($(".card.animated").hasClass("mobile")){ 
 				$(".card.mobile").toggleClass("mobile-animate-in mobile-animate-out").delay(1000).queue(function() { $(".card.mobile").removeClass("mobile-animate-out").css("z-index","1");  } );	
 
 			}else if ($(".card").hasClass("debit")){
