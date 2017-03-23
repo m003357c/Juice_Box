@@ -536,6 +536,9 @@ header{
 	background: #009cde;
 	z-index: 3;
 }
+.paypal.card .card-inner{
+	padding-top: 10px;
+}	
 .card-inner{
 	opacity: 0;
 }
