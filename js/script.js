@@ -176,8 +176,6 @@ $(document).ready(function(){
 		$(".wallet-inner").css("position","relative");		
 		$(".card-inner").removeClass("fade");
 		$(".overlay").toggleClass("fade fadeOut").delay(1000).queue(function() { $(".overlay").removeClass("isShowing fadeOut"); } );
-		setTimeout(function(){
-			$(".card").removeClass("animated");
-		},3000);
+
 	});
 });
