@@ -131,7 +131,7 @@ $(document).ready(function(){
 	});
 	
 	
-	$(".card").click(function(){
+	/*$(".card").click(function(){
 		
 		$(this).addClass("card-animate-in");
 		
@@ -142,5 +142,5 @@ $(document).ready(function(){
 	$(".pay-screen .btn").click(function(){
 		
 		$(".overlay").toggleClass("isShowing");
-	});
+	});*/
 });
