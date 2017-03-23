@@ -117,21 +117,10 @@ $(document).ready(function(){
 		var index = basket.indexOf(prodId !== -1);
 		console.log(index);
 		
-		/*if(prodId == index){
+		if(basket.indexOf(prodId !== -1)){
 		   basket.splice(index, 1);
 			console.log(basket);
-		}*/
-	
-		function removeBasketItem() {
-		    for (var i = 0; i < basket.length; i++){
-			if (basket[i].indexOf(prodId !== -1)) {
-				basket.splice(basket[i], 1);
-			};
-		    };
-		};
-		
-		removeBasketItem();
-		
+		}
 		
 		$(".basket-items").text(basket.length);
 
