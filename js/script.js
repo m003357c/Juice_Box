@@ -112,7 +112,7 @@ $(document).ready(function(){
 	
 	$(".remove-basket").click(function(){
 
-		var prodId = $(this).parent().id;
+		var prodId = $(this).parent().attr("id");
 		console.log(prodId);
 		var index = basket.indexOf(prodId > -1);
 		console.log(index);
