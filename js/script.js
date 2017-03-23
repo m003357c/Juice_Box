@@ -112,21 +112,20 @@ $(document).ready(function(){
 	
 	$(".remove-basket").click(function(){
 
-		/*console.log(basket);
+		console.log(basket);
 		
 		var prodId = $(this).parent().id;
 		var index = basket.indexOf(prodId > -1);
 		console.log(prodId, index);
 		
-		if(prodId == index){
+		/*if(prodId == index){
 		   basket.splice(index, 1);
 			console.log(basket);
-		}
-		
-		console.log(basket.length);*/
-		var removeBasketItem = function(drinkId) {
-		    for (var i = 0, len = basket.length; i < len; i++){
-			if (basket[i].drinkId === $(this).parent().id) {
+		}*/
+	
+		function removeBasketItem() {
+		    for (var i = 0; i < basket.length; i++){
+			if (basket[i].drinkId === prodId) {
 				basket.splice(basket[i], 1);
 			};
 		    };
