@@ -161,8 +161,9 @@ $(document).ready(function(){
 	
 	$(".pay-screen .btn").click(function(){
 		$(".overlay").toggleClass("fade fadeOut").delay(1000).queue(function() { $(".overlay").removeClass("isShowing fadeOut"); } );
+		$(".wallet-inner").css("position","relative");		
 		$(".card-inner").removeClass("fade");
-		$(".wallet-inner").css("position","relative");
+		
 		
 		if ($(".card-wrapper div").hasClass("mobile")){
 		    
