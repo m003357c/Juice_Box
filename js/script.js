@@ -163,10 +163,21 @@ $(document).ready(function(){
 		
 		$(".wallet-inner").css("position","relative");
 		
-		$(".overlay").toggleClass("fade fadeOut");
+		if ($(this).hasClass("mobile")){
+		    
+			$(this).toggleClass("mobile-animate-in mobile-animate-out").delay(1000).queue(function() { $(this).removeClass("mobile-animate-out animated"); } );	
 		
-		setTimeout(function(){ 
-			$(".product-information").removeClass("isShowing");
-		}, 500);
+		}else if ($(this).hasClass("debit")){
+		
+			$(this).addClass("card-animate-in card-animate-out").delay(1000).queue(function() { $(this).removeClass("mobile-animate-out animated"); } );	
+	
+		} else if ($(this).hasClass("paypal")){
+			
+			$(this).addClass("paypal-animate-in paypal-animate-out").delay(1000).queue(function() { $(this).removeClass("mobile-animate-out animated"); } );	
+			
+		};
+		
+		$(".overlay").toggleClass("fade fadeOut").delay(1000).queue(function() { $(".product-information").removeClass("isShowing fadeOut"); } );
+	
 	});
 });
