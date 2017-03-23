@@ -104,6 +104,10 @@ $(document).ready(function(){
 		
 	});
 	
+	if (basket.length !=== 0) {
+		$("li.basket").append("<span class='badge'>" + basket.length +"</span>");
+	}
+	
 	$("#basket .basket-item").each(function(i){
 		setTimeout(function(){
 			$("#basket .basket-item").eq(i).addClass("is-showing");
