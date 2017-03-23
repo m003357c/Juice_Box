@@ -608,7 +608,7 @@ header{
 	-moz-animation: card-animate-in 1s ease-in forwards;
 	animation: card-animate-in 1s ease-in forwards;
 }
-.mobile-animate-in{
+.paypal-animate-in{
 	-webkit-animation: paypal-animate-in 1s ease-in forwards;
 	-moz-animation: paypal-animate-in 1s ease-in forwards;
 	animation: paypal-animate-in 1s ease-in forwards;
