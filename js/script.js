@@ -161,7 +161,7 @@ $(document).ready(function(){
 	$(".pay-screen .btn").click(function(){		
 		$(".overlay").toggleClass("fade fadeOut").delay(1000).queue(function() { $(".overlay").removeClass("isShowing fadeOut"); } );
 		
-		if ($(".card").hasClass("mobile")){ 
+		/*if ($(".card").hasClass("mobile")){ 
 			$(".card.mobile").toggleClass("mobile-animate-in mobile-animate-out").delay(1000).queue(function() { $(this).removeClass("mobile-animate-out").css("z-index","1");  } );	
 		
 		}else if ($(".card").hasClass("debit")){
@@ -175,8 +175,7 @@ $(document).ready(function(){
 		};
 		
 		$(".wallet-inner").css("position","relative");		
-		$(".card-inner").removeClass("fade");
+		$(".card-inner").removeClass("fade");*/
 		
-
 	});
 });
