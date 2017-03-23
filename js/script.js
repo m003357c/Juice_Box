@@ -114,7 +114,7 @@ $(document).ready(function(){
 
 		var prodId = $(this).parent().attr("id");
 		console.log(prodId);
-		var index = basket.indexOf(prodId > -1);
+		var index = basket.indexOf(prodId);
 		console.log(index);
 		
 		/*if(prodId == index){
