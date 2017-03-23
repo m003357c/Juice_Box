@@ -113,7 +113,7 @@ $(document).ready(function(){
 	$(".remove-basket").click(function(){
 
 		var prodId = $(this).parent().id;
-		var index = array.indexOf(prodId);
+		var index = basket.indexOf(prodId);
 		
 		$(this).parent().removeClass("is-showing").delay(500).queue(function() { $(this).remove(); });
 		
