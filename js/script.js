@@ -147,7 +147,7 @@ $(document).ready(function(){
 			
 		};
 		
-		$(this).addClass("card-animate-in");		
+		$(this).addClass("animated");		
 		$(this).children(".card-inner").addClass("fade");
 		
 		$(".wallet-inner").css("position","static");
