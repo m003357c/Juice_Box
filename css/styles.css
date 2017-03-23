@@ -539,6 +539,9 @@ header{
 .paypal.card .card-inner{
 	padding-top: 10px;
 }	
+.paypal.card .card-inner input{
+	margin-bottom: 10px;	
+}
 .card-inner{
 	opacity: 0;
 }
