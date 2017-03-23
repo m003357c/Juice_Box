@@ -119,6 +119,8 @@ $(document).ready(function(){
 		   basket.splice(index, 1);
 		}
 		
+		console.log(basket.length);
+		
 		$(".basket-items").text(basket.length);
 
 		$(".basket-price").text("£" + basket.length * 2.5);
