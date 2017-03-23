@@ -596,31 +596,6 @@ header{
 	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.35) !important;
 	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.35) !important;
 }
-.fade{
-	-webkit-animation: fade 1s ease-in-out forwards;
-	-moz-animation: fade 1s ease-in-out forwards;
-	animation: fade 1s ease-in-out forwards;	
-}
-.mobile-animate-in{
-	-webkit-animation: mobile-animate-in 1s ease-in forwards;
-	-moz-animation: mobile-animate-in 1s ease-in forwards;
-	animation: mobile-animate-in 1s ease-in forwards;
-}
-.card-animate-in{
-	-webkit-animation: card-animate-in 1s ease-in forwards;
-	-moz-animation: card-animate-in 1s ease-in forwards;
-	animation: card-animate-in 1s ease-in forwards;
-}
-.paypal-animate-in{
-	-webkit-animation: paypal-animate-in 1s ease-in forwards;
-	-moz-animation: paypal-animate-in 1s ease-in forwards;
-	animation: paypal-animate-in 1s ease-in forwards;
-}
-.card-animate-out{
-	-webkit-animation: card-animate-out 2s ease-in-out forwards;
-	-moz-animation: card-animate-out 2s ease-in-out forwards;
-	animation: card-animate-out 2s ease-in-out forwards;
-}
 .overlay{
 	padding: 10px;
 	position: absolute;
@@ -696,6 +671,36 @@ header{
 	margin: 0;
 	padding: 0;
 }
+.fade{
+	-webkit-animation: fade 1s ease-in-out forwards;
+	-moz-animation: fade 1s ease-in-out forwards;
+	animation: fade 1s ease-in-out forwards;	
+}
+.fadeOut{
+	-webkit-animation: fade 1s ease-in-out forwards;
+	-moz-animation: fade 1s ease-in-out forwards;
+	animation: fade 1s ease-in-out forwards;	
+}
+.mobile-animate-in{
+	-webkit-animation: mobile-animate-in 1s ease-in forwards;
+	-moz-animation: mobile-animate-in 1s ease-in forwards;
+	animation: mobile-animate-in 1s ease-in forwards;
+}
+.card-animate-in{
+	-webkit-animation: card-animate-in 1s ease-in forwards;
+	-moz-animation: card-animate-in 1s ease-in forwards;
+	animation: card-animate-in 1s ease-in forwards;
+}
+.paypal-animate-in{
+	-webkit-animation: paypal-animate-in 1s ease-in forwards;
+	-moz-animation: paypal-animate-in 1s ease-in forwards;
+	animation: paypal-animate-in 1s ease-in forwards;
+}
+.card-animate-out{
+	-webkit-animation: card-animate-out 2s ease-in-out forwards;
+	-moz-animation: card-animate-out 2s ease-in-out forwards;
+	animation: card-animate-out 2s ease-in-out forwards;
+}
 @keyframes drink-animate-in{
 	0%{			
 		opacity: 0;
@@ -730,6 +735,14 @@ header{
 	}
 	100%{
 		opacity: 1;
+	}
+}
+@keyframes fadeOut {
+	0%, 30%{	
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
 	}
 }
 @keyframes mobile-animate-in{
