@@ -71,6 +71,11 @@ $(document).ready(function(){
 		basket = JSON.parse(localStorage.getItem('basket'));
 		console.log(basket);
 	}
+	
+	if ($("li.basket a .badge").is(":empty")){
+		$("li.basket a .badge").css("display","none");
+	};
+	
 	// Add item to basket then store in local storage	
 	$(".product-information .add-cart-btn").click(function(){
 		var activeDrink = $(this).closest(".product-information").attr("id");
@@ -97,11 +102,7 @@ $(document).ready(function(){
 		console.log("Add basket queue to local storage");
 		
 		var basketCount = JSON.parse(localStorage.getItem('basket'));
-		if ($("li.basket a .badge").is(":empty")){
-			$("li.basket a .badge").css("display","none");
-		} else{
-			$("li.basket a .badge").text(basketCount.length);
-		};
+		$("li.basket a .badge").text(basketCount.length);
 		
 	});
 	
