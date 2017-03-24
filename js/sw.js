@@ -1,3 +1,5 @@
+console.log("service worker running");
+
 var CACHE_NAME = 'Juice_Box_Offline_Pages';
 var CACHED_URLS = [
   '../offline-index.html',
