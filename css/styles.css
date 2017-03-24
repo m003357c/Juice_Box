@@ -554,10 +554,15 @@ header{
 	margin-bottom: 10px;	
 }
 .card-inner{
-	opacity: 0;
 	-webkit-transition: all 300ms ease-in-out;
 	-moz-transition: all 300ms ease-in-out;
 	transition: all 300ms ease-in-out;
+}
+.card-inner, .card-inner.fadeOut{
+	opacity: 0;	
+}
+.card-inner.fade{
+	opacity: 1;	
 }
 .card form label, .card .card-inner form div:nth-child(3){
 	font-size: 0.6rem;
@@ -677,14 +682,14 @@ header{
 	padding: 0;
 }
 .fade{
-	-webkit-animation: fade 1s ease-in-out forwards;
-	-moz-animation: fade 1s ease-in-out forwards;
-	animation: fade 1s ease-in-out forwards;	
+	-webkit-animation: fade 1s ease-in-out ;
+	-moz-animation: fade 1s ease-in-out ;
+	animation: fade 1s ease-in-out ;	
 }
 .fadeOut{
-	-webkit-animation: fadeOut 1s ease-in-out forwards;
-	-moz-animation: fadeOut 1s ease-in-out forwards;
-	animation: fadeOut 1s ease-in-out forwards;	
+	-webkit-animation: fadeOut 1s ease-in-out;
+	-moz-animation: fadeOut 1s ease-in-out;
+	animation: fadeOut 1s ease-in-out;	
 }
 .mobile-animate-in{
 	-webkit-animation: mobile-animate-in 1s ease-in forwards;
