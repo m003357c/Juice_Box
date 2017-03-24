@@ -41,13 +41,12 @@ $(document).ready(function(){
 
 	
 	//var basket = [greenMachine, berryBlast];
+	localStorage.setItem('basket', "0");
 	var basket = localStorage.getItem('basket');
 
 	//Function to show the drinks information when clicked
 	$(".drink-option").click(function(){
-
 		drinkID = this.id;
-		
 		switch (drinkID) {
 			case "citrus-punch":
 				$("#citrusProdInfo").addClass("isShowing");
@@ -61,9 +60,7 @@ $(document).ready(function(){
 			case "simply-red":
 		    $("#redProdInfo").addClass("isShowing");
 		};
-
 		$("#menuItems, h1").toggleClass("blur");
-
 	});
 
 	
@@ -75,7 +72,7 @@ $(document).ready(function(){
 	// Add item to basket then store in local storage
 	
 	$(".drink-option .add-cart-btn").click(function(){
-		
+
 		 switch (drinkID) {
 			case "citrus-punch":
 				basket.push("citrusPunch");
