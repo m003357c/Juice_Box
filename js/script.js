@@ -186,19 +186,17 @@ $(document).ready(function(){
 			$(".card.mobile").toggleClass("mobile-animate-in mobile-animate-out").delay(1000).queue(function() { $(".card.mobile").removeClass("mobile-animate-out animated").attr("style",""); } );
 			$(".wallet-inner").css("position","relative");		
 			$(".card-inner").removeClass("fade");
-			e.stopPropagation();
 		}else if ($(".card.debit").hasClass("animated")){
 			$(".card.debit").toggleClass("card-animate-in card-animate-out").delay(1000).queue(function() { $(".card.debit").removeClass("card-animate-out animated").attr("style",""); } );
 			$(".wallet-inner").css("position","relative");		
 			$(".card-inner").removeClass("fade");
-			e.stopPropagation();
 		} else if ($(".card.paypal").hasClass("animated")){
 			$(".card.paypal").toggleClass("paypal-animate-in paypal-animate-out").delay(1000).queue(function() { $(".card.paypal").removeClass("paypal-animate-out animated").attr("style",""); } );	
 			$(".wallet-inner").css("position","relative");		
 			$(".card-inner").removeClass("fade");
-			e.stopPropagation();
+			
 		};
-		
+		e.stopPropagation();
 	});
 	/*$(".overlay").on("click", ".pay-screen .btn", function(){		
 		
