@@ -134,6 +134,9 @@ $(document).ready(function(){
 		$("li.basket a .badge").css("display", "inline-block").text(basketCount.length);
 		
 		$("<aside class='notifcation'>You have added an item to your basket</aside>").prependTo("body");
+		setTimeout(function(){
+			$(".notification").remove();
+		}, 2000);
 
 	});
 	$(".close-btn").click(function(){		
