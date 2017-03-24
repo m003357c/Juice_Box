@@ -1,6 +1,5 @@
 //JS file for Juice Box
 $(document).ready(function(){
-	
 	// Drink JS Objects
 	var citrusPunch = {
 	    drinkId: "citrusPunch",
@@ -38,8 +37,6 @@ $(document).ready(function(){
 	    price:"&pound;2.50",
 	    drinkClass:"simply-red"
 	};
-
-	
 	//Function to show the drinks information when clicked
 	$(".drink-option").click(function(){
 		var drinkID = this.id;
@@ -104,35 +101,28 @@ $(document).ready(function(){
 		
 	});
 	
-	$(".close-btn").click(function(){
-		
-		if ($(this).parent().hasClass("isShowing")){
-		    
+	$(".close-btn").click(function(){		
+		if ($(this).parent().hasClass("isShowing")){		    
 			$(this).parent().addClass("hideElement");
-			$("#menuItems, h1").toggleClass("blur"); 	
-		
+			$("#menuItems, h1").toggleClass("blur"); 
+			
 			setTimeout(function(){ 
 				$(".product-information").removeClass("isShowing");
 				$(".product-information").removeClass("hideElement");	
-			}, 500);
-		    
+			}, 500);		    
 		};
 	});
 
 	//Append the amount in the basket and total price to page
 	$(".basket-items").text(basket.length);
-
-	$(".basket-price").text("£" + basket.length * 2.5);
-	
+	$(".basket-price").text("£" + basket.length * 2.5);	
 	basket.forEach(function(item) {
-
 	  var drinkId = item.drinkId,
 	      drinkName = item.name,
 	      drinkImage = item.image,
 	      drinkIngred = item.ingredients,
 	      drinkPrice = item.price,
 	      drinkClass = item.drinkClass;
-
 	  var template = '<article id="' + drinkId + '" class="basket-item ' + drinkClass + '">' +
 					   '<span><img src="assets/images/basket-' + drinkImage + '.svg" alt="' + drinkName + ' Ingrediant Image"></span>' +
 					   '<span>' + drinkName + '<br><small>' + drinkIngred + '</small></span>' +
@@ -140,25 +130,18 @@ $(document).ready(function(){
 					   '<a class="remove-basket" href="#">x</a>' +
 					   '<br class="clear">' +
 					 '</article>';
-
-	  $(".basket #basket").append(template);
-		
-	});
-	
+	  $(".basket #basket").append(template);		
+	});	
 	if (basket.length !== 0) {
 		$("li.basket a .badge").css("display", "inline-block").text(basket.length);
-	}
-	
+	}	
 	$("#basket .basket-item").each(function(i){
 		setTimeout(function(){
 			$("#basket .basket-item").eq(i).addClass("is-showing");
 		}, 150 * (i + 1));
-	});
-	
-	$(".remove-basket").click(function(){
-		
-		var basketTemp = JSON.parse(localStorage.getItem('basket'));
-		
+	});	
+	$(".remove-basket").click(function(){		
+		var basketTemp = JSON.parse(localStorage.getItem('basket'));		
 		var prodId = $(this).parent().attr("id");
 		var index = basketTemp.indexOf(prodId !== -1);
 		
@@ -166,43 +149,55 @@ $(document).ready(function(){
 			basketTemp.splice(index, 1);
 		}
 		
-		localStorage.setItem('basket', JSON.stringify(basketTemp));
-		
+		localStorage.setItem('basket', JSON.stringify(basketTemp));		
 		var basketCount = JSON.parse(localStorage.getItem('basket'));
 		$(".basket-items").text(basketCount.length);
-		$(".basket-price").text("£" + basketCount.length * 2.5);
-		
-		$("li.basket a .badge").text(basketCount.length);
-		
-		$(this).parent().removeClass("is-showing").delay(500).queue(function() { $(this).remove(); });
-		
+		$(".basket-price").text("£" + basketCount.length * 2.5);		
+		$("li.basket a .badge").text(basketCount.length);		
+		$(this).parent().removeClass("is-showing").delay(500).queue(function() { $(this).remove(); });		
 	});
 	
 	$(".cost").text("£" + basket.length * 2.5);
 	
-	$(".card").click(function(){
-		
-		if ($(this).hasClass("mobile")){
-		    
-			$(this).toggleClass("mobile-animate-in");	
-		
-		}else if ($(this).hasClass("debit")){
-		
-			$(this).toggleClass("card-animate-in");	
-	
-		} else if ($(this).hasClass("paypal")){
-			
-			$(this).toggleClass("paypal-animate-in");	
-			
+	$(".card").click(function(){		
+		if ($(this).hasClass("mobile")){		    
+			$(this).toggleClass("mobile-animate-in");			
+		}else if ($(this).hasClass("debit")){		
+			$(this).toggleClass("card-animate-in");		
+		} else if ($(this).hasClass("paypal")){			
+			$(this).toggleClass("paypal-animate-in");				
 		};
 		
-		$(this).addClass("animated").css("z-index","999").children(".card-inner").addClass("fade");
-		
+		$(this).addClass("animated").css("z-index","999").children(".card-inner").addClass("fade");		
 		$(".wallet-inner").css("position","static");
 		$(".overlay").addClass("isShowing fade")
 	});
 	
-	$(".overlay").on("click", ".pay-screen .btn", function(){		
+	$(".pay-screen .btn").click(function(){		
+		
+		if($(".overlay").hasClass("isShowing")){
+		    $(".overlay").toggleClass("fade fadeOut");
+			setTimeout(function(){
+				$(".overlay").removeClass("isShowing").removeClass("fadeOut");
+			}, 1000);
+	   	};		
+
+		if ($(".card.mobile").hasClass("animated")){ 
+			$(".card.mobile").toggleClass("mobile-animate-in mobile-animate-out").delay(1000).queue(function() { $(".card.mobile").removeClass("mobile-animate-out animated").attr("style",""); } );
+			$(".wallet-inner").css("position","relative");		
+			$(".card-inner").removeClass("fade");
+		}else if ($(".card.debit").hasClass("animated")){
+			$(".card.debit").toggleClass("card-animate-in card-animate-out").delay(1000).queue(function() { $(".card.debit").removeClass("card-animate-out animated").attr("style",""); } );
+			$(".wallet-inner").css("position","relative");		
+			$(".card-inner").removeClass("fade");
+		} else if ($(".card.paypal").hasClass("animated")){
+			$(".card.paypal").toggleClass("paypal-animate-in paypal-animate-out").delay(1000).queue(function() { $(".card.paypal").removeClass("paypal-animate-out animated").attr("style",""); } );	
+			$(".wallet-inner").css("position","relative");		
+			$(".card-inner").removeClass("fade");
+		};
+		
+	});
+	/*$(".overlay").on("click", ".pay-screen .btn", function(){		
 		
 		if($(".overlay").hasClass("isShowing")){
 		    $(".overlay").toggleClass("fade fadeOut");
@@ -225,5 +220,5 @@ $(document).ready(function(){
 			$(".card-inner").removeClass("fade");
 		};
 		
-	});
+	});*/
 });
