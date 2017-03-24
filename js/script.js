@@ -133,10 +133,8 @@ $(document).ready(function(){
 		var basketCount = JSON.parse(localStorage.getItem('basket'));
 		$("li.basket a .badge").css("display", "inline-block").text(basketCount.length);
 		
-		$("<aside class='notifcation'>You have added an item to your basket</aside>").prependTo("body");
-		setTimeout(function(){
-			$(".notification").remove();
-		}, 2000);
+		$("<aside class='notifcation'>You have added an item to your basket</aside>").prependTo("body").delay(2000).queue(function() { $(this).remove(); });;
+
 
 	});
 	$(".close-btn").click(function(){		
