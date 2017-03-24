@@ -73,7 +73,7 @@ $(document).ready(function(){
 	
 	// Add item to basket then store in local storage
 	
-	$(".drink-option .add-cart-btn").click(function(){
+	$(".product-information .add-cart-btn").click(function(){
 		var activeDrink = $(this).closest(".product-information").attr("id");
 		console.log(activeDrink);
 		switch (activeDrink) {
