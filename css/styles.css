@@ -692,6 +692,16 @@ header{
 	-moz-animation: fadeOut 1s ease-in-out;
 	animation: fadeOut 1s ease-in-out;	
 }
+.cash-animate-in{
+	-webkit-animation: cash-animate-in 1s ease-in forwards;
+	-moz-animation: cash-animate-in 1s ease-in forwards;
+	animation: cash-animate-in 1s ease-in forwards;
+}
+.cash-animate-out{
+	-webkit-animation: cash-animate-out 1s ease-in forwards;
+	-moz-animation: cash-animate-out 1s ease-in forwards;
+	animation: cash-animate-out 1s ease-in forwards;
+}
 .mobile-animate-in{
 	-webkit-animation: mobile-animate-in 1s ease-in forwards;
 	-moz-animation: mobile-animate-in 1s ease-in forwards;
