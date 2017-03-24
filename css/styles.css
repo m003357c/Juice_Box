@@ -758,7 +758,7 @@ header{
 		bottom: 152px;
 		background: rgba(26, 171, 0, 0.85);
 	}
-	60%, 80%{
+	30%, 70%{
 		opacity: 1;	
 		bottom: 190px;
 		background: rgba(26, 171, 0, 1);
