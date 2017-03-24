@@ -71,7 +71,13 @@ $(document).ready(function(){
 	if ($("li.basket a .badge").is(":empty")){
 		$("li.basket a .badge").text("0");
 	};
-	 function addToBasket(){
+
+	// Add item to basket then store in local storage	
+	$(".product-information .buy-now-btn").click(function(e){
+		e.preventDefault();                   // prevent default anchor behavior
+		var goTo = this.getAttribute("href"); // store anchor href
+		
+		var activeDrink = $(this).closest(".product-information").attr("id");
 		switch (activeDrink) {
 			case "citrusProdInfo":
 				basketQueue.push(citrusPunch);
@@ -95,14 +101,7 @@ $(document).ready(function(){
 		
 		var basketCount = JSON.parse(localStorage.getItem('basket'));
 		$("li.basket a .badge").css("display", "inline-block").text(basketCount.length);
-	 };
-	// Add item to basket then store in local storage	
-	$(".product-information .buy-now-btn").click(function(e){
-		var activeDrink = $(this).closest(".product-information").attr("id");
-		e.preventDefault();                   // prevent default anchor behavior
-		var goTo = this.getAttribute("href"); // store anchor href
-
-		addToBasket();
+		
 		setTimeout(function(){
 			window.location = goTo;
 		},300); 
@@ -110,7 +109,31 @@ $(document).ready(function(){
 	});
 	$(".product-information .add-cart-btn").click(function(){
 		var activeDrink = $(this).closest(".product-information").attr("id");
-		addToBasket();
+		switch (activeDrink) {
+			case "citrusProdInfo":
+				basketQueue.push(citrusPunch);
+				console.log(basketQueue);
+				break;
+			case "berryProdInfo":
+			    	basketQueue.push(berryBlast);
+			 	console.log(basketQueue);
+				break;
+			case "greenProdInfo":
+			   	basketQueue.push(greenMachine);
+				console.log(basketQueue);
+				break;
+			case "redProdInfo":
+				basketQueue.push(simplyRed);
+				console.log(basketQueue);
+		};
+		
+		localStorage.setItem('basket', JSON.stringify(basketQueue));
+		console.log("Add basket queue to local storage");
+		
+		var basketCount = JSON.parse(localStorage.getItem('basket'));
+		$("li.basket a .badge").css("display", "inline-block").text(basketCount.length);
+		
+
 	});
 	$(".close-btn").click(function(){		
 		if ($(this).parent().hasClass("isShowing")){		    
