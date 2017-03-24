@@ -43,7 +43,10 @@ $(document).ready(function(){
 	//var basket = [greenMachine, berryBlast];
 	var basketQueue = new Array();  
 		
-	localStorage.setItem('basket', "0");
+	if (localStorage.getItem("basket") === null){
+		localStorage.setItem('basket', basketQueue);	
+	}
+	
 	var basket = JSON.parse(localStorage.getItem('basket'));
 
 	//Function to show the drinks information when clicked
