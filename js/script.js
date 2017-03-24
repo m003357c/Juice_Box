@@ -173,7 +173,9 @@ $(document).ready(function(){
 		$(".overlay").addClass("isShowing fade")
 	});
 	
-	$(".pay-screen .btn").click(function(e){		
+	$(".pay-screen .btn").click(function(e){	
+		
+		e.stopPropagation();
 		
 		if($(".overlay").hasClass("isShowing")){
 		    $(".overlay").toggleClass("fade fadeOut");
@@ -181,7 +183,7 @@ $(document).ready(function(){
 				$(".overlay").removeClass("isShowing").removeClass("fadeOut");
 			}, 1000);
 	   	};		
-		//asdasdad
+		
 		if ($(".card.mobile").hasClass("animated")){ 
 			$(".card.mobile").toggleClass("mobile-animate-in mobile-animate-out").delay(1000).queue(function() { $(".card.mobile").removeClass("mobile-animate-out animated").attr("style",""); } );
 			$(".wallet-inner").css("position","relative");		
@@ -196,7 +198,7 @@ $(document).ready(function(){
 			$(".card-inner").removeClass("fade");
 			
 		};
-		e.stopPropagation();
+		
 	});
 	/*$(".overlay").on("click", ".pay-screen .btn", function(){		
 		
