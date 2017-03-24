@@ -94,7 +94,11 @@ $(document).ready(function(){
 		};
 		
 		localStorage.setItem('basket', JSON.stringify(basketQueue));
-		console.log("Add basket queue to local storage")
+		console.log("Add basket queue to local storage");
+		
+		var basketCount = JSON.parse(localStorage.getItem('basket'));
+		$("li.basket a").append("<span class='badge'>" + basketCount +"</span>");
+		
 	});
 	
 	$(".close-btn").click(function(){
