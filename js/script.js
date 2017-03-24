@@ -156,19 +156,20 @@ $(document).ready(function(){
 	});
 	
 	$(".remove-basket").click(function(){
-
-		var prodId = $(this).parent().attr("id");
-		var index = basket.indexOf(prodId !== -1);
 		
-		if(basket.indexOf(prodId !== -1)){
-			basket.splice(index, 1);
+		var basketTemp = JSON.parse(localStorage.getItem('basket'));
+		
+		var prodId = $(this).parent().attr("id");
+		//var index = basketTemp.indexOf(prodId !== -1);
+		
+		if(basketTemp.indexOf(prodId !== -1)){
+			basketTemp.splice(index, 1);
 		}
 		
-		localStorage.setItem('basket', JSON.stringify(basketQueue));
+		localStorage.setItem('basket', JSON.stringify(basketTemp));
 		
 		var basketCount = JSON.parse(localStorage.getItem('basket'));
 		$(".basket-items").text(basketCount.length);
-
 		$(".basket-price").text("£" + basket.length * 2.5);
 		
 		$(this).parent().removeClass("is-showing").delay(500).queue(function() { $(this).remove(); });
