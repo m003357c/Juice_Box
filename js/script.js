@@ -173,10 +173,7 @@ $(document).ready(function(){
 		$(".overlay").addClass("isShowing fade")
 	});
 	
-	$(".pay-screen .btn").click(function(e){	
-		
-		e.stopPropagation();
-		
+	$(".pay-screen .btn").click(function(){			
 		if($(".overlay").hasClass("isShowing")){
 		    $(".overlay").toggleClass("fade fadeOut");
 			setTimeout(function(){
