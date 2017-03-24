@@ -160,17 +160,17 @@ $(document).ready(function(){
 	$(".remove-basket").click(function(){
 
 		var prodId = $(this).parent().attr("id");
-		console.log(prodId);
 		var index = basket.indexOf(prodId !== -1);
 		
 		if(basket.indexOf(prodId !== -1)){
 			basket.splice(index, 1);
-			console.log(basket);
 		}
 		
-		$(".basket-items").text(basket.length);
+		localStorage.setItem('basket', JSON.stringify(basketQueue));
+		var basketCount = JSON.parse(localStorage.getItem('basket'));
+		$(".basket-items").text(basketCount.length);
 
-		$(".basket-price").text("£" + basket.length * 2.5);
+		$(".basket-price").text("£" + basketCount.length * 2.5);
 		
 		$(this).parent().removeClass("is-showing").delay(500).queue(function() { $(this).remove(); });
 		
