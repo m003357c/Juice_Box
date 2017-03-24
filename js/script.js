@@ -45,6 +45,7 @@ $(document).ready(function(){
 		
 	if (localStorage.getItem("basket") === null){
 		localStorage.setItem('basket', basketQueue);	
+		console.log("baskets local storage created");
 	}
 	
 	var basket = JSON.parse(localStorage.getItem('basket'));
