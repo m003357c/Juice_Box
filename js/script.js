@@ -156,13 +156,16 @@ $(document).ready(function(){
 	$(".basket-items").text(basket.length);
 	$(".cost, .basket-price").text( "£" + basketCost.toFixed(2));
 	
-	$(".cash").click(function(){				    
+	$(".cash").click(function(e){	
+		e.stopPropagation();
 		$(this).toggleClass("cash-animate-in").addClass("animated").css("z-index","999").children(".card-inner").addClass("fade");		
 		$(".wallet-inner").css("position","static");
-		$(".overlay").addClass("isShowing fade")
+		$(".overlay").addClass("isShowing fade");
+		e.stopPropagation();
 	});
 	
-	$(".card").click(function(){		
+	$(".card").click(function(e){		
+		e.stopPropagation();
 		if ($(this).hasClass("mobile")){		    
 			$(this).toggleClass("mobile-animate-in");			
 		}else if ($(this).hasClass("debit")){		
@@ -170,10 +173,11 @@ $(document).ready(function(){
 		} else if ($(this).hasClass("paypal")){			
 			$(this).toggleClass("paypal-animate-in");				
 		};
-		
+		e.stopPropagation();
 		$(this).addClass("animated").css("z-index","999").children(".card-inner").addClass("fade");		
 		$(".wallet-inner").css("position","static");
-		$(".overlay").addClass("isShowing fade")
+		$(".overlay").addClass("isShowing fade");
+		e.stopPropagation();
 	});
 	$(".pay-screen .btn").click(function(e){	
 		e.stopPropagation();
