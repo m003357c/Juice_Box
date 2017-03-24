@@ -70,9 +70,9 @@ $(document).ready(function(){
 		console.log(basket);
 	}
 	
-	if ($("li.basket a .badge").is(":empty")){
+	/*if ($("li.basket a .badge").is(":empty")){
 		$("li.basket a .badge").css("display","none");
-	};
+	};*/
 	
 	// Add item to basket then store in local storage	
 	$(".product-information .add-cart-btn").click(function(){
@@ -158,10 +158,10 @@ $(document).ready(function(){
 	$(".remove-basket").click(function(){
 
 		var prodId = $(this).parent().attr("id");
-		var index = basketQueue.indexOf(prodId !== -1);
+		var index = basket.indexOf(prodId !== -1);
 		
-		if(basketQueue.indexOf(prodId !== -1)){
-			basketQueue.splice(index, 1);
+		if(basket.indexOf(prodId !== -1)){
+			basket.splice(index, 1);
 		}
 		
 		localStorage.setItem('basket', JSON.stringify(basketQueue));
