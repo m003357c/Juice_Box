@@ -41,8 +41,10 @@ $(document).ready(function(){
 
 	
 	//var basket = [greenMachine, berryBlast];
+	var basketQueue = new Array();  
+		
 	localStorage.setItem('basket', "0");
-	var basket = localStorage.getItem('basket');
+	var basket = JSON.parse(localStorage.getItem('basket'));
 
 	//Function to show the drinks information when clicked
 	$(".drink-option").click(function(){
@@ -75,19 +77,19 @@ $(document).ready(function(){
 
 		 switch (drinkID) {
 			case "citrus-punch":
-				basket.push("citrusPunch");
+				basketQueue.push("citrusPunch");
 				break;
 			case "berry-blast":
-			    basket.push("greenMachine");
+			    	basketQueue.push("greenMachine");
 				break;
 			case "green-machine":
-			    basket.push("berryBlast");
+			   	 basketQueue.push("berryBlast");
 				break;
 			case "simply-red":
-				basket.push("simplyRed");
+				basketQueue.push("simplyRed");
 		};
 		
-		localStorage.setItem('basket', JSON.stringify(basket));
+		localStorage.setItem('basket', JSON.stringify(basketQueue));
 		
 	});
 	
