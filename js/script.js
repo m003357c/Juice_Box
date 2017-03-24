@@ -181,7 +181,7 @@ $(document).ready(function(){
 				$(".overlay").removeClass("isShowing").removeClass("fadeOut");
 			}, 1000);
 	   	};		
-
+		//asdasdad
 		if ($(".card.mobile").hasClass("animated")){ 
 			$(".card.mobile").toggleClass("mobile-animate-in mobile-animate-out").delay(1000).queue(function() { $(".card.mobile").removeClass("mobile-animate-out animated").attr("style",""); } );
 			$(".wallet-inner").css("position","relative");		
