@@ -684,9 +684,8 @@ header{
 }
 .notifcation{
 	width: 90%;
-	margin: 0 auto;
 	position: absolute;
-	top: 60px;
+	bottom: 52px;
 	right: 20px;
 	left: 20px;
 	background: rgba(26, 171, 0, 0.85);
@@ -754,17 +753,13 @@ header{
 	animation: card-animate-out 2s ease-in-out forwards;
 }
 @keyframes notify{
-	0%{			
+	0%, 100%{			
 		opacity: 0;
-		top: 60px;
+		bottom: 52px;
 	}
 	60%, 80%{
 		opacity: 1;	
-		top: 90px;
-	}
-	100%{		
-		opacity: 0;
-		top: 100px;
+		bottom: 90px;
 	}
 }
 @keyframes drink-animate-in{
