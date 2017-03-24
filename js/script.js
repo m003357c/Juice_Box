@@ -133,7 +133,7 @@ $(document).ready(function(){
 		var basketCount = JSON.parse(localStorage.getItem('basket'));
 		$("li.basket a .badge").css("display", "inline-block").text(basketCount.length);
 		
-		$("<aside class='notifcation'>You have added an item to your basket</aside>").prepend("body");
+		$("<aside class='notifcation'>You have added an item to your basket</aside>").prependTo("body");
 
 	});
 	$(".close-btn").click(function(){		
