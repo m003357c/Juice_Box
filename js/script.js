@@ -61,11 +61,9 @@ $(document).ready(function(){
 	
 	if (localStorage.getItem("basket") === null){
 		localStorage.setItem('basket',  "0");	
-		console.log("baskets local storage created");
 	} else{
 		basketQueue = JSON.parse(localStorage.getItem('basket'));
 		basket = JSON.parse(localStorage.getItem('basket'));
-		console.log(basket);
 	}
 	
 	if ($("li.basket a .badge").is(":empty")){
@@ -81,23 +79,18 @@ $(document).ready(function(){
 		switch (activeDrink) {
 			case "citrusProdInfo":
 				basketQueue.push(citrusPunch);
-				console.log(basketQueue);
 				break;
 			case "berryProdInfo":
 			    	basketQueue.push(berryBlast);
-			 	console.log(basketQueue);
 				break;
 			case "greenProdInfo":
 			   	basketQueue.push(greenMachine);
-				console.log(basketQueue);
 				break;
 			case "redProdInfo":
 				basketQueue.push(simplyRed);
-				console.log(basketQueue);
 		};
 		
 		localStorage.setItem('basket', JSON.stringify(basketQueue));
-		console.log("Add basket queue to local storage");
 		
 		var basketCount = JSON.parse(localStorage.getItem('basket'));
 		$("li.basket a .badge").css("display", "inline-block").text(basketCount.length);
@@ -112,23 +105,18 @@ $(document).ready(function(){
 		switch (activeDrink) {
 			case "citrusProdInfo":
 				basketQueue.push(citrusPunch);
-				console.log(basketQueue);
 				break;
 			case "berryProdInfo":
 			    	basketQueue.push(berryBlast);
-			 	console.log(basketQueue);
 				break;
 			case "greenProdInfo":
 			   	basketQueue.push(greenMachine);
-				console.log(basketQueue);
 				break;
 			case "redProdInfo":
 				basketQueue.push(simplyRed);
-				console.log(basketQueue);
 		};
 		
 		localStorage.setItem('basket', JSON.stringify(basketQueue));
-		console.log("Add basket queue to local storage");
 		
 		var basketCount = JSON.parse(localStorage.getItem('basket'));
 		$("li.basket a .badge").css("display", "inline-block").text(basketCount.length);
