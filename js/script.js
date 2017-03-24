@@ -98,9 +98,7 @@ $(document).ready(function(){
 		
 		var basketCount = JSON.parse(localStorage.getItem('basket'));
 		$("li.basket a .badge").css("display", "inline-block").text(basketCount.length);
-		
 	});
-	
 	$(".close-btn").click(function(){		
 		if ($(this).parent().hasClass("isShowing")){		    
 			$(this).parent().addClass("hideElement");
@@ -112,10 +110,7 @@ $(document).ready(function(){
 			}, 500);		    
 		};
 	});
-
 	//Append the amount in the basket and total price to page
-	$(".basket-items").text(basket.length);
-	$(".basket-price").text("£" + basket.length * 2.5);	
 	basket.forEach(function(item) {
 	  var drinkId = item.drinkId,
 	      drinkName = item.name,
@@ -156,9 +151,9 @@ $(document).ready(function(){
 		$("li.basket a .badge").text(basketCount.length);		
 		$(this).parent().removeClass("is-showing").delay(500).queue(function() { $(this).remove(); });		
 	});
-	
 	var basketCost = basket.length * 2.5;	
-	$(".cost").text( "£" + basketCost.toFixed(2));
+	$(".basket-items").text(basket.length);
+	$(".cost, .basket-price").text( "£" + basketCost.toFixed(2));
 	
 	$(".card").click(function(){		
 		if ($(this).hasClass("mobile")){		    
@@ -173,7 +168,6 @@ $(document).ready(function(){
 		$(".wallet-inner").css("position","static");
 		$(".overlay").addClass("isShowing fade")
 	});
-	
 	$(".pay-screen .btn").click(function(){			
 		if($(".overlay").hasClass("isShowing")){
 		    $(".overlay").toggleClass("fade fadeOut");
@@ -204,9 +198,7 @@ $(document).ready(function(){
 				});	
 				$(".wallet-inner").css("position","relative");		
 				$(".card-inner").removeClass("fade");
-
 			};
 		},500);
-		
 	});
 });
