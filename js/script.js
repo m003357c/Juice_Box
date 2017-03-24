@@ -157,7 +157,9 @@ $(document).ready(function(){
 		$(this).parent().removeClass("is-showing").delay(500).queue(function() { $(this).remove(); });		
 	});
 	
-	$(".cost").text("£" + basket.length * 2.5).toFixed(2);
+	var basketCost = "£" + basket.length * 2.5
+	
+	$(".cost").text(basketCost.toFixed(2));
 	
 	$(".card").click(function(){		
 		if ($(this).hasClass("mobile")){		    
