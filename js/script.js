@@ -41,15 +41,7 @@ $(document).ready(function(){
 
 	
 	//var basket = [greenMachine, berryBlast];
-	var basketQueue = new Array();  
-		
-	if (localStorage.getItem("basket") === null){
-		localStorage.setItem('basket',  "0");	
-		console.log("baskets local storage created");
-	}
 	
-	//var basket = JSON.parse(localStorage.getItem('basket'));
-
 	//Function to show the drinks information when clicked
 	$(".drink-option").click(function(){
 		var drinkID = this.id;
@@ -69,14 +61,16 @@ $(document).ready(function(){
 		$("#menuItems, h1").toggleClass("blur");
 	});
 
+	var basketQueue = new Array();  
+	var basket;
 	
-	
-	
-	
-	
-	
-	// Add item to basket then store in local storage
-	
+	if (localStorage.getItem("basket") === null){
+		localStorage.setItem('basket',  "0");	
+		console.log("baskets local storage created");
+	} else{
+		basket = JSON.parse(localStorage.getItem('basket'));
+	}
+	// Add item to basket then store in local storage	
 	$(".product-information .add-cart-btn").click(function(){
 		var activeDrink = $(this).closest(".product-information").attr("id");
 		console.log(activeDrink);
@@ -102,19 +96,6 @@ $(document).ready(function(){
 		console.log("Add basket queue to local storage")
 	});
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	$(".close-btn").click(function(){
 		
 		if ($(this).parent().hasClass("isShowing")){
@@ -131,7 +112,7 @@ $(document).ready(function(){
 	});
 
 	//Append the amount in the basket and total price to page
-	/*$(".basket-items").text(basket.length);
+	/$(".basket-items").text(basket.length);
 
 	$(".basket-price").text("£" + basket.length * 2.5);
 	
@@ -186,7 +167,7 @@ $(document).ready(function(){
 		
 	});
 	
-	$(".cost").text("£" + basket.length * 2.5);*/
+	$(".cost").text("£" + basket.length * 2.5);
 	
 	$(".card").click(function(){
 		
