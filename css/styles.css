@@ -758,7 +758,7 @@ header{
 		opacity: 0;
 		top: 60px;
 	}
-	80%{
+	60%, 80%{
 		opacity: 1;	
 	}
 	100%{		
