@@ -160,7 +160,7 @@ $(document).ready(function(){
 		var basketTemp = JSON.parse(localStorage.getItem('basket'));
 		
 		var prodId = $(this).parent().attr("id");
-		//var index = basketTemp.indexOf(prodId !== -1);
+		var index = basketTemp.indexOf(prodId !== -1);
 		
 		if(basketTemp.indexOf(prodId !== -1)){
 			basketTemp.splice(index, 1);
