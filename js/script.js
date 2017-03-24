@@ -63,6 +63,7 @@ $(document).ready(function(){
 		localStorage.setItem('basket',  "0");	
 		console.log("baskets local storage created");
 	} else{
+		basketQueue = JSON.parse(localStorage.getItem('basket'));
 		basket = JSON.parse(localStorage.getItem('basket'));
 		console.log(basket);
 	}
