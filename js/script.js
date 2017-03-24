@@ -184,15 +184,15 @@ $(document).ready(function(){
 		
 		if ($(this).hasClass("mobile")){
 		    
-			$(this).addClass("mobile-animate-in");	
+			$(this).toggleClass("mobile-animate-in");	
 		
 		}else if ($(this).hasClass("debit")){
 		
-			$(this).addClass("card-animate-in");	
+			$(this).toggleClass("card-animate-in");	
 	
 		} else if ($(this).hasClass("paypal")){
 			
-			$(this).addClass("paypal-animate-in");	
+			$(this).toggleClass("paypal-animate-in");	
 			
 		};
 		
