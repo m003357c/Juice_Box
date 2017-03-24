@@ -693,13 +693,11 @@ header{
 	color: #ffffff;
 	text-align: center;
 	z-index: 999;
-    padding: 10px 0;
-	-webkit-animation: notify 1s ease-in-out forwards;
-	-moz-animation: notify 1s ease-in-out forwards;
-	animation: notify 1s ease-in-out forwards;
+   	padding: 10px 0;
+	-webkit-animation: notify 2s ease-in-out forwards;
+	-moz-animation: notify 2s ease-in-out forwards;
+	animation: notify 2s ease-in-out forwards;
 }
-
-
 .fade{
 	-webkit-animation: fade 1s ease-in-out ;
 	-moz-animation: fade 1s ease-in-out ;
