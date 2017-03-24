@@ -689,11 +689,14 @@ header{
 	top: 60px;
 	right: 20px;
 	left: 20px;
-	background: rgba(26,171,0,0.8);
-	color: #1aab00;
-	-webkit-animation: notify 1s ease-in-out ;
-	-moz-animation: notify 1s ease-in-out ;
-	animation: notify 1s ease-in-out ;
+	background: rgba(26, 171, 0, 0.85);
+	color: #ffffff;
+	text-align: center;
+	z-index: 999;
+    padding: 10px 0;
+	-webkit-animation: notify 1s ease-in-out forwards;
+	-moz-animation: notify 1s ease-in-out forwards;
+	animation: notify 1s ease-in-out forwards;
 }
 
 
