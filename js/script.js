@@ -172,7 +172,7 @@ $(document).ready(function(){
 		$(".basket-items").text(basketCount.length);
 		$(".basket-price").text("£" + basketCount.length * 2.5);
 		
-		$("li.basket a .badge").append(basketCount.length);
+		$("li.basket a .badge").text(basketCount.length);
 		
 		$(this).parent().removeClass("is-showing").delay(500).queue(function() { $(this).remove(); });
 		
