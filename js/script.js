@@ -131,7 +131,7 @@ $(document).ready(function(){
 	});
 
 	//Append the amount in the basket and total price to page
-	$(".basket-items").text(basket.length);
+	/*$(".basket-items").text(basket.length);
 
 	$(".basket-price").text("£" + basket.length * 2.5);
 	
@@ -186,7 +186,7 @@ $(document).ready(function(){
 		
 	});
 	
-	$(".cost").text("£" + basket.length * 2.5);
+	$(".cost").text("£" + basket.length * 2.5);*/
 	
 	$(".card").click(function(){
 		
