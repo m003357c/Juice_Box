@@ -164,30 +164,25 @@ $(document).ready(function(){
 		e.stopPropagation();
 	});
 	
-	$(".card").click(function(e){		
-		e.stopPropagation();
+	$(".card").click(function(e){	
 		if ($(this).hasClass("mobile")){		    
-			$(this).toggleClass("mobile-animate-in");			
+			$(this).addClass("mobile-animate-in");			
 		}else if ($(this).hasClass("debit")){		
-			$(this).toggleClass("card-animate-in");		
+			$(this).addClass("card-animate-in");		
 		} else if ($(this).hasClass("paypal")){			
-			$(this).toggleClass("paypal-animate-in");				
+			$(this).addClass("paypal-animate-in");				
 		};
-		e.stopPropagation();
 		$(this).addClass("animated").css("z-index","999").children(".card-inner").addClass("fade");		
 		$(".wallet-inner").css("position","static");
 		$(".overlay").addClass("isShowing fade");
-		e.stopPropagation();
 	});
 	$(".pay-screen .btn").click(function(e){	
-		e.stopPropagation();
 		if($(".overlay").hasClass("isShowing")){
 		    $(".overlay").toggleClass("fade fadeOut");
 			setTimeout(function(){
 				$(".overlay").removeClass("isShowing").removeClass("fadeOut");
 			}, 1000);
 	   	};		
-		e.stopPropagation();
 		setTimeout(function(){
 			if ($(".card.mobile").hasClass("animated")){ 
 				$(".card.mobile").toggleClass("mobile-animate-in mobile-animate-out").attr("style","").delay(1000).queue(function(next) { 
@@ -196,7 +191,6 @@ $(document).ready(function(){
 				});
 				$(".wallet-inner").css("position","relative");		
 				$(".card-inner").removeClass("fade");
-				e.stopPropagation();
 			}else if ($(".cash").hasClass("animated")){
 				$(".cash").toggleClass("cash-animate-in cash-animate-out").attr("style","").delay(1000).queue(function(next) {
 					$(".cash").attr("class","cash");
@@ -204,7 +198,6 @@ $(document).ready(function(){
 				});
 				$(".wallet-inner").css("position","relative");	
 				$(".card-inner").removeClass("fade");
-				e.stopPropagation();
 			}else if ($(".card.debit").hasClass("animated")){
 				$(".card.debit").toggleClass("card-animate-in card-animate-out").attr("style","").delay(1000).queue(function(next) {
 					$(".card.debit").attr("class","card debit");
@@ -212,7 +205,6 @@ $(document).ready(function(){
 				});
 				$(".wallet-inner").css("position","relative");		
 				$(".card-inner").removeClass("fade");
-				e.stopPropagation();
 			} else if ($(".card.paypal").hasClass("animated")){
 				$(".card.paypal").toggleClass("paypal-animate-in paypal-animate-out").attr("style","").delay(1000).queue(function(next) { 
 					$(".card.paypal").attr("class","card paypal"); 
@@ -220,9 +212,7 @@ $(document).ready(function(){
 				});	
 				$(".wallet-inner").css("position","relative");		
 				$(".card-inner").removeClass("fade");
-				e.stopPropagation();
 			};
 		},500);
-		e.stopPropagation();
 	});
 });
