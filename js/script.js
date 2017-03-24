@@ -71,7 +71,7 @@ $(document).ready(function(){
 	}
 	
 	if ($("li.basket a .badge").is(":empty")){
-		$("li.basket a .badge").css("display","none");
+		$("li.basket a .badge").text("0");
 	};
 	
 	// Add item to basket then store in local storage	
