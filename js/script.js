@@ -77,19 +77,19 @@ $(document).ready(function(){
 		console.log(activeDrink);
 		switch (activeDrink) {
 			case "citrusProdInfo":
-				basketQueue.push(citrusPunch);
+				basketQueue.push(citrusPunch.drinkId);
 				console.log(basketQueue);
 				break;
 			case "berryProdInfo":
-			    	basketQueue.push(berryBlast);
+			    	basketQueue.push(berryBlast.drinkId);
 			 	console.log(basketQueue);
 				break;
 			case "greenProdInfo":
-			   	basketQueue.push(greenMachine);
+			   	basketQueue.push(greenMachine.drinkId);
 				console.log(basketQueue);
 				break;
 			case "redProdInfo":
-				basketQueue.push(simplyRed);
+				basketQueue.push(simplyRed.drinkId);
 				console.log(basketQueue);
 		};
 		
