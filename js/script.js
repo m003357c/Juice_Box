@@ -44,7 +44,7 @@ $(document).ready(function(){
 	var basketQueue = new Array();  
 		
 	if (localStorage.getItem("basket") === null){
-		localStorage.setItem('basket',  JSON.stringify(basketQueue));	
+		localStorage.setItem('basket',  "0");	
 		console.log("baskets local storage created");
 	}
 	
