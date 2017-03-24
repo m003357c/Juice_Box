@@ -97,7 +97,7 @@ $(document).ready(function(){
 		console.log("Add basket queue to local storage");
 		
 		var basketCount = JSON.parse(localStorage.getItem('basket'));
-		$("li.basket a").append("<span class='badge'>" + basketCount.length +"</span>");
+		$("li.basket a .badge").text(basketCount.length);
 		
 	});
 	
@@ -143,7 +143,7 @@ $(document).ready(function(){
 	});
 	
 	if (basket.length !== 0) {
-		$("li.basket a").append("<span class='badge'>" + basket.length +"</span>");
+		$("li.basket a .badge").append(basket.length);
 	}
 	
 	$("#basket .basket-item").each(function(i){
