@@ -181,7 +181,7 @@ $(document).ready(function(){
 			}, 1000);
 	   	};		
 		
-		setTiemout(function(){
+		setTimeout(function(){
 			if ($(".card.mobile").hasClass("animated")){ 
 				$(".card.mobile").toggleClass("mobile-animate-in mobile-animate-out").delay(1000).queue(function(next) { 
 					$(".card.mobile").attr("class","card mobile").attr("style","");
