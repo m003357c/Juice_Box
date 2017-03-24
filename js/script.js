@@ -156,6 +156,13 @@ $(document).ready(function(){
 	$(".basket-items").text(basket.length);
 	$(".cost, .basket-price").text( "£" + basketCost.toFixed(2));
 	
+	$(".cash").click(function(){				    
+		$(this).toggleClass("mobile-animate-in");			
+		$(this).addClass("animated").css("z-index","999");		
+		$(".wallet-inner").css("position","static");
+		$(".overlay").addClass("isShowing fade")
+	});
+	
 	$(".card").click(function(){		
 		if ($(this).hasClass("mobile")){		    
 			$(this).toggleClass("mobile-animate-in");			
@@ -185,6 +192,12 @@ $(document).ready(function(){
 				});
 				$(".wallet-inner").css("position","relative");		
 				$(".card-inner").removeClass("fade");
+			}else if ($(".cash").hasClass("animated")){
+				$(".cash").toggleClass("card-animate-in card-animate-out").attr("style","").delay(1000).queue(function(next) {
+					$(".cash").attr("class","cash");
+					next();
+				});
+				$(".wallet-inner").css("position","relative");	
 			}else if ($(".card.debit").hasClass("animated")){
 				$(".card.debit").toggleClass("card-animate-in card-animate-out").attr("style","").delay(1000).queue(function(next) {
 					$(".card.debit").attr("class","card debit");
