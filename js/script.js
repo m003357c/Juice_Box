@@ -146,7 +146,7 @@ $(document).ready(function(){
 	});
 	
 	if (basket.length !== 0) {
-		$("li.basket a .badge").css("display", "inline-block").append(basket.length);
+		$("li.basket a .badge").css("display", "inline-block").text(basket.length);
 	}
 	
 	$("#basket .basket-item").each(function(i){
