@@ -157,7 +157,7 @@ $(document).ready(function(){
 	$(".cost, .basket-price").text( "£" + basketCost.toFixed(2));
 	
 	$(".cash").click(function(){				    
-		$(this).toggleClass("mobile-animate-in").addClass("animated").css("z-index","999").children(".card-inner").addClass("fade");		
+		$(this).toggleClass("cash-animate-in").addClass("animated").css("z-index","999").children(".card-inner").addClass("fade");		
 		$(".wallet-inner").css("position","static");
 		$(".overlay").addClass("isShowing fade")
 	});
@@ -192,7 +192,7 @@ $(document).ready(function(){
 				$(".wallet-inner").css("position","relative");		
 				$(".card-inner").removeClass("fade");
 			}else if ($(".cash").hasClass("animated")){
-				$(".cash").toggleClass("card-animate-in card-animate-out").attr("style","").delay(1000).queue(function(next) {
+				$(".cash").toggleClass("cash-animate-in card-animate-out").attr("style","").delay(1000).queue(function(next) {
 					$(".cash").attr("class","cash");
 					next();
 				});
