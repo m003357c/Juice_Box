@@ -97,7 +97,11 @@ $(document).ready(function(){
 		console.log("Add basket queue to local storage");
 		
 		var basketCount = JSON.parse(localStorage.getItem('basket'));
-		$("li.basket a .badge").text(basketCount.length);
+		if ($("li.basket a .badge").is(":empty")){
+			$("li.basket a .badge").css("display","none");
+		} else{
+			$("li.basket a .badge").text(basketCount.length);
+		};
 		
 	});
 	
