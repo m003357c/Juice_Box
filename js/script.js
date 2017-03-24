@@ -182,19 +182,19 @@ $(document).ready(function(){
 			}, 1000);
 	   	};		
 		setTimeout(function(){
-			if ($(".card.mobile").hasClass("animated")){ 
+			if ($(".cash").hasClass("animated")){
+				$(".cash").toggleClass("cash-animate-in cash-animate-out").attr("style","").delay(1000).queue(function(next) {
+					//$(".cash").attr("class","cash");
+					next();
+				});
+				$(".wallet-inner").css("position","relative");	
+				$(".card-inner").removeClass("fade");
+			}else if ($(".card.mobile").hasClass("animated")){ 
 				$(".card.mobile").toggleClass("mobile-animate-in mobile-animate-out").attr("style","").delay(1000).queue(function(next) { 
 					$(".card.mobile").attr("class","card mobile");
 					next();
 				});
 				$(".wallet-inner").css("position","relative");		
-				$(".card-inner").removeClass("fade");
-			}else if ($(".cash").hasClass("animated")){
-				$(".cash").toggleClass("cash-animate-in cash-animate-out").attr("style","").delay(1000).queue(function(next) {
-					$(".cash").attr("class","cash");
-					next();
-				});
-				$(".wallet-inner").css("position","relative");	
 				$(".card-inner").removeClass("fade");
 			}else if ($(".card.debit").hasClass("animated")){
 				$(".card.debit").toggleClass("card-animate-in card-animate-out").attr("style","").delay(1000).queue(function(next) {
