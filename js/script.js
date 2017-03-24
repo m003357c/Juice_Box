@@ -1,5 +1,6 @@
 //JS file for Juice Box
 $(document).ready(function(){
+	
 	// Drink JS Objects
 	var citrusPunch = {
 	    drinkId: "citrusPunch",
@@ -38,7 +39,9 @@ $(document).ready(function(){
 	    drinkClass:"simply-red"
 	};
 
+	
 	var basket = [greenMachine, berryBlast];
+	
 
 	//Function to show the drinks information when clicked
 	$(".drink-option").click(function(){
@@ -63,6 +66,29 @@ $(document).ready(function(){
 
 	});
 
+	// Add item to basket then store in local storage
+	
+	/*$(".add-cart-btn").on("click", function(){
+		
+		 
+		
+		localStorage.setItem('basket', JSON.stringify(basket));
+		
+	});*/
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	$(".close-btn").click(function(){
 		
 		if ($(this).parent().hasClass("isShowing")){
