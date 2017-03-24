@@ -82,11 +82,11 @@ $(document).ready(function(){
 				console.log(basketQueue);
 				break;
 			case "berryProdInfo":
-			    	basketQueue.push("greenMachine");
+			    	basketQueue.push("berryBlast");
 			 	console.log(basketQueue);
 				break;
 			case "greenProdInfo":
-			   	basketQueue.push("berryBlast");
+			   	basketQueue.push("greenMachine");
 				console.log(basketQueue);
 				break;
 			case "redProdInfo":
