@@ -6,10 +6,10 @@ $(document).ready(function(){
 	    drinkId: "citrusPunch",
 	    name:"Citrus Punch",
 	    image:"citrus",
-	    ingredients:"Grapefruit, Orange &amp; Pineapple",
+	    ingredients:"Grapefruit, Orange<br>&amp; Pineapple",
 	    description:"Grapefruit, Orange &amp; Pineapple",
 	    price:"&pound;2.50",
-	    drinkClass:"citrus-blast"
+	    drinkClass:"citrus-punch"
 	};
 	var berryBlast = {
 	    drinkId: "berryBlast",
