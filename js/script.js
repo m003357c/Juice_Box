@@ -71,9 +71,7 @@ $(document).ready(function(){
 	if ($("li.basket a .badge").is(":empty")){
 		$("li.basket a .badge").text("0");
 	};
-	
-	// Add item to basket then store in local storage	
-	$(".product-information .add-cart-btn").click(function(){
+	 function addToBasket(){
 		var activeDrink = $(this).closest(".product-information").attr("id");
 		console.log(activeDrink);
 		switch (activeDrink) {
@@ -99,6 +97,20 @@ $(document).ready(function(){
 		
 		var basketCount = JSON.parse(localStorage.getItem('basket'));
 		$("li.basket a .badge").css("display", "inline-block").text(basketCount.length);
+	 };
+	// Add item to basket then store in local storage	
+	$(".product-information .buy-now-btn").click(function(e){
+		e.preventDefault();                   // prevent default anchor behavior
+		var goTo = this.getAttribute("href"); // store anchor href
+
+		addToBasket();
+		setTimeout(function(){
+			window.location = goTo;
+		},300); 
+		
+	});
+	$(".product-information .add-cart-btn").click(function(){
+		addToBasket();
 	});
 	$(".close-btn").click(function(){		
 		if ($(this).parent().hasClass("isShowing")){		    
