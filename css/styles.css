@@ -682,6 +682,21 @@ header{
 	margin: 0;
 	padding: 0;
 }
+.notifcation{
+	width: 90%;
+	margin: 0 auto;
+	position: absolute;
+	top: 60px;
+	right: 20px;
+	left: 20px;
+	background: rgba(26,171,0,0.8);
+	color: #1aab00;
+	-webkit-animation: notify 1s ease-in-out ;
+	-moz-animation: notify 1s ease-in-out ;
+	animation: notify 1s ease-in-out ;
+}
+
+
 .fade{
 	-webkit-animation: fade 1s ease-in-out ;
 	-moz-animation: fade 1s ease-in-out ;
@@ -736,6 +751,19 @@ header{
 	-webkit-animation: card-animate-out 2s ease-in-out forwards;
 	-moz-animation: card-animate-out 2s ease-in-out forwards;
 	animation: card-animate-out 2s ease-in-out forwards;
+}
+@keyframes notify{
+	0%{			
+		opacity: 0;
+		top: 60px;
+	}
+	80%{
+		opacity: 1;	
+	}
+	100%{		
+		opacity: 0;
+		top: 100px;
+	}
 }
 @keyframes drink-animate-in{
 	0%{			
