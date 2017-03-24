@@ -72,8 +72,6 @@ $(document).ready(function(){
 		$("li.basket a .badge").text("0");
 	};
 	 function addToBasket(){
-		var activeDrink = $(this).closest(".product-information").attr("id");
-		console.log(activeDrink);
 		switch (activeDrink) {
 			case "citrusProdInfo":
 				basketQueue.push(citrusPunch);
@@ -100,6 +98,7 @@ $(document).ready(function(){
 	 };
 	// Add item to basket then store in local storage	
 	$(".product-information .buy-now-btn").click(function(e){
+		var activeDrink = $(this).closest(".product-information").attr("id");
 		e.preventDefault();                   // prevent default anchor behavior
 		var goTo = this.getAttribute("href"); // store anchor href
 
@@ -110,6 +109,7 @@ $(document).ready(function(){
 		
 	});
 	$(".product-information .add-cart-btn").click(function(){
+		var activeDrink = $(this).closest(".product-information").attr("id");
 		addToBasket();
 	});
 	$(".close-btn").click(function(){		
