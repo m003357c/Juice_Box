@@ -176,14 +176,14 @@ $(document).ready(function(){
 		$(".overlay").addClass("isShowing fade")
 	});
 	$(".pay-screen .btn").click(function(e){	
-		
+		e.stopPropagation();
 		if($(".overlay").hasClass("isShowing")){
 		    $(".overlay").toggleClass("fade fadeOut");
 			setTimeout(function(){
 				$(".overlay").removeClass("isShowing").removeClass("fadeOut");
 			}, 1000);
 	   	};		
-		
+		e.stopPropagation();
 		setTimeout(function(){
 			if ($(".card.mobile").hasClass("animated")){ 
 				$(".card.mobile").toggleClass("mobile-animate-in mobile-animate-out").attr("style","").delay(1000).queue(function(next) { 
