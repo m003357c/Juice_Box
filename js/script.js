@@ -47,7 +47,9 @@ $(document).ready(function(){
 	$(".drink-option").click(function(){
 
 		var drinkID = this.id;
-
+		
+		console.log(drinkID);
+		
 		switch (drinkID) {
 			case "citrus-punch":
 				$("#citrusProdInfo").addClass("isShowing");
