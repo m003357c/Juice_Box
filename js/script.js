@@ -78,19 +78,23 @@ $(document).ready(function(){
 		 switch (drinkID) {
 			case "citrus-punch":
 				basketQueue.push("citrusPunch");
+				console.log(basketQueue);
 				break;
 			case "berry-blast":
 			    	basketQueue.push("greenMachine");
+			 	console.log(basketQueue);
 				break;
 			case "green-machine":
-			   	 basketQueue.push("berryBlast");
+			   	basketQueue.push("berryBlast");
+				console.log(basketQueue);
 				break;
 			case "simply-red":
 				basketQueue.push("simplyRed");
+				console.log(basketQueue);
 		};
 		
 		localStorage.setItem('basket', JSON.stringify(basketQueue));
-		
+		console.log("Add basket queue to local storage")
 	});
 	
 	
