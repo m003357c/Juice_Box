@@ -756,10 +756,12 @@ header{
 	0%, 100%{			
 		opacity: 0;
 		bottom: 152px;
+		background: rgba(26, 171, 0, 0.85);
 	}
 	60%, 80%{
 		opacity: 1;	
 		bottom: 190px;
+		background: rgba(26, 171, 0, 1);
 	}
 }
 @keyframes drink-animate-in{
