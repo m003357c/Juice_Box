@@ -184,7 +184,7 @@ $(document).ready(function(){
 		setTimeout(function(){
 			if ($(".cash").hasClass("animated")){
 				$(".cash").toggleClass("cash-animate-in cash-animate-out").attr("style","").delay(1000).queue(function(next) {
-					//$(".cash").attr("class","cash");
+					$(".cash").attr("class","cash");
 					next();
 				});
 				$(".wallet-inner").css("position","relative");	
