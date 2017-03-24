@@ -48,7 +48,7 @@ $(document).ready(function(){
 		console.log("baskets local storage created");
 	}
 	
-	var basket = JSON.parse(localStorage.getItem('basket'));
+	//var basket = JSON.parse(localStorage.getItem('basket'));
 
 	//Function to show the drinks information when clicked
 	$(".drink-option").click(function(){
