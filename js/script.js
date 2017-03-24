@@ -40,15 +40,13 @@ $(document).ready(function(){
 	};
 
 	
-	var basket = [greenMachine, berryBlast];
-	
+	//var basket = [greenMachine, berryBlast];
+	var basket = localStorage.getItem('basket');
 
 	//Function to show the drinks information when clicked
 	$(".drink-option").click(function(){
 
-		var drinkID = this.id;
-		
-		console.log(drinkID);
+		drinkID = this.id;
 		
 		switch (drinkID) {
 			case "citrus-punch":
@@ -68,15 +66,33 @@ $(document).ready(function(){
 
 	});
 
+	
+	
+	
+	
+	
+	
 	// Add item to basket then store in local storage
 	
-	/*$(".add-cart-btn").on("click", function(){
+	$(".drink-option .add-cart-btn").click(function(){
 		
-		 
+		 switch (drinkID) {
+			case "citrus-punch":
+				basket.push("citrusPunch");
+				break;
+			case "berry-blast":
+			    basket.push("greenMachine");
+				break;
+			case "green-machine":
+			    basket.push("berryBlast");
+				break;
+			case "simply-red":
+				basket.push("simplyRed");
+		};
 		
 		localStorage.setItem('basket', JSON.stringify(basket));
 		
-	});*/
+	});
 	
 	
 	
