@@ -48,7 +48,7 @@ $(document).ready(function(){
 
 	//Function to show the drinks information when clicked
 	$(".drink-option").click(function(){
-		drinkID = this.id;
+		var drinkID = this.id;
 		switch (drinkID) {
 			case "citrus-punch":
 				$("#citrusProdInfo").addClass("isShowing");
@@ -74,21 +74,22 @@ $(document).ready(function(){
 	// Add item to basket then store in local storage
 	
 	$(".drink-option .add-cart-btn").click(function(){
-
-		 switch (drinkID) {
-			case "citrus-punch":
+		var activeDrink = $(this).closest(".product-information").attr("id");
+		console.log(activeDrink);
+		switch (activeDrink) {
+			case "citrusProdInfo":
 				basketQueue.push("citrusPunch");
 				console.log(basketQueue);
 				break;
-			case "berry-blast":
+			case "berryProdInfo":
 			    	basketQueue.push("greenMachine");
 			 	console.log(basketQueue);
 				break;
-			case "green-machine":
+			case "greenProdInfo":
 			   	basketQueue.push("berryBlast");
 				console.log(basketQueue);
 				break;
-			case "simply-red":
+			case "redProdInfo":
 				basketQueue.push("simplyRed");
 				console.log(basketQueue);
 		};
