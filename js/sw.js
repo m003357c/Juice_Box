@@ -1,10 +1,11 @@
-/*var CACHE_NAME = 'gih-cache';
+var CACHE_NAME = 'Juice_Box_Offline_Pages';
 var CACHED_URLS = [
   '../offline-index.html',
   '../offline-basket.html',
   '../offline-checkout.html',
   '../offline-order-status.html',
   '../css/styles.css',
+  '../js/script.css'
 ];
 
 self.addEventListener('install', function(event) {
@@ -22,9 +23,9 @@ self.addEventListener('fetch', function(event) {
         if (response) {
           return response;
         } else if (event.request.headers.get('accept').includes('text/html')) {
-          return caches.match('index.html');
+          return caches.match('offline-index.html');
         }
       });
     })
   );
-});*/
+});
