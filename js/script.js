@@ -97,7 +97,7 @@ $(document).ready(function(){
 		console.log("Add basket queue to local storage");
 		
 		var basketCount = JSON.parse(localStorage.getItem('basket'));
-		$("li.basket a").append("<span class='badge'>" + basketCount +"</span>");
+		$("li.basket a").append("<span class='badge'>" + basketCount.length +"</span>");
 		
 	});
 	
