@@ -40,8 +40,6 @@ $(document).ready(function(){
 	};
 
 	
-	//var basket = [greenMachine, berryBlast];
-	
 	//Function to show the drinks information when clicked
 	$(".drink-option").click(function(){
 		var drinkID = this.id;
@@ -160,17 +158,18 @@ $(document).ready(function(){
 	$(".remove-basket").click(function(){
 
 		var prodId = $(this).parent().attr("id");
-		var index = basket.indexOf(prodId !== -1);
+		var index = basketQueue.indexOf(prodId !== -1);
 		
-		if(basket.indexOf(prodId !== -1)){
-			basket.splice(index, 1);
+		if(basketQueue.indexOf(prodId !== -1)){
+			basketQueue.splice(index, 1);
 		}
 		
 		localStorage.setItem('basket', JSON.stringify(basketQueue));
+		
 		var basketCount = JSON.parse(localStorage.getItem('basket'));
 		$(".basket-items").text(basketCount.length);
 
-		$(".basket-price").text("£" + basketCount.length * 2.5);
+		$(".basket-price").text("£" + basket.length * 2.5);
 		
 		$(this).parent().removeClass("is-showing").delay(500).queue(function() { $(this).remove(); });
 		
