@@ -190,8 +190,8 @@ $(document).ready(function(){
 				$(".wallet-inner").css("position","relative");		
 				$(".card-inner").removeClass("fade");
 			}else if ($(".cash").hasClass("animated")){
-				$(".cash").toggleClass("cash-animate-in cash-animate-out").delay(1000).queue(function(next) {
-					$(".cash").attr("class","cash").attr("style","");
+				$(".cash").toggleClass("cash-animate-in cash-animate-out").attr("style","").delay(1000).queue(function(next) {
+					$(".cash").attr("class","cash");
 					next();
 				});
 				$(".wallet-inner").css("position","relative");	
