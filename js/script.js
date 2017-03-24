@@ -69,6 +69,7 @@ $(document).ready(function(){
 		console.log("baskets local storage created");
 	} else{
 		basket = JSON.parse(localStorage.getItem('basket'));
+		console.log(basket);
 	}
 	// Add item to basket then store in local storage	
 	$(".product-information .add-cart-btn").click(function(){
@@ -152,10 +153,9 @@ $(document).ready(function(){
 		var prodId = $(this).parent().attr("id");
 		console.log(prodId);
 		var index = basket.indexOf(prodId !== -1);
-		console.log(index);
 		
 		if(basket.indexOf(prodId !== -1)){
-		   basket.splice(index, 1);
+			basket.splice(index, 1);
 			console.log(basket);
 		}
 		
