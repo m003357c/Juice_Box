@@ -158,7 +158,7 @@ $(document).ready(function(){
 	
 	$(".cash").click(function(e){	
 		e.stopPropagation();
-		$(this).toggleClass("cash-animate-in").addClass("animated").css("z-index","999").children(".card-inner").addClass("fade");		
+		$(this).addClass("cash-animate-in animated").css("z-index","999").children(".card-inner").addClass("fade");		
 		$(".wallet-inner").css("position","static");
 		$(".overlay").addClass("isShowing fade");
 		e.stopPropagation();
