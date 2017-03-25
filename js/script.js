@@ -61,6 +61,7 @@ $(document).ready(function(){
 	
 	if (localStorage.getItem("basket") === null){
 		localStorage.setItem('basket',  "0");	
+		basket = JSON.parse(localStorage.getItem('basket'));
 	} else{
 		basketQueue = JSON.parse(localStorage.getItem('basket'));
 		basket = JSON.parse(localStorage.getItem('basket'));
