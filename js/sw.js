@@ -1,11 +1,11 @@
-/*var CACHE_NAME = 'Juice_Box_Offline_Pages';
+var CACHE_NAME = 'Juice_Box_Offline_Pages';
 var CACHED_URLS = [
-  '/../offline-index.html',
-  '/../offline-basket.html',
-  '/../offline-checkout.html',
-  '/../offline-order-status.html',
-  '/../css/styles.css',
-  '/../js/script.css'
+  '../offline-index.html',
+  '../offline-basket.html',
+  ' ../offline-checkout.html',
+  '../offline-order-status.html',
+  '../css/styles.css',
+  '../js/script.css'
 ];
 
 self.addEventListener('install', function(event) {
@@ -28,4 +28,4 @@ self.addEventListener('fetch', function(event) {
       });
     })
   );
-});*/
+});
