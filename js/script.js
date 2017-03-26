@@ -108,15 +108,19 @@ $(document).ready(function(){
 		switch (activeDrink) {
 			case "citrusProdInfo":
 				basketQueue.push(citrusPunch);
+				return basketQueue;
 				break;
 			case "berryProdInfo":
 			    	basketQueue.push(berryBlast);
+				return basketQueue;
 				break;
 			case "greenProdInfo":
 			   	basketQueue.push(greenMachine);
+				return basketQueue;
 				break;
 			case "redProdInfo":
 				basketQueue.push(simplyRed);
+				return basketQueue;
 		};
 		console.log(basketQueue);
 		localStorage.setItem('basket', JSON.stringify(basketQueue));
