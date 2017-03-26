@@ -1,8 +1,8 @@
 var CACHE_NAME = 'Juice_Box_Offline_Pages';
 var CACHED_URLS = [
-  '../index.html',
-  '../basket.html',
-  ' ../checkout.html',
+  '../offline-index.html',
+  '../offline-basket.html',
+  ' ../offline-checkout.html',
   '../order-status.html',
   '../css/styles.css',
   '../js/script.js'
