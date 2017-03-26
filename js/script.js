@@ -56,7 +56,6 @@ $(document).ready(function() {
         $("#menuItems, h1").toggleClass("blur");
     });
 
-    var basketQueue = [];
     var basket = JSON.parse(localStorage.getItem('basket'));
 
 
@@ -65,27 +64,24 @@ $(document).ready(function() {
     };
 
     // Add item to basket then store in local storage	
-    $(".product-information .buy-now-btn").click(function(e, basketQueue) {
+    $(".product-information .buy-now-btn").click(function(e) {
         e.preventDefault(); // prevent default anchor behavior
         var goTo = this.getAttribute("href"); // store anchor href
-
+        
+        var basketQueue = [];
         var activeDrink = $(this).closest(".product-information").attr("id");
         switch (activeDrink) {
             case "citrusProdInfo":
                 basketQueue.push(citrusPunch);
-                return basketQueue;
                 break;
             case "berryProdInfo":
                 basketQueue.push(berryBlast);
-                return basketQueue;
                 break;
             case "greenProdInfo":
                 basketQueue.push(greenMachine);
-                return basketQueue;
                 break;
             case "redProdInfo":
                 basketQueue.push(simplyRed);
-                return basketQueue;
         };
 
         localStorage.setItem('basket', JSON.stringify(basketQueue));
@@ -98,24 +94,22 @@ $(document).ready(function() {
         }, 300);
 
     });
-    $(".product-information .add-cart-btn").click(function(basketQueue) {
+    $(".product-information .add-cart-btn").click(function() {
         var activeDrink = $(this).closest(".product-information").attr("id");
+        
+        var basketQueue = [];
         switch (activeDrink) {
             case "citrusProdInfo":
                 basketQueue.push(citrusPunch);
-                return basketQueue;
                 break;
             case "berryProdInfo":
                 basketQueue.push(berryBlast);
-                return basketQueue;
                 break;
             case "greenProdInfo":
                 basketQueue.push(greenMachine);
-                return basketQueue;
                 break;
             case "redProdInfo":
                 basketQueue.push(simplyRed);
-                return basketQueue;
         };
         localStorage.setItem('basket', JSON.stringify(basketQueue));
 
