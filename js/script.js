@@ -57,7 +57,7 @@ $(document).ready(function(){
 	});
 
 	var basketQueue = new Array();  
-	var basket;
+	var basket = null;
 	console.log(basket);
 	if (localStorage.getItem("basket") === null){
 		localStorage.setItem('basket',  "0");	
