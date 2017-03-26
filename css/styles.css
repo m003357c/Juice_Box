@@ -695,13 +695,15 @@ header{
 	width: 90%;
 	position: absolute;
 	bottom: 152px;
-	right: 20px;
-	left: 20px;
+	left: 50%;
 	background: rgba(26, 171, 0, 0.85);
 	color: #ffffff;
 	text-align: center;
 	z-index: 999;
    	padding: 10px 0;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	transform: translateX(-50%);
 	-webkit-animation: notify 2.5s ease-in-out forwards;
 	-moz-animation: notify 2.5s ease-in-out forwards;
 	animation: notify 2.5s ease-in-out forwards;
