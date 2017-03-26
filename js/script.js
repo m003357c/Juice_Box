@@ -57,15 +57,15 @@ $(document).ready(function() {
     });
 
     var basketQueue = [];
-    var basket;
+    var basket = JSON.parse(localStorage.getItem('basket'));
 
-    if (localStorage.getItem("basket") === null) {
+    /*if (localStorage.getItem("basket") === null) {
         localStorage.setItem('basket', "0");
-        basket = JSON.parse(localStorage.getItem('basket'));
+        
         //var iterator = basket.entries();
     } else {
         basketQueue = JSON.parse(localStorage.getItem('basket'));
-    };
+    };*/
 
     if ($("li.basket a .badge").is(":empty")) {
         $("li.basket a .badge").text("0");
