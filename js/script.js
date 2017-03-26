@@ -64,8 +64,7 @@ $(document).ready(function(){
 		basket = JSON.parse(localStorage.getItem('basket'));
 	} else{
 		basketQueue = JSON.parse(localStorage.getItem('basket'));
-		basket = JSON.parse(localStorage.getItem('basket'));
-	}
+	};
 	
 	if ($("li.basket a .badge").is(":empty")){
 		$("li.basket a .badge").text("0");
@@ -122,9 +121,7 @@ $(document).ready(function(){
 		var basketCount = JSON.parse(localStorage.getItem('basket'));
 		$("li.basket a .badge").css("display", "inline-block").text(basketCount.length);
 		
-		$("<aside class='notifcation'>You have added an item to your basket</aside>").prependTo("body").delay(2500).queue(function() { $(this).remove(); });;
-
-
+		$("<aside class='notifcation'>You have added an item to your basket</aside>").prependTo("body").delay(2500).queue(function() { $(this).remove(); });
 	});
 	$(".close-btn").click(function(){		
 		if ($(this).parent().hasClass("isShowing")){		    
@@ -156,7 +153,7 @@ $(document).ready(function(){
 	});	
 	if (basket.length !== 0) {
 		$("li.basket a .badge").css("display", "inline-block").text(basket.length);
-	}	
+	};
 	$("#basket .basket-item").each(function(i){
 		setTimeout(function(){
 			$("#basket .basket-item").eq(i).addClass("is-showing");
@@ -169,7 +166,7 @@ $(document).ready(function(){
 		
 		if(basketTemp.indexOf(prodId !== -1)){
 			basketTemp.splice(index, 1);
-		}
+		};
 		
 		localStorage.setItem('basket', JSON.stringify(basketTemp));		
 		var basketCount = JSON.parse(localStorage.getItem('basket'));
