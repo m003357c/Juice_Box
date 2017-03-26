@@ -57,11 +57,12 @@ $(document).ready(function(){
 	});
 
 	var basketQueue = new Array();  
-	var basket = 0;
+	var basket;
 	console.log(basket);
 	if (localStorage.getItem("basket") === null){
 		localStorage.setItem('basket',  "0");	
 		basket = JSON.parse(localStorage.getItem('basket'));
+		var iterator = basket.entries();
 	} else{
 		basketQueue = JSON.parse(localStorage.getItem('basket'));
 	};
@@ -139,14 +140,17 @@ $(document).ready(function(){
 	//Append the amount in the basket and total price to page
 	
 	console.log(basket);
-	
-	basket.forEach(function(item) {
-	  var drinkId = item.drinkId,
-	      drinkName = item.name,
-	      drinkImage = item.image,
-	      drinkIngred = item.ingredients,
-	      drinkPrice = item.price,
-	      drinkClass = item.drinkClass;
+	for (var i = 0, len = basket.length; i < len; i++) {
+	  outputBasket(basket[i]);
+	}
+	//iterator.forEach(function(item) {
+	function outputBasket(i){
+	  var drinkId = i.drinkId,
+	      drinkName = i.name,
+	      drinkImage = i.image,
+	      drinkIngred = i.ingredients,
+	      drinkPrice = i.price,
+	      drinkClass = i.drinkClass;
 	  var template = '<article id="' + drinkId + '" class="basket-item ' + drinkClass + '">' +
 					   '<span><img src="assets/images/basket-' + drinkImage + '.svg" alt="' + drinkName + ' Ingrediant Image"></span>' +
 					   '<span>' + drinkName + '<br><small>' + drinkIngred + '</small></span>' +
@@ -155,7 +159,9 @@ $(document).ready(function(){
 					   '<br class="clear">' +
 					 '</article>';
 	  $(".basket #basket").append(template);		
-	});	
+	};	
+	
+	
 	if (basket.length !== 0) {
 		$("li.basket a .badge").css("display", "inline-block").text(basket.length);
 	};
