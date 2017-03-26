@@ -57,17 +57,15 @@ $(document).ready(function(){
 	});
 
 	var basketQueue = new Array();  
-	var basket = null;
-	console.log(basket);
+	var basket;
+	
 	if (localStorage.getItem("basket") === null){
 		localStorage.setItem('basket',  "0");	
 		basket = JSON.parse(localStorage.getItem('basket'));
-		var iterator = basket.entries();
+		//var iterator = basket.entries();
 	} else{
 		basketQueue = JSON.parse(localStorage.getItem('basket'));
 	};
-	
-	console.log(basket);
 	
 	if ($("li.basket a .badge").is(":empty")){
 		$("li.basket a .badge").text("0");
@@ -103,8 +101,10 @@ $(document).ready(function(){
 		},300); 
 		
 	});
+	console.log(basketQueue);
 	$(".product-information .add-cart-btn").click(function(){
 		var activeDrink = $(this).closest(".product-information").attr("id");
+		console.log(basketQueue);
 		switch (activeDrink) {
 			case "citrusProdInfo":
 				basketQueue.push(citrusPunch);
@@ -118,7 +118,7 @@ $(document).ready(function(){
 			case "redProdInfo":
 				basketQueue.push(simplyRed);
 		};
-		
+		console.log(basketQueue);
 		localStorage.setItem('basket', JSON.stringify(basketQueue));
 		
 		var basketCount = JSON.parse(localStorage.getItem('basket'));
