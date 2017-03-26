@@ -67,7 +67,7 @@ $(document).ready(function() {
         e.preventDefault(); // prevent default anchor behavior
         var goTo = this.getAttribute("href"); // store anchor href
         
-        var basketQueue = [];
+        var basketQueue = JSON.parse(localStorage.getItem('basket');
         var activeDrink = $(this).closest(".product-information").attr("id");
         switch (activeDrink) {
             case "citrusProdInfo":
@@ -93,41 +93,10 @@ $(document).ready(function() {
         }, 300);
 
     });
-    
-    
-    $( ".buy-now-btn" ).each(function(index) {
-        
-        $(this).on("click", function(){
-            var activeDrink = $(this).closest(".product-information").attr("id");
-            var basketQueue = [];
-            switch (activeDrink) {
-                case "citrusProdInfo":
-                basketQueue.push(citrusPunch);
-            break;
-            case "berryProdInfo":
-                basketQueue.push(berryBlast);
-                break;
-            case "greenProdInfo":
-                basketQueue.push(greenMachine);
-                break;
-            case "redProdInfo":
-                basketQueue.push(simplyRed);
-            };
-            localStorage.setItem('basket', JSON.stringify(basketQueue));
-
-            var basketCount = JSON.parse(localStorage.getItem('basket'));
-            $("li.basket a .badge").css("display", "inline-block").text(basketCount.length);
-
-            $("<aside class='notifcation'>You have added an item to your basket</aside>").prependTo("body").delay(2500).queue(function() {
-                $(this).remove();
-            }); 
-        });
-    });
-    
-    /*$(".product-information .add-cart-btn").click(function() {
-        var activeDrink = $(this).closest(".product-information").attr("id");
-        
-        var basketQueue = [];
+    $(".product-information .add-cart-btn").click(function() {
+        var basketQueue = JSON.parse(localStorage.getItem('basket');
+        var activeDrink = $(this).closest(".product-information").attr("id");       
+       
         switch (activeDrink) {
             case "citrusProdInfo":
                 basketQueue.push(citrusPunch);
@@ -149,7 +118,7 @@ $(document).ready(function() {
         $("<aside class='notifcation'>You have added an item to your basket</aside>").prependTo("body").delay(2500).queue(function() {
             $(this).remove();
         });
-    });*/
+    });
     $(".close-btn").click(function() {
         if ($(this).parent().hasClass("isShowing")) {
             $(this).parent().addClass("hideElement");
