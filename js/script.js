@@ -59,20 +59,13 @@ $(document).ready(function() {
     var basketQueue = [];
     var basket = JSON.parse(localStorage.getItem('basket'));
 
-    /*if (localStorage.getItem("basket") === null) {
-        localStorage.setItem('basket', "0");
-        
-        //var iterator = basket.entries();
-    } else {
-        basketQueue = JSON.parse(localStorage.getItem('basket'));
-    };*/
 
     if ($("li.basket a .badge").is(":empty")) {
         $("li.basket a .badge").text("0");
     };
 
     // Add item to basket then store in local storage	
-    $(".product-information .buy-now-btn").click(function(e) {
+    $(".product-information .buy-now-btn").click(function(e, basketQueue) {
         e.preventDefault(); // prevent default anchor behavior
         var goTo = this.getAttribute("href"); // store anchor href
 
@@ -105,7 +98,7 @@ $(document).ready(function() {
         }, 300);
 
     });
-    $(".product-information .add-cart-btn").click(function() {
+    $(".product-information .add-cart-btn").click(function(basketQueue) {
         var activeDrink = $(this).closest(".product-information").attr("id");
         switch (activeDrink) {
             case "citrusProdInfo":
