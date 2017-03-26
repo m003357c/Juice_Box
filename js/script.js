@@ -56,8 +56,8 @@ $(document).ready(function(){
 		$("#menuItems, h1").toggleClass("blur");
 	});
 
-	var basketQueue = new Array();  
-	var basket;
+	var basketQueue = [];  
+	var basket = [];
 	
 	if (localStorage.getItem("basket") === null){
 		localStorage.setItem('basket',  "0");	
@@ -139,10 +139,6 @@ $(document).ready(function(){
 	});
 	//Append the amount in the basket and total price to page
 	
-	console.log(basket);
-	for (var i = 0, len = basket.length; i < len; i++) {
-	  outputBasket(basket[i]);
-	}
 	//iterator.forEach(function(item) {
 	function outputBasket(i){
 	  var drinkId = i.drinkId,
@@ -160,7 +156,9 @@ $(document).ready(function(){
 					 '</article>';
 	  $(".basket #basket").append(template);		
 	};	
-	
+	for (var i = 0, len = basket.length; i < len; i++) {
+	  outputBasket(basket[i]);
+	}
 	
 	if (basket.length !== 0) {
 		$("li.basket a .badge").css("display", "inline-block").text(basket.length);
