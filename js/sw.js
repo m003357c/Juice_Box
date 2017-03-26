@@ -3,7 +3,6 @@ var CACHED_URLS = [
   '../offline-index.html',
   '../offline-basket.html',
   ' ../offline-checkout.html',
-  '../order-status.html',
   '../css/styles.css',
   '../js/script.js'
 ];
