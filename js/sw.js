@@ -1,4 +1,4 @@
-var CACHE_NAME = 'Juice_Box_Offline_Pages';
+/*var CACHE_NAME = 'Juice_Box_Offline_Pages';
 var CACHED_URLS = [
   '../index.html',
   '../basket.html',
@@ -28,4 +28,4 @@ self.addEventListener('fetch', function(event) {
       });
     })
   );
-});
+});*/
