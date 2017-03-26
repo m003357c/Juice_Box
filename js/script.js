@@ -67,7 +67,7 @@ $(document).ready(function() {
         e.preventDefault(); // prevent default anchor behavior
         var goTo = this.getAttribute("href"); // store anchor href
         
-        var basketQueue = JSON.parse(localStorage.getItem('basket');
+        var basketQueue = JSON.parse(localStorage.getItem('basket'));
         var activeDrink = $(this).closest(".product-information").attr("id");
         switch (activeDrink) {
             case "citrusProdInfo":
@@ -94,7 +94,7 @@ $(document).ready(function() {
 
     });
     $(".product-information .add-cart-btn").click(function() {
-        var basketQueue = JSON.parse(localStorage.getItem('basket');
+        var basketQueue = JSON.parse(localStorage.getItem('basket'));
         var activeDrink = $(this).closest(".product-information").attr("id");       
        
         switch (activeDrink) {
