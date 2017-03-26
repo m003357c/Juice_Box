@@ -105,10 +105,8 @@ $(document).ready(function() {
         }, 300);
 
     });
-    console.log(basketQueue);
     $(".product-information .add-cart-btn").click(function() {
         var activeDrink = $(this).closest(".product-information").attr("id");
-        console.log(basketQueue);
         switch (activeDrink) {
             case "citrusProdInfo":
                 basketQueue.push(citrusPunch);
@@ -126,7 +124,6 @@ $(document).ready(function() {
                 basketQueue.push(simplyRed);
                 return basketQueue;
         };
-        console.log(basketQueue);
         localStorage.setItem('basket', JSON.stringify(basketQueue));
 
         var basketCount = JSON.parse(localStorage.getItem('basket'));
@@ -166,6 +163,7 @@ $(document).ready(function() {
             '</article>';
         $(".basket #basket").append(template);
     };
+    console.log(basket.length);
     for (var i = 0, len = basket.length; i < len; i++) {
         outputBasket(basket[i]);
     }
