@@ -58,7 +58,6 @@ $(document).ready(function() {
 
     var basket = JSON.parse(localStorage.getItem('basket'));
 
-
     if ($("li.basket a .badge").is(":empty")) {
         $("li.basket a .badge").text("0");
     };
@@ -97,10 +96,10 @@ $(document).ready(function() {
     
     
     $( ".buy-now-btn" ).each(function(index) {
-        var basketQueue = [];
+        
         $(this).on("click", function(){
             var activeDrink = $(this).closest(".product-information").attr("id");
-            
+            var basketQueue = [];
             switch (activeDrink) {
                 case "citrusProdInfo":
                 basketQueue.push(citrusPunch);
