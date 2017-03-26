@@ -66,6 +66,8 @@ $(document).ready(function(){
 		basketQueue = JSON.parse(localStorage.getItem('basket'));
 	};
 	
+	console.log(basket);
+	
 	if ($("li.basket a .badge").is(":empty")){
 		$("li.basket a .badge").text("0");
 	};
@@ -135,6 +137,9 @@ $(document).ready(function(){
 		};
 	});
 	//Append the amount in the basket and total price to page
+	
+	console.log(basket);
+	
 	basket.forEach(function(item) {
 	  var drinkId = item.drinkId,
 	      drinkName = item.name,
