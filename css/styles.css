@@ -452,6 +452,8 @@ header{
 /*---------------------------------------------------*/
 .checkout section{
 	position: relative;
+	max-width: 360px;
+	margin: 0 auto;
 }
 .checkout h1{
 	margin-top: 0;
