@@ -55,7 +55,12 @@ $(document).ready(function() {
         };
         $("#menuItems, h1").toggleClass("blur");
     });
-
+    var basket = JSON.parse(localStorage.getItem('basket'));
+    
+    if (JSON.parse(localStorage.getItem('basket') == null){
+        basket = ["0"];
+        localStorage.setItem('basket', JSON.stringify(basket));
+    };
     var basket = JSON.parse(localStorage.getItem('basket'));
 
     if ($("li.basket a .badge").is(":empty")) {
