@@ -57,7 +57,7 @@ $(document).ready(function() {
     });
     var basket = JSON.parse(localStorage.getItem('basket'));
     
-    if (JSON.parse(localStorage.getItem('basket') == null){
+    if (JSON.parse(localStorage.getItem('basket') == null)){
         basket = ["0"];
         localStorage.setItem('basket', JSON.stringify(basket));
     };
