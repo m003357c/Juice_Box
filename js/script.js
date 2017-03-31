@@ -156,8 +156,10 @@ $(document).ready(function() {
     };
     console.log(basket.length);
     for (var i = 0, len = basket.length; i < len; i++) {
-        outputBasket(basket[i]);
-    }
+        if (JSON.parse(localStorage.getItem('basket')) !== "0"){
+            outputBasket(basket[i]);
+        };
+    };
 
     if (basket.length !== 0) {
         $("li.basket a .badge").css("display", "inline-block").text(basket.length);
