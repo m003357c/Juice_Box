@@ -158,7 +158,7 @@ $(document).ready(function() {
             '</article>';
         $(".basket #basket").append(template);
     };
-    if (basket[0] === "0"){
+    if (basket[0] !=== "0"){
         for (var i = 0, len = basket.length; i < len; i++) {
                 outputBasket(basket[i]);
         };  
