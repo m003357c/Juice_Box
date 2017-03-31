@@ -251,4 +251,8 @@ $(document).ready(function() {
             };
         }, 500);
     });
+    
+    if ($('input.checkbox_check').is(':checked')) {
+    
+    };
 });
