@@ -251,29 +251,4 @@ $(document).ready(function() {
             };
         }, 500);
     });
-    
-    var cardType = $("input.cardType").val();
-    var expiryDate = $("input.expiryDate").val();
-    var cvvNo = $("input.cvvNo").val();
-    var cardNo = $("input.cardNo").val();  
-        
-    if ($('input.checkbox_check').is(':checked')) {
-          
-        console.log(cardType, expiryDate, cvvNo, cardNo);
-        
-        var cardDetails = [cardType, expiryDate, cvvNo, cardNo];
-        
-        localStorage.setItem('cardDetails', JSON.stringify(cardDetails));
-    };
-    
-    
-    if (JSON.parse(localStorage.getItem('cardDetails') !== null)){
-        
-        var getDetials = JSON.parse(localStorage.getItem('cardDetails'));
-        
-        $("input.cardType").val(getDetials[0]);
-        $("input.expiryDate").val(getDetials[1]);
-        $("input.cvvNo").val(getDetials[2]);
-        $("input.cardNo").val(getDetials[3]);
-    };
 });
