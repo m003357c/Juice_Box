@@ -162,9 +162,6 @@ $(document).ready(function() {
         for (var i = 0, len = basket.length; i < len; i++) {
                 outputBasket(basket[i]);
         };  
-    } else {
-        $(".badge, .basket-items").text("0");
-        $(".basket-price").text("£0.00");
     };
 
     if (basket.length !== 0) {
