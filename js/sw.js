@@ -4,9 +4,9 @@ var CACHED_URLS = [
   // Our HTML
     BASEPATH + 'index.html',
   // Stylesheets and fonts    
-    BASEPATH +  '/css/styles.css',
+    BASEPATH +  'css/styles.css',
   // JavaScript
-    BASEPATH +  'manifest.json',
+    BASEPATH +  'assets/icons/manifest.json',
     BASEPATH +  'js/script.js',
   // Images
 ];
