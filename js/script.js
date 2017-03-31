@@ -37,6 +37,17 @@ $(document).ready(function() {
         price: "&pound;2.50",
         drinkClass: "simply-red"
     };
+    
+    var basket = JSON.parse(localStorage.getItem('basket'));
+    
+    if (JSON.parse(localStorage.getItem('basket') == null)){
+        basket = ["0"];
+        localStorage.setItem('basket', JSON.stringify(basket));
+    };
+    
+    var basket = JSON.parse(localStorage.getItem('basket'));
+    
+    
     //Function to show the drinks information when clicked
     $(".drink-option").click(function() {
         var drinkID = this.id;
@@ -55,13 +66,6 @@ $(document).ready(function() {
         };
         $("#menuItems, h1").toggleClass("blur");
     });
-    var basket = JSON.parse(localStorage.getItem('basket'));
-    
-    if (JSON.parse(localStorage.getItem('basket') == null)){
-        basket = ["0"];
-        localStorage.setItem('basket', JSON.stringify(basket));
-    };
-    var basket = JSON.parse(localStorage.getItem('basket'));
 
     if ($("li.basket a .badge").is(":empty")) {
         $("li.basket a .badge").text("0");
@@ -154,9 +158,10 @@ $(document).ready(function() {
             '</article>';
         $(".basket #basket").append(template);
     };
-    console.log(basket.length);
-    for (var i = 0, len = basket.length; i < len; i++) {
-            outputBasket(basket[i]);
+    if (basket[0] == 0){
+        for (var i = 0, len = basket.length; i < len; i++) {
+                outputBasket(basket[i]);
+        };  
     };
 
     if (basket.length !== 0) {
