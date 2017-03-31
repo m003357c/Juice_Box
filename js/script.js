@@ -269,7 +269,7 @@ $(document).ready(function() {
     
     if (JSON.parse(localStorage.getItem('cardDetails') !== null)){
         
-        var getDetials = JSON.parse(localStorage.getItem('cardDetails')
+        var getDetials = JSON.parse(localStorage.getItem('cardDetails'));
         
         $("input.cardType").val(getDetials[0]);
         $("input.expiryDate").val(getDetials[1]);
