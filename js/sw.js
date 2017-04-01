@@ -3,11 +3,13 @@ var BASEPATH = '/Juice_Box/';
 var CACHED_URLS = [
   // Our HTML
     BASEPATH + 'index.html',
+    BASEPATH + 'basket.html',
+    BASEPATH + 'checkout.html',
   // Stylesheets and fonts    
     BASEPATH +  'css/styles.css',
   // JavaScript
     BASEPATH +  'assets/icons/manifest.json',
-    BASEPATH +  'js/script.js',
+    BASEPATH +  'js/script.js'
   // Images
 ];
 
