@@ -28,8 +28,6 @@ a, a:hover, a:focus, a:active, article, img{
 }
 .checkout .container{
 	padding: 20px 10px 50px;
-	-webkit-backface-visibility: hidden;
-	-webkit-perspective: 1000;
 }
 .btn{
 	text-transform: uppercase;
