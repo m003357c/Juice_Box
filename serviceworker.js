@@ -21,14 +21,14 @@ var CACHED_URLS = [
     BASEPATH +  'assets/images/menu-berry.svg',
     BASEPATH +  'assets/images/menu-green.svg',
     BASEPATH +  'assets/images/menu-red.svg',
-    BASEPATH +  'assets/images/prod-citrus.svg',
+    /*BASEPATH +  'assets/images/prod-citrus.svg',
     BASEPATH +  'assets/images/prod-berry.svg',
     BASEPATH +  'assets/images/prod-green.svg',
     BASEPATH +  'assets/images/prod-red.svg',
     BASEPATH +  'assets/images/basket-citrus.svg',
     BASEPATH +  'assets/images/basket-berry.svg',
     BASEPATH +  'assets/images/basket-green.svg',
-    BASEPATH +  'assets/images/basket-red.svg',
+    BASEPATH +  'assets/images/basket-red.svg',*/
     BASEPATH +  'assets/images/star.svg',
     BASEPATH +  'assets/images/nfc-icon.png'
 ];
