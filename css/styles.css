@@ -16,6 +16,8 @@ body{
 	position: relative;	
 	padding-top: 60px;
 	overflow-x: hidden;
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
 }
 body, nav ul{
 	margin: 0;
