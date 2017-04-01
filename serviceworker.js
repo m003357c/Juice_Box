@@ -30,7 +30,7 @@ var CACHED_URLS = [
     BASEPATH +  'assets/images/basket-green.svg',
     BASEPATH +  'assets/images/basket-red.svg',
     BASEPATH +  'assets/images/star.svg',
-    BASEPATH +  'assets/images/nfc-icon.svg'
+    BASEPATH +  'assets/images/nfc-icon.png'
 ];
 
 self.addEventListener('install', function(event) {
