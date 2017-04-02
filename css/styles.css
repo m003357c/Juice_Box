@@ -441,6 +441,9 @@ header{
 	font-size: 1.5rem;
 	padding: 25px 27px;
 }
+ #basket-pay .basket-clear-btn{
+	margin-right: 20px; 
+}	
 .basket-item{
 	opacity: 0;	
 	-webkit-transition: all 500ms ease-in-out;
