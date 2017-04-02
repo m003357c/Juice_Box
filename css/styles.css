@@ -437,7 +437,7 @@ header{
 #basket-pay{
 	text-align: center;	
 }
-#basket-pay .basket-pay-btn{
+#basket-pay .basket-pay-btn, #basket-pay .basket-clear-btn{
 	font-size: 1.5rem;
 	padding: 25px 27px;
 }
