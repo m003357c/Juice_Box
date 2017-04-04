@@ -158,10 +158,12 @@ $(document).ready(function() {
             '</article>';
         $(".basket #basket").append(template);
     };
-
-    for (var i = 0, len = basket.length; i < len; i++) {
+    if (JSON.parse(localStorage.getItem('basket') !== "0")){
+        for (var i = 0, len = basket.length; i < len; i++) {
             outputBasket(basket[i]);
-    };  
+         }; 
+    };
+     
 
     if (basket.length !== 0) {
         $("li.basket a .badge").css("display", "inline-block").text(basket.length);
