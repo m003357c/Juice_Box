@@ -41,7 +41,7 @@ $(document).ready(function() {
     var basket = JSON.parse(localStorage.getItem('basket'));
     
     if (JSON.parse(localStorage.getItem('basket') == null)){
-        basket = ["0"];
+        basket = [];
         localStorage.setItem('basket', JSON.stringify(basket));
     };
     
@@ -156,14 +156,14 @@ $(document).ready(function() {
             '<a class="remove-basket" href="#">x</a>' +
             '<br class="clear">' +
             '</article>';
-        $(".basket #basket").append(template);
+        if(basket[0] !== ""){
+            $(".basket #basket").append(template);
+        };
     };
-    if (JSON.parse(localStorage.getItem('basket') !== "0")){
-        for (var i = 0, len = basket.length; i < len; i++) {
-            outputBasket(basket[i]);
-         }; 
-    };
-     
+    
+    for (var i = 0, len = basket.length; i < len; i++) {
+        outputBasket(basket[i]);
+     }; 
 
     if (basket.length !== 0) {
         $("li.basket a .badge").css("display", "inline-block").text(basket.length);
