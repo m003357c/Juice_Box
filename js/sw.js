@@ -9,8 +9,20 @@ var CACHED_URLS = [
     BASEPATH +  'css/styles.css',
   // JavaScript
     BASEPATH +  'assets/icons/manifest.json',
-    BASEPATH +  'js/script.js'
+    BASEPATH +  'js/script.js',
   // Images
+    BASEPATH +  'assets/images/menu-citrus.svg',
+    BASEPATH +  'assets/images/menu-berry.svg',
+    BASEPATH +  'assets/images/menu-green.svg',
+    BASEPATH +  'assets/images/menu-red.svg',
+    BASEPATH +  'assets/images/prod-citrus.svg',
+    BASEPATH +  'assets/images/prod-berry.svg',
+    BASEPATH +  'assets/images/prod-green.svg',
+    BASEPATH +  'assets/images/prod-red.svg',
+    BASEPATH +  'assets/images/basket-citrus.svg',
+    BASEPATH +  'assets/images/basket-berry.svg',
+    BASEPATH +  'assets/images/basket-green.svg',
+    BASEPATH +  'assets/images/basket-red.svg'
 ];
 
 self.addEventListener('install', function(event) {
