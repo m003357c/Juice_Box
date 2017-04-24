@@ -20,9 +20,6 @@ body{
 body, nav ul{
 	margin: 0;
 }
-a, a:hover, a:focus, a:active, article, img{
- 
-}
 .container{
 	padding: 20px 0 50px;	
 }
@@ -225,7 +222,7 @@ header{
 #hiddenProdInfo{
 	position: absolute;
 	width: 100%;
-	bottom: -140px;
+	top: 80px;
 }
 #berryProdInfo h2, #berryProdInfo p, #berryProdInfo th, #berryProdInfo td,
 #redProdInfo h2, #redProdInfo p, #redProdInfo th, #redProdInfo td{
@@ -244,7 +241,7 @@ header{
 	z-index: 5;
 	display: none;
 }
-.product-information::before{
+.product-information .info-holder::before{
 	content: '';
 	width: 140%;
 	height: 360px;
@@ -258,12 +255,12 @@ header{
 	transform: translate(-50%);
 }
 .product-information img{
-	position: absolute;
+	/*position: absolute;
 	top: -340px;
 	left: 50%;
 	-webkit-transform: translate(-50%, 0);
 	-mos-transform: translate(-50%, 0);
-	transform: translate(-50%, 0);
+	transform: translate(-50%, 0);*/
 }
 .product-information p.btn-holder{
 	position: relative;
@@ -274,8 +271,8 @@ header{
 	top: -40px;
 }	
 .product-information a.close-btn {
-    top: -350px;
-    right: 60px;
+    top: 0;
+    right: 40%;
     padding: 10px 15px;
     z-index: 999;
 }
@@ -386,16 +383,16 @@ header{
 	float: right;
 	margin-top: 15px;
 }
-.citrus-punch, .citrus-punch.product-information::before{
+.citrus-punch .info-holder, .citrus-punch.product-information::before{
 	background: #f4ca07;	
 }
-.berry-blast, .berry-blast.product-information::before{
+.berry-blast .info-holder, .berry-blast.product-information::before{
 	background: #73397c;	
 }
-.green-machine, .green-machine.product-information::before{
+.green-machine .info-holder, .green-machine.product-information::before{
 	background: #7fb75a;	
 }
-.simply-red, .simply-red.product-information::before{
+.simply-red .info-holder, .simply-red.product-information::before{
 	background: #a32121;	
 }
 .remove-basket{
