@@ -20,9 +20,6 @@ body{
 body, nav ul{
 	margin: 0;
 }
-a, a:hover, a:focus, a:active, article, img{
- 
-}
 .container{
 	padding: 20px 0 50px;	
 	position: relative;
