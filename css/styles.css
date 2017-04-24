@@ -25,6 +25,9 @@ a, a:hover, a:focus, a:active, article, img{
 }
 .container{
 	padding: 20px 0 50px;	
+	position: relative;
+	max-width: 360px;
+	margin: 0 auto;
 }
 .checkout .container{
 	padding: 20px 10px 50px;
@@ -462,11 +465,6 @@ header{
 /*---------------------------------------------------*/
 /*------------------- Checkout Wallet ---------------*/
 /*---------------------------------------------------*/
-.checkout section{
-	position: relative;
-	max-width: 360px;
-	margin: 0 auto;
-}
 .checkout h1{
 	margin-top: 0;
 }
