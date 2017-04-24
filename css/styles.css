@@ -22,12 +22,12 @@ body, nav ul{
 }
 .container{
 	padding: 20px 0 50px;	
-	position: relative;
-	max-width: 360px;
-	margin: 0 auto;
 }
 .checkout .container{
 	padding: 20px 10px 50px;
+	position: relative;
+	max-width: 360px;
+	margin: 0 auto;
 }
 .btn{
 	text-transform: uppercase;
