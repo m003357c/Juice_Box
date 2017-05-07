@@ -205,9 +205,9 @@ header{
 #simply-red{
 	background: url(../assets/images/menu-red.svg) 50% 50% no-repeat;
 	background-color: #a32121;
-	-webkit-transform: translate(60px, -80px);
-	-moz-transform: translate(60px, -80px);
-	transform: translate(60px, -80px);
+	-webkit-transform: translate(60px, -90px);
+	-moz-transform: translate(60px, -90px);
+	transform: translate(60px, -90px);
 }
 .drink-name{
 	font-size: 0.875rem;
